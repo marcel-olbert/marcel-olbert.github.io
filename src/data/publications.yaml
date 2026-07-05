@@ -1,12 +1,29 @@
 # Published papers. Add new entries at the top. `selected: true` shows the paper on the homepage.
-# `abstract` can be added/edited freely; shows as expandable text on the Research page.
+# `abstract` shows as expandable text on the Research page.
 - title: "Firms' Real and Reporting Responses to Taxation: A Review"
   coauthors: [Rebecca Lester]
   journal: Journal of Accounting and Economics
   year: 2025
   link: https://doi.org/10.1016/j.jacceco.2025.101837
   selected: true
-  abstract: null
+  abstract: >-
+    Taxation is a central economic policy tool, with governments increasingly using tax
+    policy to stimulate local economic growth and also regulate multinational firms. We
+    review the empirical literature that studies the effect of tax policies on firms'
+    investment, employment, and other real outcomes. Building on the neoclassical theory
+    of corporate taxes and tangible investment, we propose an organizing framework for our
+    review that captures the wide set of tax policies and firm responses examined in
+    accounting research. This framework highlights four dimensions along which accounting
+    scholars contribute to the literature: (i) documenting the role of financial reporting
+    incentives as a moderating factor in firms' real responses, (ii) studying firms'
+    reporting versus real responses, (iii) quantifying real effects of tax disclosure
+    regulations, and (iv) improving measurement of firms' tax status and proxies for
+    investment and employment. We identify open questions for future research and suggest
+    new international, federal, and local settings that may help uncover underlying
+    mechanisms driving observed economic phenomena. Specifically, we encourage scholars to
+    further distinguish firms' reported and real responses to tax changes and improve
+    measurement of these outcomes, especially in settings related to environmental
+    taxation or settings in which tax avoidance and real outcomes are closely linked.
 
 - title: How Do Multinational Companies Respond to Destination-based Taxes?
   coauthors: [Lisa De Simone]
@@ -14,7 +31,24 @@
   year: 2025
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125715
   selected: false
-  abstract: null
+  abstract: >-
+    Taxing companies' goods or services where they are consumed, rather than where
+    companies operate, limits tax avoidance and improves efficiency. However, such
+    destination-based systems are hard to enforce. Therefore, in the European Union,
+    value-added taxes on digital business-to-consumer (B2C) sales were historically based
+    on the seller's location or origin, allowing multinational companies to route sales
+    through low-VAT countries. We study the impact of a 2015 reform that required
+    multinationals to pay VAT where their consumers are. Difference-in-differences results
+    suggest that they reported disproportionately high digital B2C services sales in
+    low-VAT countries under the previous origin-based system. The introduction of the
+    destination-based system curbed this tax planning behavior. While this baseline
+    finding is consistent with expectations, we also provide novel evidence on potentially
+    unintended or unexpected effects of system changes toward destination-based taxation.
+    Specifically, we find that multinationals also decreased employment in low-VAT
+    countries and increased income tax-motivated profit shifting post reform. In sum, our
+    findings indicate that destination-based taxes curb corporate tax planning for mobile
+    tax bases but that tax system changes have real effects and incentivize tax avoidance
+    for other tax bases taxed at origin.
 
 - title: The Impact of Tax Shields on Bankruptcy Risk and Resource Allocation
   coauthors: []
@@ -22,7 +56,18 @@
   year: 2025
   link: https://ssrn.com/abstract=3467669
   selected: false
-  abstract: null
+  abstract: >-
+    This paper investigates how tax loss carryforward (LCF) rules influence corporate
+    bankruptcies and market-wide productivity. Analyzing data from 29 European countries,
+    I find that stricter LCF deductibility limits significantly increase bankruptcy
+    likelihoods. This is because stricter LCF deductibility limits lower the present value
+    of net operating losses (NOLs) as tax assets, reducing the incentive to keep
+    struggling firms alive. This effect is especially pronounced for business group firms,
+    which can support struggling affiliates through internal capital markets to
+    strategically exploit NOLs. My results suggest that lenient LCF deductibility limits
+    can sustain unproductive firms, impacting market-wide resource allocation and
+    productivity. These findings highlight the trade-off in tax policy between supporting
+    firm survival and ensuring efficient resource allocation.
 
 - title: ESG Disclosures in the Private Equity Industry
   coauthors: [Jefferson Abraham, Florin Vasvari]
@@ -30,7 +75,18 @@
   year: 2024
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4265171
   selected: true
-  abstract: null
+  abstract: >-
+    This paper offers the first systematic evidence on environmental, social, and
+    governance (ESG) disclosures provided by a large global sample of private equity (PE)
+    firms. Using historical websites from 2000 to 2022, we develop and validate a novel
+    dictionary-based measure of voluntary PE firm ESG disclosures. Descriptive statistics
+    reveal an increasing time trend in these disclosures, with social topics becoming as
+    important as environmental topics recently. Multivariate analyses show that the demand
+    for ESG information from fund investors is a significant determinant of PE firms' ESG
+    disclosures. Leveraging data on PE firms' portfolio companies, we document that more
+    PE firm ESG disclosures are associated with better ESG outcomes at the portfolio
+    company level, suggesting that voluntary ESG disclosures align with real actions for
+    the average PE firm.
 
 - title: Private Equity and Local Public Finances
   coauthors: [Peter Severin]
@@ -38,7 +94,19 @@
   year: 2023
   link: https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12487
   selected: false
-  abstract: null
+  abstract: >-
+    We study the economic impact of private equity (PE) investments on local governments,
+    which are important corporate stakeholders. Examining over 11,000 deals and private
+    firm data in Europe, we document that target firms' effective tax rates and total tax
+    expenses decrease by 15% and 13% after PE deals. At the same time, target firms expand
+    their capital expenditures and firm boundaries, but do not increase employment. Using
+    administrative data on the public finances of German municipalities and exploiting the
+    geographical and time-series variation in PE deals, we document that PE activity is
+    negatively associated with local governments' tax revenues and spending. This result
+    is likely driven by reduced tax payments of PE portfolio firms, accompanied by only
+    modest positive spillovers of PE investments on regional economic growth. Collectively,
+    our findings suggest that corporate tax efficiency serves as a cost-cutting channel in
+    the PE sector and constrains the finances of local governments.
 
 - title: Measuring the Expected Effects of the Global Tax Reform
   coauthors: [Roberto Gomez-Cram]
@@ -46,7 +114,16 @@
   year: 2023
   link: https://doi.org/10.1093/rfs/hhad038
   selected: true
-  abstract: null
+  abstract: >-
+    Over 140 countries agreed on a fundamental corporate tax reform in 2021 to be
+    implemented in 2023 and beyond. To measure its potential effects, we study asset price
+    changes within minutes of the reform announcements. We construct proxies for the
+    reform's costs regarding U.S. companies' tax burdens and countries' public finances.
+    Likely exposed companies exhibit significant negative stock returns. Our lower-bound
+    estimates indicate total shareholder value losses of $112.6 billion one day after the
+    reform announcements. Further, likely exposed countries experience increases in
+    sovereign debt credit risk. Our findings inform the cost-benefit analysis of a
+    historical international tax reform.
 
 - title: Tax Competition and Employment
   coauthors: [Stephen Glaeser, Ann-Catherin Werner]
@@ -54,7 +131,19 @@
   year: 2023
   link: https://publications.aaahq.org/accounting-review/article/doi/10.2308/TAR-2020-0575/10917
   selected: false
-  abstract: null
+  abstract: >-
+    We examine how exposure to international tax competition affects domestic firms'
+    employment. Consistent with prior work, we find evidence that reductions in foreign
+    tax rates affect the domestic competitive environment via increases in import
+    competition and investment in foreign-owned firms. We posit that these changes in the
+    competitive environment can cause managers to reduce their firms' employment levels.
+    Consistent with our expectation, we find that relative decreases in foreign tax rates
+    negatively affect total labor compensation at domestic firms ex ante exposed to import
+    competition and competition from foreign-owned peers. The effect of exposure to tax
+    competition is greater for firms more exposed to product market competition and those
+    that are less able to expand investment without also increasing employment levels.
+    Taken together, our results suggest that foreign tax rate changes can affect managers'
+    domestic employment decisions by changing the domestic competitive environment.
 
 - title: "How Does Private Firm Disclosure Affect Demand for Public Firm Equity? Evidence from the Global Equity Market"
   coauthors: [Jinhwan Kim]
@@ -62,7 +151,23 @@
   year: 2022
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3837658
   selected: false
-  abstract: null
+  abstract: >-
+    We investigate the relationship between private firms' disclosures and the demand for
+    the equity of their publicly traded peers. Using data on the global movement of
+    portfolio investments in public equity, we find that a 10% increase in private firm
+    disclosure transparency – proxied by the number of disclosed private firms' financial
+    statement line items – reduces global investors' demand for public equity by 4.3% or
+    $358 million per investee country-industry. These findings are consistent with private
+    firm disclosures generating negative pecuniary externalities – global investors
+    reallocate their capital away from public firms to more transparent private firms –
+    and less consistent with these disclosures creating positive information externalities
+    that would benefit public firms. Consistent with this interpretation, we find that the
+    reduction in demand for public equity is offset by a comparable increase in capital
+    allocation to more transparent private firms. Using a simulated instruments approach
+    and the staggered implementations of electronic business registers in investee
+    countries in Europe as plausibly exogenous shocks to private firm transparency, we
+    conclude that the negative relationship between private firm disclosures and public
+    equity demand is likely causal.
 
 - title: Real Effects of Private Country-by-Country Disclosure
   coauthors: [Lisa De Simone]
@@ -70,4 +175,18 @@
   year: 2022
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3398116
   selected: true
-  abstract: null
+  abstract: >-
+    We investigate the effects of mandatory private Country-by-Country Reporting (CbCR) to
+    European tax authorities on multinational firms' capital and labor investments, as
+    well as their organizational structures. We exploit the threshold-based application of
+    this 2016 disclosure rule to conduct difference-in-differences and regression
+    discontinuity tests. We document increases in capital and labor expenditures in
+    Europe, but these effects are more pronounced in countries with preferential tax
+    regimes. Cross-sectional tests and analysis using consolidated financial data provide
+    evidence consistent with multinational firms reallocating capital across Europe to
+    mitigate increased tax enforcement risk, as well as with CbCR hindering capital
+    investment efficiency. We also find evidence consistent with firms responding to CbCR
+    by reducing organizational complexity. Collectively, our results support the
+    conclusion that mandatory private CbCR causes firms to change real investment
+    activities to substantiate their tax avoidance activities in Europe while reducing the
+    appearance of aggressive tax practices.

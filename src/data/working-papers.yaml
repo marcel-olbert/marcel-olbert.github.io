@@ -1,30 +1,104 @@
 # Working papers. Add new entries at the top. `status` shows e.g. "R&R at ..." if set.
+# `year` is the SSRN posting/latest-revision year.
 - title: "What to Expect from Private Sector Commitments Following Policy Reforms? Evidence from \"Made for Germany\""
   coauthors: []
+  year: 2025
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5544199
   status: null
-  abstract: null
+  abstract: >-
+    Can private sector investment pledges meaningfully shift investor expectations
+    following the enactment of pro-growth public policies? While policymakers often
+    present such pledges as landmark signals of reform momentum, this paper provides the
+    first empirical assessment of their credibility and impact. The setting is the July
+    2025 "Made for Germany" initiative, in which 61 firms joined the newly elected
+    government to announce a €631 billion investment pledge—presumably in response to
+    newly adopted tax incentives and public spending measures. The pledged amount appears
+    ambitious but not implausible when benchmarked against the historical investment
+    behavior of the committing firms. Capital markets initially responded favorably:
+    publicly listed pledging firms experienced abnormal returns of 0.5 percent on the
+    event day (€1.7 billion) and €3.1 billion over two days. Broader German equity indices
+    and sovereign bond yields also rose relative to international benchmarks. These
+    effects dissipated within days, suggesting that investment pledges may boost
+    short-term investor sentiment but are unlikely to generate lasting economic impact
+    without more tangible action.
 
 - title: The Global Network of Oligarch Companies
   coauthors: [John Gallemore, Jinhwan Kim, Iman Taghaddosinejad]
+  year: 2025
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5525498
   status: null
-  abstract: null
+  abstract: >-
+    We study how Russian oligarch-affiliated companies operate globally and respond to
+    sanctions. We construct a dataset tracking 70 companies, 1,800 international
+    subsidiaries, and their institutional investors between 2009 and 2023. These companies
+    maintain extensive networks, especially in tax havens. Difference-in-differences
+    estimates show that the 2014 and 2022 sanctions had limited impact on the companies'
+    global footprint or access to institutional minority investors. Instead, oligarch
+    companies use more tax haven entities, in particular in jurisdictions offering
+    secrecy, and withdraw from jurisdictions with beneficial ownership disclosure
+    regulation. Our findings highlight how organizational complexity and regulatory
+    arbitrage undermine sanctions, suggesting that globally coordinated transparency
+    regulation is critical for enforcement.
 
 - title: Taxes and the Global Spillovers of AI Investments
   coauthors: [Emilia Gschossmann]
+  year: 2025
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5196844
   status: null
-  abstract: null
+  abstract: >-
+    Artificial Intelligence (AI) is transforming businesses and the technological
+    frontier, yet its cross-border spillovers remain understudied. Using a novel panel
+    dataset, we find that AI investment strongly propagates internationally in the form of
+    growth in foreign subsidiaries' assets, employment, and revenues. We construct a
+    measure of European country-industry exposure to U.S. firms' AI investments and
+    document significant spillovers of U.S.-originating AI investment into European
+    industries. However, these effects vary with local tax policies: European countries
+    with attractive R&D tax incentives experience faster, larger AI-driven growth, while
+    low corporate tax rates further amplify revenue spillovers. To test the mechanisms
+    behind these results, we exploit variation within U.S. firms across their foreign
+    subsidiaries. Spillovers occur because U.S. firms not only expand capital inputs and
+    output, but also increase their labor productivity, R&D activities, and market
+    presence, particularly in foreign markets with attractive corporate tax regimes,
+    following AI adoption. Our findings highlight the role of fiscal policy in shaping AI
+    diffusion and offer new insights into how digital-era investments influence global
+    economic growth.
 
 - title: Carbon Leakage to Developing Countries
   coauthors: [Diego Kaenzig, Julian Marenz]
+  year: 2024
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4833343
   status: null
-  abstract: null
+  abstract: >-
+    How do climate policies in developed countries spill over to the developing world?
+    Using a novel dataset that combines multinational firms' subsidiary locations with
+    spatial emission data, we study how the carbon footprint of multinational firms in
+    Africa changes in response to more stringent climate policies in Europe. Exploiting
+    variation in multinationals' exposure to carbon prices across European countries, we
+    find that emissions of their African subsidiaries increase as the multinationals'
+    European operations face higher carbon prices. At the same time, multinationals reduce
+    their domestic investment in Europe while worldwide investment remains unchanged —
+    consistent with the notion that these firms shift some of their operations abroad. We
+    confirm these results at the aggregate level, documenting a significant increase in
+    economic activity and emissions in Africa. Policies to mitigate leakage should thus
+    balance environmental concerns against development and equity considerations.
 
 - title: Corporate Tax Policy in Developed Countries and Economic Activity in Africa
   coauthors: [Jeffrey L. Hoopes, Daniel Klein, Rebecca Lester, Julian Marenz]
+  year: 2022
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4254414
   status: null
-  abstract: null
+  abstract: >-
+    This paper studies whether tax policies in developed nations affect developing
+    economies through cross-border investments by multinational firms. We study firm
+    investment responses to a major U.K. tax reform that drastically reduced the income
+    tax burden for U.K.-based firms. Our identification strategy compares the investment
+    outcomes of U.K. multinational firms in Africa to those of other multinationals with
+    similar ties to Africa but not subject to the large U.K. tax changes that started in
+    2009. Difference-in-differences estimates show that U.K. multinational firms increased
+    their subsidiary presence in sub-Saharan Africa by 17-26 percent following the U.K.
+    reform. Exploiting location-specific nighttime luminosity data as well as local data
+    from the African Demographic and Health Surveys, we also document increased economic
+    activity and higher employment rates of African citizens within close proximity of
+    local U.K.-owned subsidiaries. These effects are confirmed using novel data on local
+    wealth. Our findings imply that, beyond the goal of motivating home country
+    investment, developed countries' corporate tax policies impact developing nations.
