@@ -8,8 +8,7 @@ email: marcel.olbert@outlook.com # confirmed by Marcel (personal site → person
 photo: /assets/marcel-olbert-portrait.jpg
 cvUrl: /assets/cv-marcel-olbert.pdf # self-hosted; source CV_Olbert_20260624.pdf from Marcel's websitecontent folder
 ssrnUrl: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2490396
-# TODO(Marcel): add if wanted
-googleScholarUrl: null
+googleScholarUrl: https://scholar.google.com/citations?user=d-ki44UAAAAJ&hl=en
 linkedinUrl: https://www.linkedin.com/in/marcel-olbert-4746034a/
 twitterUrl: null
 

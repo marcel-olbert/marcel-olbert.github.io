@@ -78,6 +78,28 @@ The homepage always features the **top entry** of `episodes` in
 
 ---
 
+## Launch day (domain cutover to marcelolbert.com)
+
+The full technical checklist is in `CLAUDE.md`; short version: tell Claude
+"let's launch" — Claude changes the site config and GitHub Pages settings,
+you paste four DNS records into WordPress.com
+(wordpress.com/domains/manage/marcelolbert.com). Old site stays up until DNS
+flips; export a WordPress backup before cancelling the hosting plan, and make
+sure the domain registration itself survives (paid until March 2027).
+
+**SEO actions right after launch (Marcel, ~30 minutes, biggest visibility
+lever after the domain itself):**
+- Google Search Console: verify marcelolbert.com, submit the sitemap.
+- Add marcelolbert.com to: LinkedIn profile (contact info + Featured section),
+  podcast descriptions on Spotify / YouTube / Apple, SSRN profile,
+  Mannheim faculty page, Google Scholar profile.
+- Announce the relaunch (site + podcast page) in a LinkedIn post — wait for
+  the real domain so the link is permanent.
+
+The site side is already done: robots.txt, sitemap, structured data
+(Person + PodcastSeries), per-page share images, self-hosted fonts, redirects
+from all old WordPress URLs.
+
 ## Housekeeping (occasionally)
 
 - **Prune news:** keep the "Latest" list at 4–6 items.
