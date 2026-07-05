@@ -1,4 +1,35 @@
-# Hosted events (historical record — events took place while at London Business School).
+# Hosted events — new entries on top. COBRA events (Mannheim, 2026–) and the
+# historical LBS-era events. COBRA events page:
+# https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/cobra-events/
+- title: COBRA Summer School on Empirical Tax Research
+  date: July 2026
+  location: Mannheim
+  description: An intensive COBRA program for PhD students and early-career scholars on empirical tax research — lectures on frontier research, research pitches, and feedback sessions, with tax systems as empirical settings. Fully booked.
+  links:
+    - label: COBRA events page
+      url: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/cobra-events/
+
+- title: COBRA Soft Launch
+  date: 9 June 2026
+  location: Mannheim
+  description: Public launch of COBRA — the Mannheim Center for Corporate Behavior and Regulation Analysis, which I founded and lead as Academic Director. COBRA is a platform for rigorous, data-driven research on regulation, taxation, financial markets, corporate decision-making, and public policy, connecting academic research with policy and business practice.
+  links:
+    - label: COBRA
+      url: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/
+  photos:
+    - /assets/events/cobra-launch-1.jpg
+    - /assets/events/cobra-launch-2.jpg
+    - /assets/events/cobra-launch-3.jpg
+
+- title: AI & Code Clinic for Research and Teaching
+  date: 20 & 26 May 2026
+  location: Mannheim
+  description: COBRA workshops for faculty and researchers on how AI agents such as Claude Code can support the research process — practical applications, common pitfalls, and new data infrastructure for research. Sessions by Philipp Doerrenberg, Marcel Olbert, and Paul Seidel; slides and recordings available via the COBRA events page.
+  links:
+    - label: COBRA events page (slides & recordings)
+      url: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/cobra-events/
+
+# Historical record — events below took place while at London Business School.
 - title: Tax Bootcamp 2024
   date: 19 June 2024
   location: London Business School (Sussex Place), London

@@ -11,13 +11,13 @@ import resources from '../data/data-code.yaml';
       the corresponding papers when using these resources.
     </p>
 
-    {resources.map((r) => (
+    {resources.map((r: any) => (
       <article class="pub">
         <div class="pub-title">{r.title}</div>
         <p style="font-size: 0.95rem; color: var(--muted); margin-top: 0.35rem;">{r.description}</p>
         <div style="margin-top: 0.5rem; font-size: 0.92rem;">
           <a href={r.link}>{r.linkLabel ?? 'Link'}</a>
-          {r.additional?.map((a) => <> · <a href={a.url}>{a.label}</a></>)}
+          {r.additional?.map((a: any) => <> · <a href={a.url}>{a.label}</a></>)}
         </div>
       </article>
     ))}

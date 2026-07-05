@@ -16,17 +16,17 @@ import wip from '../data/work-in-progress.yaml';
 
     <section>
       <h2>Publications</h2>
-      {publications.map((pub) => <PubEntry pub={pub} />)}
+      {publications.map((pub: any) => <PubEntry pub={pub} />)}
     </section>
 
     <section>
       <h2>Working papers</h2>
-      {workingPapers.map((pub) => <PubEntry pub={pub} />)}
+      {workingPapers.map((pub: any) => <PubEntry pub={pub} />)}
     </section>
 
     <section>
       <h2>Work in progress</h2>
-      {wip.map((pub) => <PubEntry pub={pub} />)}
+      {wip.map((pub: any) => <PubEntry pub={pub} />)}
     </section>
   </div>
 </Base>

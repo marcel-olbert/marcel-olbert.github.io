@@ -15,7 +15,7 @@ import speaking from '../data/speaking.yaml';
 
     <section>
       <h2>Topics</h2>
-      {speaking.topics.map((t) => (
+      {speaking.topics.map((t: any) => (
         <div class="topic">
           <h3>{t.title}</h3>
           <p>{t.text}</p>
@@ -26,13 +26,13 @@ import speaking from '../data/speaking.yaml';
     <section>
       <h2>Formats</h2>
       <ul style="margin-left: 1.1rem;">
-        {speaking.formats.map((f) => <li>{f}</li>)}
+        {speaking.formats.map((f: string) => <li>{f}</li>)}
       </ul>
     </section>
 
     <section>
       <h2>Selected engagements</h2>
-      {speaking.engagements.map((e) => (
+      {speaking.engagements.map((e: any) => (
         <div class="news-item">
           <div class="news-date">{e.year ?? 'Ongoing'}</div>
           <div>{e.text}</div>

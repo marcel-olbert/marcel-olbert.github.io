@@ -130,6 +130,20 @@ section + section { margin-top: 3.2rem; }
 .cta-band h2 { color: #fff; margin: 0; font-size: 1.45rem; }
 .cta-band p { color: #c8ccd2; font-size: 0.95rem; margin-top: 0.3rem; }
 
+/* ——— Hero highlights & LinkedIn follow line ——— */
+.hero-highlights { list-style: none; margin: 1.1rem 0 0; padding: 0; }
+.hero-highlights li {
+  font-size: 0.95rem; font-weight: 550; margin-top: 0.35rem;
+  padding-left: 1.15rem; position: relative;
+}
+.hero-highlights li::before { content: '◆'; position: absolute; left: 0; font-size: 0.6rem; top: 0.35rem; color: var(--accent); }
+.hero-highlights a { color: inherit; text-decoration: none; }
+.hero-highlights a:hover { color: var(--accent); }
+.follow-line {
+  margin-top: 1.3rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+  font-size: 0.95rem; color: var(--muted);
+}
+
 /* ——— Podcast ——— */
 .podcast-band {
   display: grid; grid-template-columns: 11rem 1fr; gap: 1.8rem; align-items: center;

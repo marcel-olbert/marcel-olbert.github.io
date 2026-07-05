@@ -11,19 +11,19 @@ import events from '../data/events.yaml';
       policy and practice.
     </p>
 
-    {events.map((event) => (
+    {events.map((event: any) => (
       <article class="event">
         <h2>{event.title}</h2>
         <div class="event-meta">{event.date} · {event.location}</div>
         <p>{event.description}</p>
         {event.links?.length > 0 && (
           <ul>
-            {event.links.map((l) => <li><a href={l.url}>{l.label}</a></li>)}
+            {event.links.map((l: any) => <li><a href={l.url}>{l.label}</a></li>)}
           </ul>
         )}
         {event.photos?.length > 0 && (
           <div class="event-photos">
-            {event.photos.map((src) => <img src={src} alt={event.title} loading="lazy" />)}
+            {event.photos.map((src: string) => <img src={src} alt={event.title} loading="lazy" />)}
           </div>
         )}
       </article>

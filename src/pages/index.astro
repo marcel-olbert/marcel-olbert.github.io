@@ -8,9 +8,9 @@ import publications from '../data/publications.yaml';
 
 const latestEpisode = podcast.episodes[0];
 
-const selected = publications.filter((p) => p.selected);
+const selected = publications.filter((p: any) => p.selected);
 const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-function formatDate(d) {
+function formatDate(d: string) {
   if (!d) return '';
   const [y, m] = String(d).split('-');
   return m ? `${monthNames[Number(m) - 1]} ${y}` : y;
@@ -24,9 +24,15 @@ function formatDate(d) {
         <div class="kicker">{site.title} · {site.institution}</div>
         <h1>{site.name}</h1>
         <p class="tagline">{site.tagline}</p>
+        <ul class="hero-highlights">
+          {site.highlights.map((h: any) => (
+            <li><a href={h.url}>{h.text}</a></li>
+          ))}
+        </ul>
         <div class="hero-actions">
           <a class="btn btn-primary" href="/speaking/">Speaking &amp; Policy</a>
           <a class="btn btn-ghost" href="/research/">Research</a>
+          <a class="btn btn-ghost" href={site.linkedinUrl}>LinkedIn</a>
           <a class="btn btn-ghost" href={site.cvUrl}>CV</a>
           <a class="btn btn-ghost" href={site.ssrnUrl}>SSRN</a>
         </div>
@@ -38,7 +44,7 @@ function formatDate(d) {
 
     <section>
       <h2>Latest</h2>
-      {news.map((item) => (
+      {news.map((item: any) => (
         <div class="news-item">
           <div class="news-date">{formatDate(item.date)}</div>
           <div>
@@ -47,6 +53,9 @@ function formatDate(d) {
           </div>
         </div>
       ))}
+      <p class="follow-line">
+        {site.linkedinPitch} <a href={site.linkedinUrl}>Follow on LinkedIn →</a>
+      </p>
     </section>
 
     <section>
@@ -68,14 +77,14 @@ function formatDate(d) {
 
     <section>
       <h2>Selected publications</h2>
-      {selected.map((pub) => <PubEntry pub={pub} />)}
+      {selected.map((pub: any) => <PubEntry pub={pub} />)}
       <p style="margin-top: 1rem;"><a href="/research/">All publications and working papers →</a></p>
     </section>
 
     <section>
       <h2>Roles &amp; affiliations</h2>
       <ul style="margin-left: 1.1rem;">
-        {site.roles.map((r) => <li>{r}</li>)}
+        {site.roles.map((r: string) => <li>{r}</li>)}
       </ul>
       <p style="margin-top: 0.8rem; color: var(--muted);">{site.grants}</p>
     </section>
