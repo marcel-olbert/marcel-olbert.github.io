@@ -64,8 +64,8 @@ schema.org Person JSON-LD, old-URL redirects, favicon.
 2. `speaking.yaml` — topics/wording are Claude's draft from his research profile; Marcel
    must make them his own. Testimonials wanted (he'll supply).
 3. `news.yaml` dates — 2026-01 (Mannheim team item) and 2025-09 (Oligarch WP) are guesses.
-4. Which email to publish for speaking inquiries — currently marcel.olbert@outlook.com
-   placeholder in `site.yaml`; Mannheim address may be better.
+4. Email RESOLVED (July 2026): marcel.olbert@outlook.com confirmed — this is Marcel's
+   personal (non-university) site, so the personal address is intentional.
 5. Add LinkedIn / Google Scholar / X links? (`site.yaml` has null slots; old site had none.)
 6. Impressum + Datenschutzerklärung pages BUILT (July 2026: `/impressum/`, `/datenschutz/`,
    linked in footer; personal details live in `src/data/legal.yaml`). Marcel must still
