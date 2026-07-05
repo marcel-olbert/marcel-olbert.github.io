@@ -72,8 +72,15 @@ schema.org Person JSON-LD, old-URL redirects, favicon.
    supply his ladungsfähige Anschrift (visible bracketed placeholders on the pages until
    then) and should have the text reviewed — Claude drafted it; it is not legal advice.
 
-**Assets Marcel will supply:** 2–3 high-res photos; current CV PDF (then replace OneDrive
-`cvUrl` in site.yaml with self-hosted `/assets/cv-marcel-olbert.pdf`).
+**Assets (July 2026): supplied and integrated.** Marcel drops input files in
+`/Users/marcel/Library/CloudStorage/OneDrive-Personal/Shared/websitecontent/` — check there
+for new material. Done so far: CV self-hosted at `/assets/cv-marcel-olbert.pdf` (source
+CV_Olbert_20260624.pdf); outdoor portrait → homepage hero
+(`/assets/marcel-olbert-portrait.jpg`); speaking photo (MBS COBRA launch, June 2026) →
+Speaking page (`/assets/marcel-olbert-speaking.jpg`). Photos resized to 1600px via `sips`.
+Unused so far: 3 more COBRA-launch event photos in that folder; **"Prof of Concept" podcast
+logos** — Marcel co-hosts a podcast (3 hosts, Mannheim) with NO entry in media.yaml yet;
+need details from Marcel (co-hosts, links, description) before adding — do not invent.
 
 **Build tasks remaining:**
 - Analytics: add GoatCounter snippet (free, no cookie banner) once Marcel creates account

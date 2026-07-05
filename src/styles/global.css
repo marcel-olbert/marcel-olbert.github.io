@@ -130,6 +130,10 @@ section + section { margin-top: 3.2rem; }
 .cta-band h2 { color: #fff; margin: 0; font-size: 1.45rem; }
 .cta-band p { color: #c8ccd2; font-size: 0.95rem; margin-top: 0.3rem; }
 
+/* ——— Full-width page photo ——— */
+.page-photo { margin: 1.8rem 0 0.4rem; }
+.page-photo img { width: 100%; height: auto; border-radius: 10px; display: block; }
+
 /* ——— Event blocks ——— */
 .event { border-top: 1px solid var(--rule); padding-top: 1.6rem; margin-top: 1.6rem; }
 .event .event-meta { color: var(--muted); font-size: 0.92rem; font-weight: 550; margin: 0.15rem 0 0.7rem; }

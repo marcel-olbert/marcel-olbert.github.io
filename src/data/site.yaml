@@ -5,8 +5,8 @@ institution: University of Mannheim
 institutionUrl: https://www.uni-mannheim.de/en/
 tagline: Research at the intersection of disclosure regulation, corporate taxation, and corporate finance.
 email: marcel.olbert@outlook.com # confirmed by Marcel (personal site → personal address)
-photo: /assets/marcel-olbert.jpg
-cvUrl: https://1drv.ms/u/s!AmXfoDT8duk8jNI3hXN_XBhHi4ENwQ?e=eahjqo  # TODO: replace with self-hosted /assets/cv-marcel-olbert.pdf
+photo: /assets/marcel-olbert-portrait.jpg
+cvUrl: /assets/cv-marcel-olbert.pdf # self-hosted; source CV_Olbert_20260624.pdf from Marcel's websitecontent folder
 ssrnUrl: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2490396
 # TODO(Marcel): add if wanted
 googleScholarUrl: null
