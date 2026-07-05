@@ -1,0 +1,83 @@
+---
+import '@fontsource-variable/fraunces';
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+import site from '../data/site.yaml';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description = site.tagline } = Astro.props;
+const pageTitle = title ? `${title} — ${site.name}` : `${site.name} — ${site.title}, ${site.institution}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(site.photo, Astro.site);
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/research/', label: 'Research' },
+  { href: '/speaking/', label: 'Speaking & Policy' },
+  { href: '/media/', label: 'Media' },
+  { href: '/events/', label: 'Events' },
+  { href: '/data/', label: 'Data & Code' },
+];
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  jobTitle: site.title,
+  worksFor: { '@type': 'CollegeOrUniversity', name: site.institution, url: site.institutionUrl },
+  url: Astro.site?.toString(),
+  image: ogImage.toString(),
+  sameAs: [site.ssrnUrl, site.googleScholarUrl, site.linkedinUrl, site.twitterUrl].filter(Boolean),
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="site-name" href="/">{site.name}</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          {nav.map((item) => {
+            const itemPath = item.href.replace(/\/$/, '') || '/';
+            const current = itemPath === currentPath ? 'page' : undefined;
+            return <a href={item.href} aria-current={current}>{item.label}</a>;
+          })}
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          © {new Date().getFullYear()} {site.name} · {site.title}, <a href={site.institutionUrl}>{site.institution}</a>
+        </div>
+        <div>
+          <a href={site.ssrnUrl}>SSRN</a> · <a href={site.cvUrl}>CV</a> · <a href={`mailto:${site.email}`}>Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

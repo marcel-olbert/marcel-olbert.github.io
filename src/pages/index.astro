@@ -1,17 +1,63 @@
 ---
+import Base from '../layouts/Base.astro';
+import PubEntry from '../components/PubEntry.astro';
+import site from '../data/site.yaml';
+import news from '../data/news.yaml';
+import publications from '../data/publications.yaml';
 
+const selected = publications.filter((p) => p.selected);
+const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+function formatDate(d) {
+  if (!d) return '';
+  const [y, m] = String(d).split('-');
+  return m ? `${monthNames[Number(m) - 1]} ${y}` : y;
+}
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <div class="kicker">{site.title} · {site.institution}</div>
+        <h1>{site.name}</h1>
+        <p class="tagline">{site.tagline}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/speaking/">Speaking &amp; Policy</a>
+          <a class="btn btn-ghost" href="/research/">Research</a>
+          <a class="btn btn-ghost" href={site.cvUrl}>CV</a>
+          <a class="btn btn-ghost" href={site.ssrnUrl}>SSRN</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src={site.photo} alt={`${site.name}, ${site.title} at ${site.institution}`} width="1200" height="799" />
+      </div>
+    </div>
+
+    <section>
+      <h2>Latest</h2>
+      {news.map((item) => (
+        <div class="news-item">
+          <div class="news-date">{formatDate(item.date)}</div>
+          <div>
+            {item.text}
+            {item.link && <> <a href={item.link}>{item.linkLabel ?? 'Link'}</a></>}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    <section>
+      <h2>Selected publications</h2>
+      {selected.map((pub) => <PubEntry pub={pub} />)}
+      <p style="margin-top: 1rem;"><a href="/research/">All publications and working papers →</a></p>
+    </section>
+
+    <section>
+      <h2>Roles &amp; affiliations</h2>
+      <ul style="margin-left: 1.1rem;">
+        {site.roles.map((r) => <li>{r}</li>)}
+      </ul>
+      <p style="margin-top: 0.8rem; color: var(--muted);">{site.grants}</p>
+    </section>
+  </div>
+</Base>

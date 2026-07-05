@@ -1,0 +1,35 @@
+---
+interface Props {
+  pub: {
+    title: string;
+    coauthors?: string[];
+    journal?: string | null;
+    year?: number | null;
+    link?: string | null;
+    status?: string | null;
+    note?: string | null;
+    noteUrl?: string | null;
+    abstract?: string | null;
+  };
+}
+const { pub } = Astro.props;
+const authors = pub.coauthors?.length ? `with ${pub.coauthors.join(', ')}` : null;
+---
+
+<article class="pub">
+  <div class="pub-title">
+    {pub.link ? <a href={pub.link}>{pub.title}</a> : pub.title}
+  </div>
+  <div class="pub-meta">
+    {authors}{authors && (pub.journal || pub.year) && ' · '}
+    {pub.journal && <em>{pub.journal}</em>}{pub.journal && pub.year && ', '}{pub.year}
+    {pub.status && <> · {pub.status}</>}
+    {pub.note && <> · {pub.noteUrl ? <a href={pub.noteUrl}>{pub.note}</a> : pub.note}</>}
+  </div>
+  {pub.abstract && (
+    <details>
+      <summary>Abstract</summary>
+      <p>{pub.abstract}</p>
+    </details>
+  )}
+</article>

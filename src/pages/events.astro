@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import events from '../data/events.yaml';
+---
+
+<Base title="Hosted Events" description="Conferences and events hosted by Marcel Olbert, bringing together scholars, policymakers, and practitioners on global tax policy.">
+  <div class="wrap-text">
+    <h1 class="page-title">Hosted Events</h1>
+    <p class="page-lede">
+      Conferences and workshops I have organised to connect academic research with
+      policy and practice.
+    </p>
+
+    {events.map((event) => (
+      <article class="event">
+        <h2>{event.title}</h2>
+        <div class="event-meta">{event.date} · {event.location}</div>
+        <p>{event.description}</p>
+        {event.links?.length > 0 && (
+          <ul>
+            {event.links.map((l) => <li><a href={l.url}>{l.label}</a></li>)}
+          </ul>
+        )}
+        {event.photos?.length > 0 && (
+          <div class="event-photos">
+            {event.photos.map((src) => <img src={src} alt={event.title} loading="lazy" />)}
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,35 @@
+# Data & code resources for researchers.
+- title: Financial Reporting Transparency Measures from Orbis Firm-level Data
+  description: Code to generate variants of the transparency measure used in Kim & Olbert (2022, JAE). Aggregated measures by industry, country, and year are available from the authors via email. Please cite Kim & Olbert (2022), "How Does Private Firm Disclosure Affect Demand for Public Firm Equity?".
+  link: https://1drv.ms/u/s!AmXfoDT8duk8jPVDK0VDoTRZAbMxmg?e=BTOdpj
+  linkLabel: Code (OneDrive)
+  additional:
+    - label: Readme
+      url: https://1drv.ms/b/s!AmXfoDT8duk8jPVCUp6adp3kKR9Kqg?e=Dca1m7
+    - label: Paper (JAE 2022)
+      url: https://www.sciencedirect.com/science/article/pii/S0165410122000684
+
+- title: ESG Disclosures of Private Equity Firms, 2000–2022
+  description: Abraham, Olbert & Vasvari (2024, JAR) construct a panel of ESG disclosures from PE firms' historical websites for a global sample of PE firms covered in Preqin. See Section 3 and the Online Appendix of the paper for construction details. Contact the authors to request the dataset (valid Preqin license required).
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4265171
+  linkLabel: Paper (SSRN)
+  additional:
+    - label: Readme
+      url: https://1drv.ms/t/s!AmXfoDT8duk8jZRVrozlLJLbnyiT2A?e=d3QISO
+
+- title: TRI, OSHA, Trucost & RepRisk Facilities Matched to Preqin PE Transactions
+  description: Abraham, Olbert & Vasvari (2024, JAR) match facilities reporting to the EPA Toxic Release Inventory and OSHA, and companies covered in S&P Trucost and RepRisk, to private equity investments from Preqin. Full dataset available from the authors (Preqin license required); abbreviated datasets without PE firm identifiers available for researchers without a license.
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4265171
+  linkLabel: Paper (SSRN)
+  additional:
+    - label: Readme
+      url: https://1drv.ms/w/s!AmXfoDT8duk8jZRXuZcPqrsXkvzkag?e=So4Pw6
+    - label: Abbreviated datasets
+      url: https://1drv.ms/u/s!AmXfoDT8duk8jZRiB5p6JHGOVaUHug?e=Zz4b5Y
+
+# Other resources
+- title: "Mini paper (in German): Compliance costs of tax declaration — evidence from Benzarti (2020)"
+  description: A short teaching-oriented summary, in German, of the evidence on tax declaration compliance costs in Benzarti (2020).
+  link: https://1drv.ms/b/c/3ce976fc34a0df65/IQD1XFLf9FVaS6_LvirXKYU9AQqyPsjJJ2xk7D8POWKLU8E?e=JpM9ho
+  linkLabel: PDF
+  additional: []

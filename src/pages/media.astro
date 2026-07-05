@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import media from '../data/media.yaml';
+
+const typeLabels = { podcast: 'Podcast', video: 'Video', article: 'Article', interview: 'Interview' };
+---
+
+<Base title="Media" description="Podcasts, interviews, videos, and articles by Marcel Olbert on tax policy, ESG disclosure, and corporate transparency.">
+  <div class="wrap">
+    <h1 class="page-title">Media &amp; Insights</h1>
+    <p class="page-lede">
+      Podcasts, interviews, and accessible summaries of my research — for practitioners,
+      policymakers, and anyone curious about how taxes and transparency shape firm behaviour.
+    </p>
+
+    <div class="card-grid">
+      {media.map((item) => (
+        <article class="card">
+          <span class="card-tag">{typeLabels[item.type] ?? item.type}</span>
+          <h3>{item.link ? <a href={item.link}>{item.title}</a> : item.title}</h3>
+          <div class="card-outlet">{item.outlet}{item.date && ` · ${item.date}`}</div>
+          {item.description && <p>{item.description}</p>}
+          <div class="card-link">
+            {item.link && <a href={item.link}>Listen / watch / read →</a>}
+            {item.paperLink && <> · <a href={item.paperLink}>Paper</a></>}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</Base>

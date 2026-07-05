@@ -1,0 +1,38 @@
+# Speaking & Policy page content.
+# DRAFT — TODO(Marcel): review topics, add/correct engagements, add testimonials if available.
+intro: >-
+  I speak to boards, executives, policymakers, and conference audiences about how
+  tax policy and disclosure regulation actually change firm behaviour — grounded in
+  evidence, not talking points. I also advise policy institutions and organisations
+  on the design and evaluation of tax and transparency rules.
+
+topics:
+  - title: The global tax reform and what it means for business
+    text: The OECD's Pillar Two minimum tax is the biggest change to corporate taxation in a century. What the evidence says about who bears it, how markets priced it, and how firms are responding.
+  - title: Tax policy for sustainability
+    text: Carbon taxes, green incentives, and the risk of carbon leakage — what works, what backfires, and what the data from European firms shows.
+  - title: ESG disclosure — talk versus walk
+    text: Evidence from the private equity industry on whether ESG claims translate into real changes in portfolio companies, and what regulators should take from it.
+  - title: Transparency regulation and multinational firms
+    text: Country-by-country reporting, public disclosure mandates, and their real effects on investment, employment, and tax planning.
+  - title: AI for research, tax, and the finance function
+    text: How AI agents are changing empirical research and corporate tax and finance work — a practitioner-oriented view from the frontier.
+
+formats:
+  - Keynotes and conference talks
+  - Executive education sessions and workshops
+  - Panel discussions and moderation
+  - Policy briefings and expert testimony
+  - Media commentary (English and German)
+
+engagements:
+  - year: 2026
+    text: Talk on AI agents in empirical research, AI Clinic, University of Mannheim
+  - year: 2024
+    text: Co-host, Tax Bootcamp 2024 with Stanford GSB — policymakers and executives on AI in tax and tax policy for sustainability, London
+  - year: 2023
+    text: Co-host, LBS–Stanford Global Tax Conference — with speakers from the OECD, HM Treasury, EY, and PwC, London
+  - year: null
+    text: Podcast appearances incl. Tax Chats, Conversations on Climate, The Why Podcast, and Think Ahead
+
+# testimonials: []  # TODO(Marcel): add 1-2 quotes with name/role when available

@@ -1,0 +1,81 @@
+# Media appearances & research communication. Add new entries at the top.
+# type: podcast | video | article | interview
+# TODO(Marcel): add dates where you remember them (YYYY-MM) — currently mostly unknown.
+- title: "Prof of Concept — my own podcast"
+  type: podcast
+  outlet: Prof of Concept
+  link: https://www.youtube.com/watch?v=Xn3jlbJlbf4
+  description: In German — discussions of current business and economics issues, including recent reforms, tailored to a young audience. With co-hosts Chris Wieland and Niklas Schab.
+  date: null
+
+- title: "Regulation, reporting, and the value question: ESG in a shifting landscape"
+  type: podcast
+  outlet: Think Ahead Podcast
+  link: https://open.spotify.com/show/2DArpBYDnVSmNUeDTLOMSW
+  description: With Katharina Neureiter (Co-Head of Global Sustainability, The Carlyle Group), hosted by Sergei Guriev (Dean, London Business School) — on how new rules, from ESG disclosures to tax incentives, are reshaping corporate behaviour and investor expectations.
+  date: null
+
+- title: "Research summary: Value-added taxation and multinational firms in the digital age"
+  type: video
+  outlet: YouTube
+  link: https://www.youtube.com/watch?v=HBF6XOJWhGo
+  paperLink: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125715
+  description: Video summary of joint work with Lisa De Simone (UT Austin) on how multinational companies respond to destination-based taxes.
+  date: null
+
+- title: Global Tax Policy, Private Equity, and Sustainability
+  type: podcast
+  outlet: Conversations on Climate
+  link: https://www.youtube.com/watch?v=R0GLZ8U6ypA
+  description: Hour-long conversation with Chris Caldwell on how disclosure regulation and tax policy can change corporate behaviour, and the role of the private equity industry.
+  date: null
+
+- title: Carbon Taxes and Carbon Leakage
+  type: podcast
+  outlet: Tax Chats
+  link: https://taxchats.buzzsprout.com/1878989/episodes/15885860-cement-and-carbon-taxes-a-chat-with-marcel-olbert-and-daniel-klein
+  description: With hosts Jeff Hoopes (UNC) and Scott Dyreng (Duke), joined by Daniel Klein (Heidelberg Materials) — on carbon taxes, their impact on European firms, and evidence on carbon leakage.
+  date: null
+
+- title: Can taxes make businesses more sustainable?
+  type: podcast
+  outlet: The Why Podcast (London Business School)
+  link: https://megaphone.link/LBS1223957784
+  description: Conversation with Alenka Turnsek (EY EMEIA Sustainability Tax Leader) on international business tax policy and environmental taxation.
+  date: null
+
+- title: "Research summary: The Global Minimum Tax — the world's most historic corporate tax reform"
+  type: video
+  outlet: YouTube
+  link: https://www.youtube.com/watch?v=wrwibkzjDf0
+  paperLink: https://doi.org/10.1093/rfs/hhad038
+  description: Findings from the Review of Financial Studies paper with Roberto Gomez-Cram on how the proposed 15% global corporate minimum tax affected US firms' stock market valuations.
+  date: null
+
+- title: Research summaries by the Wheeler Institute
+  type: article
+  outlet: Wheeler Institute for Business and Development
+  link: https://wheelerinstituteresearch.org/people/marcel-olbert/
+  description: Collection of research summaries, including spillover effects of European corporate tax reforms on investment in Africa and carbon leakage to developing countries.
+  date: null
+
+- title: "Interview: ESG Disclosures in the Private Equity Industry"
+  type: interview
+  outlet: Faculti
+  link: https://faculti.net/esg-disclosures-in-the-private-equity-industry
+  description: On how private equity firms disclose their ESG investing strategies — and whether more ESG talk in the PE industry also means more walk. On average, it does.
+  date: null
+
+- title: "Taxing times: a new era of political economy"
+  type: article
+  outlet: LBS Think
+  link: https://www.london.edu/think/taxing-times-a-new-era-of-political-economy
+  description: With Roberto Gomez-Cram — analysing the changes to global corporate profit taxation.
+  date: null
+
+- title: Keeping an eye on private equity and ESG
+  type: article
+  outlet: LBS Think
+  link: https://www.london.edu/think/keeping-an-eye-on-private-equity-and-esg
+  description: Do private equity firms merely make ESG claims, or do claims translate into better portfolio company performance?
+  date: null

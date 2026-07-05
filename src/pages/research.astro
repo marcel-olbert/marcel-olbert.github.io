@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import PubEntry from '../components/PubEntry.astro';
+import publications from '../data/publications.yaml';
+import workingPapers from '../data/working-papers.yaml';
+import wip from '../data/work-in-progress.yaml';
+---
+
+<Base title="Research" description="Publications and working papers by Marcel Olbert on disclosure regulation, corporate taxation, and corporate finance.">
+  <div class="wrap-text">
+    <h1 class="page-title">Research</h1>
+    <p class="page-lede">
+      My work studies how firms respond to taxation and disclosure regulation, combining
+      large firm-level data with causal research designs.
+    </p>
+
+    <section>
+      <h2>Publications</h2>
+      {publications.map((pub) => <PubEntry pub={pub} />)}
+    </section>
+
+    <section>
+      <h2>Working papers</h2>
+      {workingPapers.map((pub) => <PubEntry pub={pub} />)}
+    </section>
+
+    <section>
+      <h2>Work in progress</h2>
+      {wip.map((pub) => <PubEntry pub={pub} />)}
+    </section>
+  </div>
+</Base>

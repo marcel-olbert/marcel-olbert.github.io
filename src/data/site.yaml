@@ -1,0 +1,29 @@
+# Global site settings — edit here, everything updates everywhere.
+name: Marcel Olbert
+title: Professor of Taxation, Accounting, and Finance
+institution: University of Mannheim
+institutionUrl: https://www.uni-mannheim.de/en/
+tagline: Research at the intersection of disclosure regulation, corporate taxation, and corporate finance.
+# TODO(Marcel): confirm which email to publish for speaking/policy inquiries
+email: marcel.olbert@outlook.com
+photo: /assets/marcel-olbert.jpg
+cvUrl: https://1drv.ms/u/s!AmXfoDT8duk8jNI3hXN_XBhHi4ENwQ?e=eahjqo  # TODO: replace with self-hosted /assets/cv-marcel-olbert.pdf
+ssrnUrl: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2490396
+# TODO(Marcel): add if wanted
+googleScholarUrl: null
+linkedinUrl: null
+twitterUrl: null
+
+roles:
+  - Editorial Board, The Accounting Review
+  - Associate Editor, European Accounting Review
+  - Junior Research Associate, ZEW — Leibniz Centre for European Economic Research
+  - Research Fellow, TRR 266 Accounting for Transparency
+
+grants: Research grants from the NBER, the Wheeler Institute for Business and Development, and the ITFP.
+
+press:
+  - label: Poets&Quants Best 40-Under-40 MBA Professors (2024)
+    url: https://poetsandquants.com/2024/05/18/2024-best-40-under-40-mba-professors-marcel-olbert-london-business-school/
+  - label: "Five minutes with the faculty — London Business School"
+    url: https://www.london.edu/think/five-minutes-with-the-faculty-marcel-olbert

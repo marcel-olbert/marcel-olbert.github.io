@@ -1,0 +1,22 @@
+# Short news items for the homepage "Latest" section. Add new items at the top.
+# date format: YYYY-MM (shown as "Month YYYY"). Keep it to 4-6 items; prune old ones.
+# TODO(Marcel): verify/adjust dates and add anything missing (talks, media, appointments).
+- date: 2026-05
+  text: Talk on using AI agents in empirical research at the University of Mannheim AI Clinic.
+  link: /assets/ai-agents-empirical-research-slides.pdf
+  linkLabel: Slides (PDF)
+
+- date: 2026-01
+  text: Building a new research team and Research Center at the University of Mannheim — pre-doc and PhD hiring for this year is complete; new postings in 2027.
+  link: null
+  linkLabel: null
+
+- date: 2025-09
+  text: New working paper — The Global Network of Oligarch Companies, with John Gallemore, Jinhwan Kim, and Iman Taghaddosinejad.
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5525498
+  linkLabel: SSRN
+
+- date: 2025-06
+  text: "Firms' Real and Reporting Responses to Taxation: A Review (with Rebecca Lester) published in the Journal of Accounting and Economics."
+  link: https://doi.org/10.1016/j.jacceco.2025.101837
+  linkLabel: Paper

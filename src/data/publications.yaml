@@ -1,0 +1,73 @@
+# Published papers. Add new entries at the top. `selected: true` shows the paper on the homepage.
+# `abstract` can be added/edited freely; shows as expandable text on the Research page.
+- title: "Firms' Real and Reporting Responses to Taxation: A Review"
+  coauthors: [Rebecca Lester]
+  journal: Journal of Accounting and Economics
+  year: 2025
+  link: https://doi.org/10.1016/j.jacceco.2025.101837
+  selected: true
+  abstract: null
+
+- title: How Do Multinational Companies Respond to Destination-based Taxes?
+  coauthors: [Lisa De Simone]
+  journal: Review of Accounting Studies
+  year: 2025
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125715
+  selected: false
+  abstract: null
+
+- title: The Impact of Tax Shields on Bankruptcy Risk and Resource Allocation
+  coauthors: []
+  journal: Review of Accounting Studies
+  year: 2025
+  link: https://ssrn.com/abstract=3467669
+  selected: false
+  abstract: null
+
+- title: ESG Disclosures in the Private Equity Industry
+  coauthors: [Jefferson Abraham, Florin Vasvari]
+  journal: Journal of Accounting Research
+  year: 2024
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4265171
+  selected: true
+  abstract: null
+
+- title: Private Equity and Local Public Finances
+  coauthors: [Peter Severin]
+  journal: Journal of Accounting Research
+  year: 2023
+  link: https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12487
+  selected: false
+  abstract: null
+
+- title: Measuring the Expected Effects of the Global Tax Reform
+  coauthors: [Roberto Gomez-Cram]
+  journal: Review of Financial Studies
+  year: 2023
+  link: https://doi.org/10.1093/rfs/hhad038
+  selected: true
+  abstract: null
+
+- title: Tax Competition and Employment
+  coauthors: [Stephen Glaeser, Ann-Catherin Werner]
+  journal: The Accounting Review
+  year: 2023
+  link: https://publications.aaahq.org/accounting-review/article/doi/10.2308/TAR-2020-0575/10917
+  selected: false
+  abstract: null
+
+- title: "How Does Private Firm Disclosure Affect Demand for Public Firm Equity? Evidence from the Global Equity Market"
+  coauthors: [Jinhwan Kim]
+  journal: Journal of Accounting and Economics
+  year: 2022
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3837658
+  selected: false
+  abstract: null
+
+- title: Real Effects of Private Country-by-Country Disclosure
+  coauthors: [Lisa De Simone]
+  journal: The Accounting Review
+  year: 2022
+  link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3398116
+  selected: true
+  abstract: null

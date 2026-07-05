@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.yaml';
+import speaking from '../data/speaking.yaml';
+---
+
+<Base title="Speaking & Policy" description="Keynotes, executive education, policy advice, and media commentary by Marcel Olbert on tax policy, ESG regulation, and the future of corporate transparency.">
+  <div class="wrap-text">
+    <h1 class="page-title">Speaking &amp; Policy</h1>
+    <p class="page-lede">{speaking.intro}</p>
+
+    <section>
+      <h2>Topics</h2>
+      {speaking.topics.map((t) => (
+        <div class="topic">
+          <h3>{t.title}</h3>
+          <p>{t.text}</p>
+        </div>
+      ))}
+    </section>
+
+    <section>
+      <h2>Formats</h2>
+      <ul style="margin-left: 1.1rem;">
+        {speaking.formats.map((f) => <li>{f}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected engagements</h2>
+      {speaking.engagements.map((e) => (
+        <div class="news-item">
+          <div class="news-date">{e.year ?? 'Ongoing'}</div>
+          <div>{e.text}</div>
+        </div>
+      ))}
+    </section>
+
+    <div class="cta-band">
+      <div>
+        <h2>Invite me to speak</h2>
+        <p>Keynotes, panels, executive sessions, and policy briefings — in English or German.</p>
+      </div>
+      <a class="btn btn-primary" href={`mailto:${site.email}?subject=Speaking inquiry`}>Get in touch</a>
+    </div>
+  </div>
+</Base>
