@@ -16,8 +16,7 @@ import legal from '../data/legal.yaml';
     <p>
       {legal.name}<br />
       {legal.role}<br />
-      {legal.street}<br />
-      {legal.city}<br />
+      {legal.addressLines.map((line: string) => <>{line}<br /></>)}
       {legal.country}
     </p>
 
@@ -35,8 +34,7 @@ import legal from '../data/legal.yaml';
     <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
     <p>
       {legal.name}<br />
-      {legal.street}<br />
-      {legal.city}
+      {legal.addressLines.map((line: string, i: number) => <>{line}{i < legal.addressLines.length - 1 && <br />}</>)}
     </p>
 
     <h2>Haftung für Inhalte</h2>

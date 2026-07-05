@@ -51,7 +51,7 @@ const personJsonLd = {
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
   </head>
   <body>
     <header class="site-header">
@@ -75,8 +75,7 @@ const personJsonLd = {
           © {new Date().getFullYear()} {site.name} · {site.title}, <a href={site.institutionUrl}>{site.institution}</a>
         </div>
         <div>
-          <a href={site.ssrnUrl}>SSRN</a> · <a href={site.cvUrl}>CV</a> · <a href={`mailto:${site.email}`}>Email</a>
-          · <a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Datenschutz</a>
+          <a href={site.ssrnUrl}>SSRN</a> · <a href={site.cvUrl}>CV</a> · <a href={`mailto:${site.email}`}>Email</a> · <a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Datenschutz</a>
         </div>
       </div>
     </footer>

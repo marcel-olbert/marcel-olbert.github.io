@@ -1,14 +1,13 @@
 # Details for the legal pages (Impressum & Datenschutzerklärung).
-# TODO(Marcel): replace the bracketed placeholders before launch — they are
-# rendered VISIBLY on the live pages so nothing is silently wrong.
-# A ladungsfähige Anschrift is required by §5 DDG. This is Marcel's PERSONAL
-# (non-university) site — he chooses which address to list (private or office);
-# purely private sites can be exempt, but keeping an Impressum is the safe
-# standard practice for a publicly visible academic site.
+# Address = Marcel's University of Mannheim office (his choice, July 2026);
+# the site itself is personal and non-commercial, not a university site.
 name: Marcel Olbert
 role: Professor of Taxation, Accounting, and Finance
-street: "[Straße und Hausnummer — von Marcel zu ergänzen]" # TODO(Marcel)
-city: "[PLZ und Ort — von Marcel zu ergänzen]" # TODO(Marcel)
+addressLines:
+  - Universität Mannheim
+  - Area Accounting and Taxation
+  - Schloss – Raum SO 102–105
+  - 68161 Mannheim
 country: Deutschland
 email: marcel.olbert@outlook.com # confirmed by Marcel (personal site → personal address)
 phone: null # optional — §5 DDG requires a way for fast electronic contact; email suffices

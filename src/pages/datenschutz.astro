@@ -20,8 +20,7 @@ import legal from '../data/legal.yaml';
     </p>
     <p>
       {legal.name}<br />
-      {legal.street}<br />
-      {legal.city}<br />
+      {legal.addressLines.map((line: string) => <>{line}<br /></>)}
       E-Mail: <a href={`mailto:${legal.email}`}>{legal.email}</a>
     </p>
 
