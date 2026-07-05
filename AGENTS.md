@@ -89,6 +89,14 @@ verbatim from official RSS feed (anchor.fm/s/1133e62b4/podcast/rss); co-hosts Ni
 Schwab (@hedgefonds.henning) & Christoph Wieland; Spotify/Apple/YouTube links verified.
 To feature a new episode: add it at the top of `episodes` in `podcast.yaml`.
 
+**Off-site SEO actions for Marcel (July 2026 — site side is done: robots.txt, sitemap,
+JSON-LD Person + PodcastSeries, per-page OG images):** after domain cutover, add
+marcelolbert.com to: LinkedIn profile (contact info + featured section), podcast
+descriptions on Spotify/YouTube/Apple, SSRN profile, university faculty page, Google
+Scholar profile (also give Claude the Scholar URL for the `googleScholarUrl` slot in
+site.yaml). Announce relaunch in a LinkedIn post. Backlinks from these profiles are the
+main visibility lever besides the domain itself.
+
 **Build tasks remaining:**
 - Analytics: add GoatCounter snippet (free, no cookie banner) once Marcel creates account
   at goatcounter.com — or skip until launch.
