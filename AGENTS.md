@@ -83,11 +83,26 @@ schema.org Person JSON-LD, old-URL redirects, favicon.
   events.yaml — consider downloading and self-hosting the files in `public/assets/`.
 - OG share image: currently the profile photo; a dedicated card image would be nicer.
 
-**Launch checklist (Phase 5, blocked on Marcel finding domain registrar login):**
+**Domain facts (verified via whois/dig, July 2026 — registrar login FOUND, no longer a blocker):**
+- marcelolbert.com is registered at **Automattic Inc. (WordPress.com)** — Marcel's existing
+  WordPress.com account IS the registrar. DNS manager:
+  https://wordpress.com/domains/manage/marcelolbert.com/edit/marcelolbert.com
+- Nameservers ns1–ns3.wordpress.com; A records currently point to WordPress hosting
+  (192.0.78.24/.25). Registration paid until **2027-03-05** — no urgency, no transfer needed.
+- Cutover = edit DNS records in that WordPress.com page (keep their nameservers).
+- ⚠️ After cutover: when cancelling the WordPress *hosting plan*, ensure the *domain
+  registration* survives as its own paid item (bundled-free domains can lapse on plan
+  cancellation). Export full WordPress backup BEFORE cancelling anything.
+
+**Launch checklist (Phase 5 — unblocked, go whenever Marcel says so):**
 1. Change `site` in `astro.config.mjs` to `https://marcelolbert.com`.
 2. Add custom domain in GitHub Pages settings (`gh api` or repo Settings → Pages);
-   creates CNAME. DNS at registrar: A records 185.199.108.153/109/110/111 + www CNAME
-   → marcel-olbert.github.io; enable HTTPS enforcement.
-3. Verify live + old-URL redirects, then export WordPress backup and cancel hosting.
-4. Google Search Console: verify domain, submit sitemap.
-5. Pre-launch: Lighthouse ≥95, link check over dist/, mobile check, OG preview.
+   creates CNAME. Claude can do steps 1–2 from here.
+3. Marcel edits DNS in the WordPress.com page above: replace WordPress A records with
+   GitHub Pages A records 185.199.108.153/109/110/111 + www CNAME
+   → marcel-olbert.github.io. Then enable HTTPS enforcement in GitHub Pages
+   (needs cert provisioning after DNS propagates, minutes to a few hours).
+4. Verify live + old-URL redirects, then export WordPress backup and cancel hosting
+   (see domain caution above).
+5. Google Search Console: verify domain, submit sitemap.
+6. Pre-launch: Lighthouse ≥95, link check over dist/, mobile check, OG preview.
