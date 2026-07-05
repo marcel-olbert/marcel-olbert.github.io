@@ -67,8 +67,10 @@ schema.org Person JSON-LD, old-URL redirects, favicon.
 4. Which email to publish for speaking inquiries — currently marcel.olbert@outlook.com
    placeholder in `site.yaml`; Mannheim address may be better.
 5. Add LinkedIn / Google Scholar / X links? (`site.yaml` has null slots; old site had none.)
-6. Impressum page — likely legally required (§5 DDG, Germany). Needs his address/details;
-   do NOT invent. Add Datenschutzerklärung at same time.
+6. Impressum + Datenschutzerklärung pages BUILT (July 2026: `/impressum/`, `/datenschutz/`,
+   linked in footer; personal details live in `src/data/legal.yaml`). Marcel must still
+   supply his ladungsfähige Anschrift (visible bracketed placeholders on the pages until
+   then) and should have the text reviewed — Claude drafted it; it is not legal advice.
 
 **Assets Marcel will supply:** 2–3 high-res photos; current CV PDF (then replace OneDrive
 `cvUrl` in site.yaml with self-hosted `/assets/cv-marcel-olbert.pdf`).
