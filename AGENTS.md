@@ -9,6 +9,9 @@ Marcel is Professor of Taxation, Accounting, and Finance at University of Mannhe
 (formerly London Business School). Strong in Stata, comfortable in R, basic Python —
 explain web-stack things briefly when they matter; don't assume JS/Astro knowledge.
 
+**Day-to-day maintenance recipes live in `WORKFLOWS.md`** (new episode, new paper, news,
+CV, photos, housekeeping) — written for Marcel; keep it in sync when workflows change.
+
 ## Stack & operations
 
 - **Astro** static site, content lives in `src/data/*.yaml` — content edits are YAML edits,
