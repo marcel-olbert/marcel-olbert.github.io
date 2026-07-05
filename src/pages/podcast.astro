@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import podcast from '../data/podcast.yaml';
+
+const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+function formatDate(d: string) {
+  const [y, m, day] = String(d).split('-');
+  return `${monthNames[Number(m) - 1]} ${Number(day)}, ${y}`;
+}
+---
+
+<Base title="Prof of Concept — Podcast" description="Prof of Concept: Marcel Olbert's German-language podcast explaining the economy to a young audience — with co-hosts Niklas Schwab and Christoph Wieland.">
+  <div class="wrap-text">
+    <h1 class="page-title">{podcast.name}</h1>
+    <p class="page-lede">{podcast.blurb}</p>
+
+    <div class="podcast-platforms">
+      <a class="btn btn-primary" href={podcast.links.spotify}>Spotify</a>
+      <a class="btn btn-ghost" href={podcast.links.apple}>Apple Podcasts</a>
+      <a class="btn btn-ghost" href={podcast.links.youtube}>YouTube</a>
+      <a class="btn btn-ghost" href={podcast.links.rss}>RSS</a>
+    </div>
+
+    <figure class="page-photo">
+      <img src={podcast.hostsPhoto} alt={`${podcast.name} — Niklas Schwab, Marcel Olbert, and Christoph Wieland`} width="1254" height="1254" loading="lazy" />
+    </figure>
+
+    <p lang="de" class="podcast-description">{podcast.description}</p>
+
+    <section>
+      <h2>Episodes</h2>
+      {podcast.episodes.map((e: any) => (
+        <div class="news-item">
+          <div class="news-date">{formatDate(e.date)}</div>
+          <div lang="de">
+            {e.title}<br />
+            <span class="episode-links">
+              Listen: <a href={e.spotify}>Spotify</a> · <a href={e.youtube}>YouTube</a>
+            </span>
+          </div>
+        </div>
+      ))}
+    </section>
+  </div>
+</Base>

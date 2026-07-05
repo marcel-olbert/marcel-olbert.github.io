@@ -1,0 +1,37 @@
+# Prof of Concept — Marcel's German-language podcast (launched June 2026).
+# "New episode" workflow: add it at the TOP of `episodes` — the homepage
+# automatically features episodes[0] as the latest episode.
+# Facts sourced from the official RSS feed (anchor.fm) and YouTube, July 2026.
+name: Prof of Concept
+tagline: Wirtschaft für Hyperformer
+# Official show description, verbatim from the podcast feed (German):
+description: >-
+  Wirtschaft für Hyperformer. Prof. Dr. Marcel Olbert von der Universität Mannheim
+  erklärt der Gen-Z die Wirtschaft von A bis Z. Wissenschaftlich fundiert, Facts
+  First und dank seiner Co-Hosts Niklas Schwab (aka @hedgefonds.henning) &
+  Christoph Wieland auch mit der notwendigen Prise Humor.
+# Short English framing for the site's international audience:
+blurb: >-
+  My German-language podcast: together with my co-hosts Niklas Schwab and
+  Christoph Wieland, I explain the economy to a young audience — scientifically
+  grounded, facts first, and with the necessary dose of humor.
+cover: /assets/prof-of-concept-cover.jpg
+hostsPhoto: /assets/prof-of-concept-hosts.jpg
+links:
+  spotify: https://open.spotify.com/show/033qTC1rQTUIS1FFeHwBeJ
+  apple: https://podcasts.apple.com/de/podcast/prof-of-concept/id6786339773
+  youtube: https://www.youtube.com/playlist?list=PLEioR_KrWcyNpHjVtMAMAIgCH64fFEvXE
+  rss: https://anchor.fm/s/1133e62b4/podcast/rss
+episodes: # newest first
+  - title: "Hörsaal statt Tradingfloor: Wieso Marcel JPMorgan abgesagt hat"
+    date: 2026-06-17
+    youtube: https://www.youtube.com/watch?v=P3ExTPdumQ8
+    spotify: https://podcasters.spotify.com/pod/show/prof-of-concept/episodes/Hrsaal-statt-Tradingfloor-Wieso-Marcel-JPMorgan-abgesagt-hat-e3kqiuu
+  - title: "500 Milliarden vers(ch)enkt: Das sind die ECHTEN Auswirkungen des Sondervermögens"
+    date: 2026-06-04
+    youtube: https://www.youtube.com/watch?v=1tIkQTImJIM
+    spotify: https://podcasters.spotify.com/pod/show/prof-of-concept/episodes/500-Milliarden-verschenkt-Das-sind-die-ECHTEN-Auswirkungen-des-Sondervermgens-e3kbhsf
+  - title: "Die Lüge von der toten Deutschen Wirtschaft: Warum es uns eigentlich gut geht!"
+    date: 2026-06-02
+    youtube: https://www.youtube.com/watch?v=Xn3jlbJlbf4
+    spotify: https://podcasters.spotify.com/pod/show/prof-of-concept/episodes/Die-Lge-von-der-toten-Deutschen-Wirtschaft-Warum-es-uns-eigentlich-gut-geht-e3k6mj3

@@ -3,7 +3,10 @@ import Base from '../layouts/Base.astro';
 import PubEntry from '../components/PubEntry.astro';
 import site from '../data/site.yaml';
 import news from '../data/news.yaml';
+import podcast from '../data/podcast.yaml';
 import publications from '../data/publications.yaml';
+
+const latestEpisode = podcast.episodes[0];
 
 const selected = publications.filter((p) => p.selected);
 const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -44,6 +47,23 @@ function formatDate(d) {
           </div>
         </div>
       ))}
+    </section>
+
+    <section>
+      <div class="podcast-band">
+        <a href="/podcast/" class="podcast-cover">
+          <img src={podcast.cover} alt={`${podcast.name} podcast cover`} width="1200" height="1200" loading="lazy" />
+        </a>
+        <div>
+          <div class="kicker">Podcast · {podcast.tagline}</div>
+          <h2 class="podcast-band-title"><a href="/podcast/">{podcast.name}</a></h2>
+          <p class="podcast-band-blurb">{podcast.blurb}</p>
+          <p class="podcast-latest">
+            <strong>Latest episode:</strong> <span lang="de">{latestEpisode.title}</span><br />
+            Listen on <a href={latestEpisode.spotify}>Spotify</a> · <a href={latestEpisode.youtube}>YouTube</a> · <a href={podcast.links.apple}>Apple Podcasts</a> · <a href="/podcast/">All episodes →</a>
+          </p>
+        </div>
+      </div>
     </section>
 
     <section>

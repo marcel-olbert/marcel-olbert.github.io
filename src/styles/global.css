@@ -130,6 +130,26 @@ section + section { margin-top: 3.2rem; }
 .cta-band h2 { color: #fff; margin: 0; font-size: 1.45rem; }
 .cta-band p { color: #c8ccd2; font-size: 0.95rem; margin-top: 0.3rem; }
 
+/* ——— Podcast ——— */
+.podcast-band {
+  display: grid; grid-template-columns: 11rem 1fr; gap: 1.8rem; align-items: center;
+  background: var(--bg-raised); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 1.7rem;
+}
+.podcast-cover img { width: 100%; height: auto; border-radius: 10px; display: block; }
+.podcast-band-title { margin: 0.25rem 0 0; }
+.podcast-band-title a { color: inherit; text-decoration: none; }
+.podcast-band-title a:hover { color: var(--accent); }
+.podcast-band-blurb { font-size: 0.95rem; color: var(--muted); margin-top: 0.45rem; }
+.podcast-latest { font-size: 0.95rem; margin-top: 0.8rem; }
+.podcast-platforms { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.4rem 0 0.4rem; }
+.podcast-description { color: var(--muted); font-size: 0.97rem; }
+.episode-links { font-size: 0.92rem; color: var(--muted); }
+@media (max-width: 640px) {
+  .podcast-band { grid-template-columns: 1fr; }
+  .podcast-cover { max-width: 12rem; }
+}
+
 /* ——— Full-width page photo ——— */
 .page-photo { margin: 1.8rem 0 0.4rem; }
 .page-photo img { width: 100%; height: auto; border-radius: 10px; display: block; }

@@ -33,6 +33,7 @@ explain web-stack things briefly when they matter; don't assume JS/Astro knowled
 | `news.yaml` | Homepage "Latest" | date `YYYY-MM`, keep 4–6 items, prune old |
 | `media.yaml` | Podcasts/videos/articles/interviews | type: podcast\|video\|article\|interview |
 | `speaking.yaml` | Speaking & Policy page (topics, formats, engagements) | DRAFT — needs Marcel's voice |
+| `podcast.yaml` | Prof of Concept podcast (show info, platform links, episodes) | New episodes on TOP of `episodes` — homepage auto-features `episodes[0]` |
 | `events.yaml` | Hosted conferences (historical, LBS era) | |
 | `data-code.yaml` | Datasets & code resources | |
 
@@ -78,9 +79,12 @@ for new material. Done so far: CV self-hosted at `/assets/cv-marcel-olbert.pdf` 
 CV_Olbert_20260624.pdf); outdoor portrait → homepage hero
 (`/assets/marcel-olbert-portrait.jpg`); speaking photo (MBS COBRA launch, June 2026) →
 Speaking page (`/assets/marcel-olbert-speaking.jpg`). Photos resized to 1600px via `sips`.
-Unused so far: 3 more COBRA-launch event photos in that folder; **"Prof of Concept" podcast
-logos** — Marcel co-hosts a podcast (3 hosts, Mannheim) with NO entry in media.yaml yet;
-need details from Marcel (co-hosts, links, description) before adding — do not invent.
+Unused so far: 3 more COBRA-launch event photos in that folder.
+**Prof of Concept podcast (built July 2026):** own page `/podcast/` (in nav) + homepage
+band featuring the latest episode + news item. Data in `podcast.yaml` — show description
+verbatim from official RSS feed (anchor.fm/s/1133e62b4/podcast/rss); co-hosts Niklas
+Schwab (@hedgefonds.henning) & Christoph Wieland; Spotify/Apple/YouTube links verified.
+To feature a new episode: add it at the top of `episodes` in `podcast.yaml`.
 
 **Build tasks remaining:**
 - Analytics: add GoatCounter snippet (free, no cookie banner) once Marcel creates account
