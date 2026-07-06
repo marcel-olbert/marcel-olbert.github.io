@@ -129,7 +129,7 @@ www→apex redirect, old-WordPress-URL redirects.
    (`gh api repos/marcel-olbert/marcel-olbert.github.io/pages` → https_enforced: true).
 2. Marcel: export full WordPress backup, THEN cancel WordPress hosting plan — domain
    registration must survive as its own paid item (see domain caution above).
-3. Google Search Console: verify marcelolbert.com, submit sitemap.
+3. DONE (July 7, 2026): Google Search Console verified, sitemap submitted by Marcel.
 4. Marcel's off-site SEO list (see above) + LinkedIn relaunch announcement.
 5. Nice-to-have: Lighthouse pass, full link check, dedicated OG card image.
 NOTE: Marcel has Google-hosted email on the domain (MX aspmx.l.google.com) — a

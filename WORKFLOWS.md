@@ -89,7 +89,7 @@ sure the domain registration itself survives (paid until March 2027).
 
 **SEO actions right after launch (Marcel, ~30 minutes, biggest visibility
 lever after the domain itself):**
-- Google Search Console: verify marcelolbert.com, submit the sitemap.
+- ~~Google Search Console: verify marcelolbert.com, submit the sitemap.~~ DONE July 2026.
 - Add marcelolbert.com to: LinkedIn profile (contact info + Featured section),
   podcast descriptions on Spotify / YouTube / Apple, SSRN profile,
   Mannheim faculty page, Google Scholar profile.
