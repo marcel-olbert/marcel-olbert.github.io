@@ -2,10 +2,9 @@
 import Base from '../layouts/Base.astro';
 import podcast from '../data/podcast.yaml';
 
-const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-function formatDate(d: string) {
-  const [y, m, day] = String(d).split('-');
-  return `${monthNames[Number(m) - 1]} ${Number(day)}, ${y}`;
+// The YAML loader parses `date: 2026-06-17` into a JS Date object.
+function formatDate(d: any) {
+  return new Date(d).toDateString(); // e.g. "Wed Jun 17 2026"
 }
 
 const podcastJsonLd = {
@@ -20,7 +19,7 @@ const podcastJsonLd = {
   sameAs: [podcast.links.spotify, podcast.links.apple, podcast.links.youtube],
   author: [
     { '@type': 'Person', name: 'Marcel Olbert', url: Astro.site?.toString() },
-    { '@type': 'Person', name: 'Niklas Schwab' },
+    { '@type': 'Person', name: 'Niklas Schwab', alternateName: '@hedgefonds.henning' },
     { '@type': 'Person', name: 'Christoph Wieland' },
   ],
 };
@@ -40,7 +39,7 @@ const podcastJsonLd = {
     </div>
 
     <figure class="page-photo">
-      <img src={podcast.hostsPhoto} alt={`${podcast.name} — Niklas Schwab, Marcel Olbert, and Christoph Wieland`} width="1254" height="1254" loading="lazy" />
+      <img src={podcast.hostsPhoto} alt={`${podcast.name} — Niklas Schwab (@hedgefonds.henning), Marcel Olbert, and Christoph Wieland`} width="1254" height="1254" loading="lazy" />
     </figure>
 
     <p lang="de" class="podcast-description">{podcast.description}</p>
@@ -53,7 +52,7 @@ const podcastJsonLd = {
           <div lang="de">
             {e.title}<br />
             <span class="episode-links">
-              Listen: <a href={e.spotify}>Spotify</a> · <a href={e.youtube}>YouTube</a>
+              Listen: <a href={e.spotify}>Spotify</a> · <a href={e.apple}>Apple Podcasts</a> · <a href={e.youtube}>YouTube</a>
             </span>
           </div>
         </div>

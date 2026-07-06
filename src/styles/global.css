@@ -168,6 +168,14 @@ section + section { margin-top: 3.2rem; }
 .page-photo { margin: 1.8rem 0 0.4rem; }
 .page-photo img { width: 100%; height: auto; border-radius: 10px; display: block; }
 
+/* Two photos side by side, cropped to equal height */
+.photo-pair { display: grid; grid-template-columns: 3fr 2fr; gap: 0.8rem; margin: 1.8rem 0 0.4rem; }
+.photo-pair img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; display: block; }
+@media (max-width: 640px) {
+  .photo-pair { grid-template-columns: 1fr; }
+  .photo-pair img { height: auto; }
+}
+
 /* ——— Event blocks ——— */
 .event { border-top: 1px solid var(--rule); padding-top: 1.6rem; margin-top: 1.6rem; }
 .event .event-meta { color: var(--muted); font-size: 0.92rem; font-weight: 550; margin: 0.15rem 0 0.7rem; }
