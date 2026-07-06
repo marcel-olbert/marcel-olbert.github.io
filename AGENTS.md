@@ -98,8 +98,10 @@ site.yaml). Announce relaunch in a LinkedIn post. Backlinks from these profiles 
 main visibility lever besides the domain itself.
 
 **Build tasks remaining:**
-- Analytics: add GoatCounter snippet (free, no cookie banner) once Marcel creates account
-  at goatcounter.com — or skip until launch.
+- Analytics: GoatCounter is WIRED (Base.astro, off while `goatcounter: null` in site.yaml).
+  Waiting on Marcel to sign up at goatcounter.com and supply his code; when activating,
+  ALSO add a GoatCounter section to the Datenschutzerklärung (no cookies, no personal
+  data, but disclosure required).
 - media.yaml: all dates null — fill in as Marcel remembers them.
 - Fragile external links: many OneDrive (1drv.ms) / Dropbox links in data-code.yaml and
   events.yaml — consider downloading and self-hosting the files in `public/assets/`.
