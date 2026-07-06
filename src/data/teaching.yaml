@@ -9,6 +9,6 @@ intro: >-
 
 materials: # newest on top
   - title: AI Agents in Empirical Research
-    context: Talk at the University of Mannheim AI Clinic, May 2026
+    context: Talk at the COBRA AI Clinic, University of Mannheim, May 2026
     url: /assets/ai-agents-empirical-research-slides.pdf
     label: Slides (PDF)
