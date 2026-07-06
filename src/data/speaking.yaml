@@ -1,5 +1,5 @@
 # Speaking & Policy page content.
-# DRAFT — TODO(Marcel): review topics, add/correct engagements, add testimonials if available.
+# TODO(Marcel): add 1-2 testimonials when available.
 intro: >-
   I speak to fellow academics, policymakers, corporate leaders, and students about how
   tax policy and related regulation actually change firm behaviour. My talks are grounded in
@@ -7,6 +7,8 @@ intro: >-
   Through my regular interactions with corporate leaders, journalists as well as social media influencers, I always aim to make my research accessible and actionable for a broad audience.
 
 topics:
+  - title: Tax policy and business
+    text: Evidence from my own and surveyed research, paired with timely data analyses of tax reforms and firms' tax sensitivity across countries.
   - title: The global tax reform and what it means for business
     text: The OECD's Pillar Two minimum tax is the biggest change to corporate taxation in a century. What the evidence says about who bears it, how markets priced it, and how firms are responding.
   - title: Tax policy for sustainability
@@ -27,11 +29,31 @@ formats:
 
 engagements:
   - year: 2026
+    text: Academic discussion at Stanford GSB
+  - year: 2026
     text: Talk on AI agents in empirical research, AI Clinic, University of Mannheim
+  - year: 2025
+    text: Research talks at MIT and Chicago Booth
+  - year: 2025
+    text: LBS Summit Series — fireside chat with Euronext CEO Stéphane Boujnah
+  - year: 2025
+    text: '"New Era of German Fiscal Policy in 2025" — talk for HG Oftersheim/Schwetzingen (in German)'
+  - year: 2024
+    text: Impulsvortrag „KI als Werttreiber in Tax and Beyond — wissenschaftliche Evidenz und offene Fragen", Flick Gocke Schaumburg, Frankfurt (in German)
+  - year: 2024
+    text: Talk on carbon taxation in Europe to the PwC US Climate Tax Study Group; panel member at the LBS Road to COP28
   - year: 2024
     text: Co-host, Tax Bootcamp 2024 with Stanford GSB — policymakers and executives on AI in tax and tax policy for sustainability, London
   - year: 2023
+    text: Expert opinion at the European Parliament hearing (FISC Subcommittee) on the role of tax policy in controlling inflation
+  - year: 2023
+    text: Moderator, sustainability panel, LBS China Business Forum
+  - year: 2023
     text: Co-host, LBS–Stanford Global Tax Conference — with speakers from the OECD, HM Treasury, EY, and PwC, London
+  - year: 2017
+    text: Conference host and moderator at Q-Summit, Mannheim
+    link: https://www.q-summit.com/
+    linkLabel: q-summit.com
   - year: null
     text: Podcast appearances incl. Tax Chats, Conversations on Climate, The Why Podcast, and Think Ahead
 

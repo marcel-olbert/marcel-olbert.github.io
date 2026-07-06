@@ -15,7 +15,7 @@ import speaking from '../data/speaking.yaml';
     </div>
 
     <section>
-      <h2>Topics</h2>
+      <h2>Core Topics</h2>
       {speaking.topics.map((t: any) => (
         <div class="topic">
           <h3>{t.title}</h3>
@@ -36,7 +36,10 @@ import speaking from '../data/speaking.yaml';
       {speaking.engagements.map((e: any) => (
         <div class="news-item">
           <div class="news-date">{e.year ?? 'Ongoing'}</div>
-          <div>{e.text}</div>
+          <div>
+            {e.text}
+            {e.link && <> — <a href={e.link}>{e.linkLabel ?? 'Link'}</a></>}
+          </div>
         </div>
       ))}
     </section>
