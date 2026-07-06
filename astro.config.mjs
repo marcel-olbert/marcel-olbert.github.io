@@ -5,8 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  // Preview URL while building; switch to 'https://marcelolbert.com' at launch
-  site: 'https://marcel-olbert.github.io',
+  site: 'https://marcelolbert.com',
   integrations: [sitemap()],
   // Old WordPress URLs → new pages (keeps existing backlinks alive)
   redirects: {
