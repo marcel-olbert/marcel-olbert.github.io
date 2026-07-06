@@ -5,6 +5,9 @@ institution: University of Mannheim
 institutionUrl: https://www.uni-mannheim.de/en/
 tagline: Research on economic policy and firm behavior, focusing on taxes, disclosure, private equity, and corporate finance decisions.
 email: marcel.olbert@outlook.com # confirmed by Marcel (personal site → personal address)
+# GoatCounter analytics code (the subdomain chosen at goatcounter.com signup,
+# e.g. "marcelolbert" for marcelolbert.goatcounter.com). null = analytics off.
+goatcounter: null
 photo: /assets/marcel-olbert-portrait.jpg
 cvUrl: /assets/cv-marcel-olbert.pdf # self-hosted; source CV_Olbert_20260624.pdf from Marcel's websitecontent folder
 ssrnUrl: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2490396

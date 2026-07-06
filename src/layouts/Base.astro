@@ -54,6 +54,9 @@ const personJsonLd = {
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
+    {site.goatcounter && (
+      <script is:inline defer data-goatcounter={`https://${site.goatcounter}.goatcounter.com/count`} src="//gc.zgo.at/count.js"></script>
+    )}
     <slot name="head" />
   </head>
   <body>
