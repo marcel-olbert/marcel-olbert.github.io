@@ -1,0 +1,14 @@
+# Teaching page content. PLACEHOLDER stage — Marcel will add courses, events,
+# and more materials over time. Do not invent course names or details.
+intro: >-
+  I teach across all levels — bachelor's, master's, executive education, and
+  PhD — on taxes, financial accounting, and empirical research, including
+  AI-related methodologies. On this page I share updates on my teaching
+  approaches and events, and make selected materials available to my students
+  and the wider public.
+
+materials: # newest on top
+  - title: AI Agents in Empirical Research
+    context: Talk at the University of Mannheim AI Clinic, May 2026
+    url: /assets/ai-agents-empirical-research-slides.pdf
+    label: Slides (PDF)

@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import teaching from '../data/teaching.yaml';
+---
+
+<Base title="Teaching" description="Teaching by Marcel Olbert across bachelor's, master's, executive education, and PhD levels — taxes, financial accounting, and empirical research including AI-related methodologies.">
+  <div class="wrap-text">
+    <h1 class="page-title">Teaching</h1>
+    <p class="page-lede">{teaching.intro}</p>
+
+    <section>
+      <h2>Materials</h2>
+      {teaching.materials.map((m: any) => (
+        <div class="news-item">
+          <div class="news-date">{m.context}</div>
+          <div>
+            {m.title} — <a href={m.url}>{m.label}</a>
+          </div>
+        </div>
+      ))}
+    </section>
+  </div>
+</Base>

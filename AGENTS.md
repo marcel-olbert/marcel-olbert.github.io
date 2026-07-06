@@ -37,6 +37,7 @@ CV, photos, housekeeping) — written for Marcel; keep it in sync when workflows
 | `media.yaml` | Podcasts/videos/articles/interviews | type: podcast\|video\|article\|interview |
 | `speaking.yaml` | Speaking & Policy page (topics, formats, engagements) | DRAFT — needs Marcel's voice |
 | `podcast.yaml` | Prof of Concept podcast (show info, platform links, episodes) | New episodes on TOP of `episodes` — homepage auto-features `episodes[0]` |
+| `teaching.yaml` | Teaching page (intro, materials) | PLACEHOLDER — Marcel adds courses/materials over time; never invent course details |
 | `events.yaml` | Hosted conferences (historical, LBS era) | |
 | `data-code.yaml` | Datasets & code resources | |
 
