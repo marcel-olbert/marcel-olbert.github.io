@@ -119,15 +119,18 @@ main visibility lever besides the domain itself.
   registration* survives as its own paid item (bundled-free domains can lapse on plan
   cancellation). Export full WordPress backup BEFORE cancelling anything.
 
-**Launch checklist (Phase 5 — unblocked, go whenever Marcel says so):**
-1. Change `site` in `astro.config.mjs` to `https://marcelolbert.com`.
-2. Add custom domain in GitHub Pages settings (`gh api` or repo Settings → Pages);
-   creates CNAME. Claude can do steps 1–2 from here.
-3. Marcel edits DNS in the WordPress.com page above: replace WordPress A records with
-   GitHub Pages A records 185.199.108.153/109/110/111 + www CNAME
-   → marcel-olbert.github.io. Then enable HTTPS enforcement in GitHub Pages
-   (needs cert provisioning after DNS propagates, minutes to a few hours).
-4. Verify live + old-URL redirects, then export WordPress backup and cancel hosting
-   (see domain caution above).
-5. Google Search Console: verify domain, submit sitemap.
-6. Pre-launch: Lighthouse ≥95, link check over dist/, mobile check, OG preview.
+**LAUNCHED July 6, 2026** 🎉 — marcelolbert.com serves the new site from GitHub Pages.
+Site config, GitHub custom domain, and DNS (A records + www CNAME at WordPress.com;
+MX records for Google mail kept untouched) all done. Verified: homepage, podcast page,
+www→apex redirect, old-WordPress-URL redirects.
+
+**Post-launch remaining:**
+1. HTTPS enforcement — watcher enables it once GitHub issues the cert; VERIFY it is on
+   (`gh api repos/marcel-olbert/marcel-olbert.github.io/pages` → https_enforced: true).
+2. Marcel: export full WordPress backup, THEN cancel WordPress hosting plan — domain
+   registration must survive as its own paid item (see domain caution above).
+3. Google Search Console: verify marcelolbert.com, submit sitemap.
+4. Marcel's off-site SEO list (see above) + LinkedIn relaunch announcement.
+5. Nice-to-have: Lighthouse pass, full link check, dedicated OG card image.
+NOTE: Marcel has Google-hosted email on the domain (MX aspmx.l.google.com) — a
+@marcelolbert.com address may exist as a nicer public contact; ask before using.
