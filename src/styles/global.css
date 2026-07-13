@@ -176,6 +176,21 @@ section + section { margin-top: 3.2rem; }
   .photo-pair img { height: auto; }
 }
 
+/* ——— Featured resource card (Data & Code) ——— */
+.resource-featured {
+  background: var(--bg-raised); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 1.7rem; margin-bottom: 2.4rem;
+}
+.resource-featured .kicker {
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 0.5rem;
+}
+.resource-featured-title { font-size: 1.4rem; margin: 0 0 0.6rem; }
+.resource-featured-title a { color: inherit; }
+.resource-featured-title a:hover { color: var(--accent); text-decoration: none; }
+.resource-featured p { font-size: 0.97rem; color: var(--muted); }
+.resource-featured-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
+
 /* ——— Event blocks ——— */
 .event { border-top: 1px solid var(--rule); padding-top: 1.6rem; margin-top: 1.6rem; }
 .event .event-meta { color: var(--muted); font-size: 0.92rem; font-weight: 550; margin: 0.15rem 0 0.7rem; }

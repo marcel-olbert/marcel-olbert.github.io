@@ -1,6 +1,11 @@
 # Short news items for the homepage "Latest" section. Add new items at the top.
 # date format: YYYY-MM (shown as "Month YYYY"). Keep it to 4-6 items; prune old ones.
 # TODO(Marcel): verify/adjust dates and add anything missing (talks, media, appointments).
+- date: 2026-07
+  text: New open resource — Measuring Tax Effects, an interactive guide to 84+ measures and 51 data sources for tax research, with Rebecca Lester (Stanford GSB). Companion to our Journal of Accounting and Economics review.
+  link: https://www.measuringtaxeffects.com/
+  linkLabel: measuringtaxeffects.com
+
 - date: 2026-06
   text: Launched Prof of Concept — my German-language podcast on the economy, with co-hosts Niklas Schwab (@hedgefonds.henning) and Christoph Wieland.
   link: /podcast/

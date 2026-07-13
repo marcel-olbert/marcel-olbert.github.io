@@ -1,4 +1,21 @@
 # Data & code resources for researchers.
+# `featured: true` → rendered as a highlighted card at the top of the page.
+- title: Measuring Tax Effects — An Interactive Measurement Guide for Tax Research
+  featured: true
+  description: >-
+    An open, interactive companion to my Journal of Accounting and Economics review with
+    Rebecca Lester (Stanford GSB). It catalogues 84+ measurement approaches, organised by
+    research outcome — investment, R&D, M&A, employment, and geographic allocation — each
+    with its pros, cons, and data sources; plus 51 datasets documented across eight
+    categories, with access requirements, coverage, strengths, and limitations, and a
+    glossary of 40+ terms. Built to improve measurement consistency and make data sources
+    easier to find for researchers working on the real effects of taxation.
+  link: https://www.measuringtaxeffects.com/
+  linkLabel: measuringtaxeffects.com
+  additional:
+    - label: Paper (JAE 2025, open access)
+      url: https://doi.org/10.1016/j.jacceco.2025.101837
+
 - title: Financial Reporting Transparency Measures from Orbis Firm-level Data
   description: Code to generate variants of the transparency measure used in Kim & Olbert (2022, JAE). Aggregated measures by industry, country, and year are available from the authors via email. Please cite Kim & Olbert (2022), "How Does Private Firm Disclosure Affect Demand for Public Firm Equity?".
   link: https://1drv.ms/u/s!AmXfoDT8duk8jPVDK0VDoTRZAbMxmg?e=BTOdpj

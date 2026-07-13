@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import resources from '../data/data-code.yaml';
+
+const featured = resources.filter((r: any) => r.featured);
+const rest = resources.filter((r: any) => !r.featured);
 ---
 
 <Base title="Data & Code" description="Datasets, code, and resources from Marcel Olbert's research, available to the research community.">
@@ -11,7 +14,19 @@ import resources from '../data/data-code.yaml';
       the corresponding papers when using these resources.
     </p>
 
-    {resources.map((r: any) => (
+    {featured.map((r: any) => (
+      <article class="resource-featured">
+        <div class="kicker">Featured resource</div>
+        <h2 class="resource-featured-title"><a href={r.link}>{r.title}</a></h2>
+        <p>{r.description}</p>
+        <div class="resource-featured-links">
+          <a class="btn btn-primary" href={r.link}>{r.linkLabel ?? 'Open'}</a>
+          {r.additional?.map((a: any) => <a class="btn btn-ghost" href={a.url}>{a.label}</a>)}
+        </div>
+      </article>
+    ))}
+
+    {rest.map((r: any) => (
       <article class="pub">
         <div class="pub-title">{r.title}</div>
         <p style="font-size: 0.95rem; color: var(--muted); margin-top: 0.35rem;">{r.description}</p>
