@@ -144,6 +144,32 @@ section + section { margin-top: 3.2rem; }
   font-size: 0.95rem; color: var(--muted);
 }
 
+/* ——— Feature band (COBRA on homepage) ——— */
+.feature-band {
+  display: grid; grid-template-columns: 13rem 1fr; gap: 1.8rem; align-items: center;
+  background: var(--bg-raised); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 1.7rem;
+}
+/* height:auto is required — the img's height attribute would otherwise win over aspect-ratio */
+.feature-band-media img {
+  width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover;
+  border-radius: 10px; display: block;
+}
+.feature-band .kicker {
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent);
+}
+.feature-band-title { font-size: 1.35rem; margin: 0.35rem 0 0; }
+.feature-band-title a { color: inherit; }
+.feature-band-title a:hover { color: var(--accent); text-decoration: none; }
+.feature-band-tagline { font-family: var(--serif); font-size: 1.05rem; margin-top: 0.4rem; }
+.feature-band-text { font-size: 0.95rem; color: var(--muted); margin-top: 0.5rem; }
+.feature-band-links { font-size: 0.93rem; margin-top: 0.9rem; }
+@media (max-width: 640px) {
+  .feature-band { grid-template-columns: 1fr; }
+  .feature-band-media { max-width: 13rem; }
+}
+
 /* ——— Podcast ——— */
 .podcast-band {
   display: grid; grid-template-columns: 11rem 1fr; gap: 1.8rem; align-items: center;

@@ -42,6 +42,23 @@ function formatDate(d: string) {
     </div>
 
     <section>
+      <div class="feature-band">
+        <a class="feature-band-media" href={site.cobra.url}>
+          <img src={site.cobra.photo} alt={`${site.cobra.name} — ${site.cobra.fullName}`} width="1400" height="933" loading="lazy" />
+        </a>
+        <div>
+          <div class="kicker">Research Center · {site.cobra.role}</div>
+          <h2 class="feature-band-title"><a href={site.cobra.url}>{site.cobra.name} — {site.cobra.fullName}</a></h2>
+          <p class="feature-band-tagline">{site.cobra.tagline}</p>
+          <p class="feature-band-text">{site.cobra.description}</p>
+          <p class="feature-band-links">
+            <a href={site.cobra.url}>Visit COBRA →</a> · <a href={site.cobra.eventsUrl}>Events</a> · <a href="/events/">Events I host</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>Latest</h2>
       {news.map((item: any) => (
         <div class="news-item">

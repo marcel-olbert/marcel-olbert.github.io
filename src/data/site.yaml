@@ -24,6 +24,22 @@ highlights:
   - text: Academic Advisor to fintech FINANCIALREPORTS PTE. LTD.
     url: https://financialfilings.com/for/academic-research/
 
+# COBRA research center — featured as a band on the homepage.
+# Description in the center's own words (from the MBS COBRA page).
+cobra:
+  name: COBRA
+  fullName: Mannheim Center for Corporate Behavior and Regulation Analysis
+  role: Founder & Academic Director
+  tagline: How policy shapes business, and why it matters.
+  description: >-
+    A leading platform for rigorous, data-driven research on regulation, taxation,
+    financial markets, corporate decision-making, and public policy. COBRA funds
+    research, runs a pre-doctoral program, hosts seminars, conferences, and workshops,
+    and brings the evidence to policymakers, business, and the press.
+  photo: /assets/cobra-launch.jpg
+  url: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/
+  eventsUrl: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/cobra-events/
+
 # One-liner inviting people to follow on LinkedIn (homepage, under "Latest"):
 linkedinPitch: Follow me on LinkedIn for research insights, op-eds, and commentary on economic policy and other current topics.
 

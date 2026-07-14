@@ -33,6 +33,11 @@ const personJsonLd = {
   name: site.name,
   jobTitle: site.title,
   worksFor: { '@type': 'CollegeOrUniversity', name: site.institution, url: site.institutionUrl },
+  affiliation: {
+    '@type': 'ResearchOrganization',
+    name: `${site.cobra.name} — ${site.cobra.fullName}`,
+    url: site.cobra.url,
+  },
   url: Astro.site?.toString(),
   image: ogImage.toString(),
   sameAs: [site.ssrnUrl, site.googleScholarUrl, site.linkedinUrl, site.twitterUrl].filter(Boolean),
