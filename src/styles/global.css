@@ -217,6 +217,16 @@ section + section { margin-top: 3.2rem; }
 .resource-featured p { font-size: 0.97rem; color: var(--muted); }
 .resource-featured-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
 
+/* ——— Teaching notes ——— */
+.teaching-note {
+  background: var(--bg-raised); border: 1px solid var(--rule); border-radius: 12px;
+  padding: 1.5rem; margin-bottom: 1.2rem;
+}
+.teaching-note h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+.teaching-note p { font-size: 0.97rem; color: var(--muted); }
+.teaching-note-link { margin-top: 0.8rem; }
+.teaching-note-link a { font-weight: 550; }
+
 /* ——— Event blocks ——— */
 .event { border-top: 1px solid var(--rule); padding-top: 1.6rem; margin-top: 1.6rem; }
 .event .event-meta { color: var(--muted); font-size: 0.92rem; font-weight: 550; margin: 0.15rem 0 0.7rem; }

@@ -7,6 +7,19 @@ intro: >-
   approaches and events, and make selected materials available to my students
   and the wider public.
 
+# Teaching approaches / notes — featured above materials. Newest on top.
+highlights:
+  - title: Bringing social media into the lecture hall
+    text: >-
+      In fall 2026 I am co-teaching Unternehmensbesteuerung (Corporate Taxation) with
+      Christoph Spengel for about 400 business students at the University of Mannheim.
+      Young people increasingly learn economics from social media, not traditional
+      media — so instead of lecturing about it, we bring real social-media takes on
+      taxes into the classroom and examine, discuss, and analyze them together. We
+      are inviting students and the wider community to submit examples.
+    linkLabel: Read the post on LinkedIn
+    link: https://www.linkedin.com/posts/marcel-olbert-4746034a_steuerpolitik-bwl-künstlicheintelligenz-activity-7472915240771551233-6mb8
+
 materials: # newest on top
   - title: AI Agents in Empirical Research
     context: Talk at the COBRA AI Clinic, University of Mannheim, May 2026

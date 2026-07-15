@@ -8,6 +8,19 @@ import teaching from '../data/teaching.yaml';
     <h1 class="page-title">Teaching</h1>
     <p class="page-lede">{teaching.intro}</p>
 
+    {teaching.highlights?.length > 0 && (
+      <section>
+        <h2>Teaching approaches</h2>
+        {teaching.highlights.map((h: any) => (
+          <article class="teaching-note">
+            <h3>{h.title}</h3>
+            <p>{h.text}</p>
+            {h.link && <p class="teaching-note-link"><a href={h.link}>{h.linkLabel ?? 'Read more'} →</a></p>}
+          </article>
+        ))}
+      </section>
+    )}
+
     <section>
       <h2>Materials</h2>
       {teaching.materials.map((m: any) => (
