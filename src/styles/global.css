@@ -217,6 +217,35 @@ section + section { margin-top: 3.2rem; }
 .resource-featured p { font-size: 0.97rem; color: var(--muted); }
 .resource-featured-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
 
+/* ——— Research tabs (CSS-only, radio + :checked) ——— */
+.research-tabs { margin-top: 1.6rem; }
+.research-radio { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.research-tablist {
+  display: flex; flex-wrap: wrap; gap: 1.6rem;
+  border-bottom: 1px solid var(--rule); margin-bottom: 1.8rem;
+}
+.research-tab {
+  cursor: pointer; padding-bottom: 0.7rem; margin-bottom: -1px;
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--muted); border-bottom: 2px solid transparent; white-space: nowrap;
+}
+.research-tab:hover { color: var(--ink); }
+.research-count { font-weight: 500; font-size: 0.8rem; text-transform: none; opacity: 0.7; }
+.research-panel { display: none; }
+#rtab-pub:checked ~ .research-tablist label[for="rtab-pub"],
+#rtab-wp:checked ~ .research-tablist label[for="rtab-wp"],
+#rtab-wip:checked ~ .research-tablist label[for="rtab-wip"] {
+  color: var(--ink); border-bottom-color: var(--accent);
+}
+#rtab-pub:checked ~ .research-panel[data-tab="pub"],
+#rtab-wp:checked ~ .research-panel[data-tab="wp"],
+#rtab-wip:checked ~ .research-panel[data-tab="wip"] { display: block; }
+#rtab-pub:focus-visible ~ .research-tablist label[for="rtab-pub"],
+#rtab-wp:focus-visible ~ .research-tablist label[for="rtab-wp"],
+#rtab-wip:focus-visible ~ .research-tablist label[for="rtab-wip"] {
+  outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px;
+}
+
 /* ——— Teaching notes ——— */
 .teaching-note {
   background: var(--bg-raised); border: 1px solid var(--rule); border-radius: 12px;

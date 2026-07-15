@@ -4,6 +4,13 @@ import PubEntry from '../components/PubEntry.astro';
 import publications from '../data/publications.yaml';
 import workingPapers from '../data/working-papers.yaml';
 import wip from '../data/work-in-progress.yaml';
+
+// CSS-only tabs (radio inputs + :checked selectors) — no JS, no third-party requests.
+const tabs = [
+  { id: 'pub', label: 'Publications', items: publications },
+  { id: 'wp', label: 'Working papers', items: workingPapers },
+  { id: 'wip', label: 'Work in progress', items: wip },
+];
 ---
 
 <Base title="Research" description="Publications and working papers by Marcel Olbert on disclosure regulation, corporate taxation, and corporate finance.">
@@ -16,19 +23,24 @@ import wip from '../data/work-in-progress.yaml';
       in leading academic journals across fields.
     </p>
 
-    <section>
-      <h2>Publications</h2>
-      {publications.map((pub: any) => <PubEntry pub={pub} />)}
-    </section>
+    <div class="research-tabs">
+      <input class="research-radio" type="radio" name="rtab" id="rtab-pub" checked />
+      <input class="research-radio" type="radio" name="rtab" id="rtab-wp" />
+      <input class="research-radio" type="radio" name="rtab" id="rtab-wip" />
 
-    <section>
-      <h2>Working papers</h2>
-      {workingPapers.map((pub: any) => <PubEntry pub={pub} />)}
-    </section>
+      <div class="research-tablist" role="tablist" aria-label="Research categories">
+        {tabs.map((t) => (
+          <label class="research-tab" for={`rtab-${t.id}`}>
+            {t.label} <span class="research-count">{t.items.length}</span>
+          </label>
+        ))}
+      </div>
 
-    <section>
-      <h2>Work in progress</h2>
-      {wip.map((pub: any) => <PubEntry pub={pub} />)}
-    </section>
+      {tabs.map((t) => (
+        <div class="research-panel" data-tab={t.id}>
+          {t.items.map((pub: any) => <PubEntry pub={pub} />)}
+        </div>
+      ))}
+    </div>
   </div>
 </Base>
