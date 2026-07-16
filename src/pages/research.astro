@@ -2,12 +2,14 @@
 import Base from '../layouts/Base.astro';
 import PubEntry from '../components/PubEntry.astro';
 import publications from '../data/publications.yaml';
+import otherPublications from '../data/other-publications.yaml';
 import workingPapers from '../data/working-papers.yaml';
 import wip from '../data/work-in-progress.yaml';
 
 // CSS-only tabs (radio inputs + :checked selectors) — no JS, no third-party requests.
 const tabs = [
-  { id: 'pub', label: 'Publications', items: publications },
+  { id: 'pub', label: 'Top-Tier Publications', items: publications },
+  { id: 'other', label: 'Other Publications', items: otherPublications },
   { id: 'wp', label: 'Working papers', items: workingPapers },
   { id: 'wip', label: 'Work in progress', items: wip },
 ];
@@ -25,6 +27,7 @@ const tabs = [
 
     <div class="research-tabs">
       <input class="research-radio" type="radio" name="rtab" id="rtab-pub" checked />
+      <input class="research-radio" type="radio" name="rtab" id="rtab-other" />
       <input class="research-radio" type="radio" name="rtab" id="rtab-wp" />
       <input class="research-radio" type="radio" name="rtab" id="rtab-wip" />
 

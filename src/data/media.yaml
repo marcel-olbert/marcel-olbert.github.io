@@ -1,6 +1,13 @@
 # Media appearances & research communication. Add new entries at the top.
 # type: podcast | video | article | interview
 # TODO(Marcel): add dates where you remember them (YYYY-MM) — currently mostly unknown.
+- title: "KI im Studium: Wenn BWL-Studenten nur mit KI eine Eins schreiben"
+  type: article
+  outlet: Frankfurter Allgemeine Zeitung (FAZ)
+  link: https://www.faz.net/aktuell/karriere-hochschule/hoersaal/ki-im-studium-wenn-bwl-studenten-nur-mit-ki-eine-eins-schreiben-accg-110854030.html
+  description: In German — with Christoph Spengel, on what it means for university teaching when business students can ace an assignment using AI alone, and how we should respond.
+  date: 2026-03
+
 - title: "Prof of Concept — my own podcast"
   type: podcast
   outlet: Prof of Concept

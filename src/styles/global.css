@@ -233,14 +233,17 @@ section + section { margin-top: 3.2rem; }
 .research-count { font-weight: 500; font-size: 0.8rem; text-transform: none; opacity: 0.7; }
 .research-panel { display: none; }
 #rtab-pub:checked ~ .research-tablist label[for="rtab-pub"],
+#rtab-other:checked ~ .research-tablist label[for="rtab-other"],
 #rtab-wp:checked ~ .research-tablist label[for="rtab-wp"],
 #rtab-wip:checked ~ .research-tablist label[for="rtab-wip"] {
   color: var(--ink); border-bottom-color: var(--accent);
 }
 #rtab-pub:checked ~ .research-panel[data-tab="pub"],
+#rtab-other:checked ~ .research-panel[data-tab="other"],
 #rtab-wp:checked ~ .research-panel[data-tab="wp"],
 #rtab-wip:checked ~ .research-panel[data-tab="wip"] { display: block; }
 #rtab-pub:focus-visible ~ .research-tablist label[for="rtab-pub"],
+#rtab-other:focus-visible ~ .research-tablist label[for="rtab-other"],
 #rtab-wp:focus-visible ~ .research-tablist label[for="rtab-wp"],
 #rtab-wip:focus-visible ~ .research-tablist label[for="rtab-wip"] {
   outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px;
