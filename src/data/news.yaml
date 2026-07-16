@@ -7,6 +7,14 @@
   linkLabel: measuringtaxeffects.com
 
 - date: 2026-06
+  text: "Named to the Journal of Accounting Research Excellence in Refereeing List 2025, recognizing outstanding peer-review contributions to a leading accounting journal."
+  links:
+    - label: University of Mannheim
+      url: https://www.bwl.uni-mannheim.de/en/details/prof-marcel-olbert-in-der-excellence-in-refereeing-liste-2025-des-journal-of-accounting-research-vertreten/
+    - label: Journal of Accounting Research
+      url: https://onlinelibrary.wiley.com/journal/1475679x
+
+- date: 2026-06
   text: Launched Prof of Concept — my German-language podcast on the economy, with co-hosts Niklas Schwab (@hedgefonds.henning) and Christoph Wieland.
   link: /podcast/
   linkLabel: Podcast
@@ -25,8 +33,3 @@
   text: New working paper — The Global Network of Oligarch Companies, with John Gallemore, Jinhwan Kim, and Iman Taghaddosinejad.
   link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5525498
   linkLabel: SSRN
-
-- date: 2025-06
-  text: "Firms' Real and Reporting Responses to Taxation: A Review (with Rebecca Lester) published in the Journal of Accounting and Economics."
-  link: https://doi.org/10.1016/j.jacceco.2025.101837
-  linkLabel: Paper

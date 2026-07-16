@@ -65,7 +65,9 @@ function formatDate(d: string) {
           <div class="news-date">{formatDate(item.date)}</div>
           <div>
             {item.text}
-            {item.link && <> <a href={item.link}>{item.linkLabel ?? 'Link'}</a></>}
+            {item.links
+              ? item.links.map((l: any, i: number) => <>{i === 0 ? ' ' : ' · '}<a href={l.url}>{l.label}</a></>)
+              : item.link && <> <a href={item.link}>{item.linkLabel ?? 'Link'}</a></>}
           </div>
         </div>
       ))}
