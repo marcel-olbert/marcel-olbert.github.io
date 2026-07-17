@@ -18,20 +18,20 @@
   coauthors: [Nicos Savva]
   journal: Forbes
   year: 2026
-  link: null # TODO(Marcel): add Forbes URL
+  link: https://www.forbes.com/sites/lbsbusinessstrategyreview/2026/01/16/beyond-robot-taxes-building-a-sustainable-fiscal-model-for-the-ai-economy/
 
 - title: "Multinational Firms in Tax Havens: Corporate Motives, Regulatory Countermeasures, and Recent Statistics"
   coauthors: [Christoph Spengel, Stefan Weck]
   journal: Research Handbook on the Economics of Tax Havens
   year: 2024
   note: Chapter 18
-  link: null
+  link: https://www.elgaronline.com/edcollchap/book/9781803929743/chapter18.xml
 
 - title: Do firms with a centralized transfer pricing authority have more tax disputes and internal coordination conflicts?
   coauthors: [Sven-Eric Bärsch, Jost H. Heckemeyer]
   journal: Journal of Business Economics
   year: 2023
-  link: null
+  link: https://link.springer.com/article/10.1007/s11573-023-01146-8
 
 - title: "Transfer Pricing for Digital Business Models: Early Evidence of Challenges and Options for Reform"
   coauthors: [Stefan Greil, Raphael Müller]
@@ -56,12 +56,13 @@
 
 - title: "Taxation in the Digital Economy: Recent Policy Developments and the Question of Value Creation"
   coauthors: [Christoph Spengel]
-  journal: ZEW Discussion Paper
-  year: null
-  link: null
+  journal: International Tax Studies
+  year: 2019
+  link: https://access.heinonline.com/HOL/LandingPage?handle=hein.journals/itnltxs2019&div=11
 
 - title: Analysis of US Corporate Tax Reform Proposals and their Effects for Europe and Germany
-  journal: Policy report
-  year: null
+  coauthors: [Friedrich Heinemann, Olena Pfeiffer, Thomas Schwab, Christoph Spengel, Kathrin Stutzenberger]
+  journal: ZEW report
+  year: 2017
   note: Mentioned by Kevin Hassett at the White House
-  link: null
+  link: https://www.zew.de/en/publications/analysis-of-us-corporate-tax-reform-proposals-and-their-effects-for-europe-and-germany
