@@ -17,15 +17,15 @@ const podcastJsonLd = {
   image: new URL(podcast.cover, Astro.site).toString(),
   webFeed: podcast.links.rss,
   sameAs: [podcast.links.spotify, podcast.links.apple, podcast.links.youtube],
+  // Matches the feed's itunes:author, which now credits Marcel and Christoph only.
   author: [
     { '@type': 'Person', name: 'Marcel Olbert', url: Astro.site?.toString() },
-    { '@type': 'Person', name: 'Niklas Schwab', alternateName: '@hedgefonds.henning' },
     { '@type': 'Person', name: 'Christoph Wieland' },
   ],
 };
 ---
 
-<Base title="Prof of Concept — Podcast" description="Prof of Concept: Marcel Olbert's German-language podcast explaining the economy to a young audience — with co-hosts Niklas Schwab and Christoph Wieland." ogImage={podcast.cover}>
+<Base title="Prof of Concept — Podcast" description="Prof of Concept: Marcel Olbert's German-language podcast on economic policy, with co-host Christoph Wieland." ogImage={podcast.cover}>
   <script slot="head" is:inline type="application/ld+json" set:html={JSON.stringify(podcastJsonLd)} />
   <div class="wrap-text">
     <h1 class="page-title">{podcast.name}</h1>
