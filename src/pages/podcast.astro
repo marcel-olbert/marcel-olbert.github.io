@@ -52,7 +52,15 @@ const podcastJsonLd = {
           <div lang="de">
             {e.title}<br />
             <span class="episode-links">
-              Listen: <a href={e.spotify}>Spotify</a> · <a href={e.apple}>Apple Podcasts</a> · <a href={e.youtube}>YouTube</a>
+              {/* A platform link can be missing when the sync script found no
+                  match for it; show only the ones we actually have. */}
+              Listen: {[
+                ['Spotify', e.spotify],
+                ['Apple Podcasts', e.apple],
+                ['YouTube', e.youtube],
+              ].filter(([, url]) => url).map(([label, url], i) => (
+                <Fragment>{i > 0 && ' · '}<a href={url}>{label}</a></Fragment>
+              ))}
             </span>
           </div>
         </div>

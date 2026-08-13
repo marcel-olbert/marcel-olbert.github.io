@@ -21,15 +21,29 @@ automatically in ~1–2 minutes (GitHub Actions → GitHub Pages).
 
 ---
 
-## New podcast episode (Prof of Concept)
+## New podcast episode (Prof of Concept) — **automatic**
 
-The homepage always features the **top entry** of `episodes` in
-`src/data/podcast.yaml` as the latest episode — nothing else to update.
+**You don't have to do anything.** A GitHub Action runs every Thursday, Friday
+and Monday morning, finds new episodes in the official feeds, adds them to
+`src/data/podcast.yaml`, and deploys. The homepage always features the top
+entry of `episodes` as the latest episode.
 
-- **Tell Claude:** "New podcast episode" + the YouTube or Spotify link. Claude
-  pulls title and date from the official feed and adds it on top.
-- **DIY:** copy the previous entry in `podcast.yaml`, paste it at the TOP of
-  `episodes`, replace title / date / links. Title verbatim from the platform.
+Where the three links come from: title, date and the Spotify link come from the
+anchor.fm feed, the Apple link from Apple's public lookup API, and the YouTube
+link from the playlist feed. YouTube titles are often edited for the platform
+(episode 8 is "Milliardenschaden…" in the podcast feed but "Deutschland
+beklaut…" on YouTube), so those are matched by word overlap.
+
+- **Want it live now, not Thursday:** GitHub → Actions → "Sync podcast
+  episodes" → *Run workflow*. Or locally: `npm run sync:podcast`, then commit.
+  `npm run sync:podcast -- --dry-run` shows what it would add without writing.
+- **An episode shows up without its YouTube (or Apple) link:** the match wasn't
+  confident enough, so the script left it `null` and the page simply hides that
+  link. Paste the URL into the entry in `podcast.yaml` by hand, or ask Claude.
+- **The script never overwrites** anything already in the file — episodes you
+  or Claude edited by hand stay exactly as they are.
+
+Script: `scripts/sync-podcast.mjs`. Schedule: `.github/workflows/sync-podcast.yml`.
 
 ## New paper (publication or working paper)
 

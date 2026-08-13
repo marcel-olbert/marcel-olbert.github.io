@@ -1,0 +1,67 @@
+name: Sync podcast episodes
+
+# Checks the Prof of Concept feeds for new episodes and commits them to
+# src/data/podcast.yaml, so a new episode reaches the live site without anyone
+# touching the repo.
+#
+# Episodes drop on Thursdays, so this runs Thursday and Friday morning (a
+# second pass in case Apple or YouTube lag behind the podcast feed), plus
+# Monday as a backstop. Run it by hand any time from the Actions tab.
+
+on:
+  schedule:
+    - cron: '0 7 * * 4,5,1' # 07:00 UTC Thu, Fri, Mon
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit the new episodes
+  actions: write # trigger deploy.yml afterwards
+
+concurrency:
+  group: sync-podcast
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # The sync script uses only Node built-ins, so it needs no install.
+      - name: Look for new episodes
+        id: sync
+        run: |
+          npm run sync:podcast
+          if git diff --quiet -- src/data/podcast.yaml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # A malformed YAML file would break the site build, so prove it still
+      # builds before committing anything.
+      - name: Verify the site still builds
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          npm ci
+          npm run build
+
+      - name: Commit new episodes
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/podcast.yaml
+          git commit -m "Podcast: add new episode(s) from feed [automated]"
+          git push
+
+      # A push made with GITHUB_TOKEN does not trigger other workflows, so the
+      # deploy has to be started explicitly.
+      - name: Deploy the updated site
+        if: steps.sync.outputs.changed == 'true'
+        run: gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

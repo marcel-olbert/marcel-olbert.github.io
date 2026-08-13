@@ -89,6 +89,17 @@ band featuring the latest episode + news item. Data in `podcast.yaml` — show d
 verbatim from official RSS feed (anchor.fm/s/1133e62b4/podcast/rss); co-hosts Niklas
 Schwab (@hedgefonds.henning) & Christoph Wieland; Spotify/Apple/YouTube links verified.
 To feature a new episode: add it at the top of `episodes` in `podcast.yaml`.
+**Episodes now sync themselves (Aug 2026):** `scripts/sync-podcast.mjs` reads the anchor.fm
+RSS, the iTunes lookup API and the YouTube playlist XML feed, and appends only unseen
+episodes (keyed by Spotify URL) without touching anything else in the file.
+`.github/workflows/sync-podcast.yml` runs it Thu/Fri/Mon 07:00 UTC, commits, and dispatches
+`deploy.yml` (a GITHUB_TOKEN push does not trigger workflows on its own). YouTube titles
+differ from feed titles, so they are word-overlap matched; a low-confidence match leaves
+`youtube: null` and both templates hide missing platform links.
+**Show rebranded (Aug 2026):** feed title is now "Prof of Concept - So läuft
+Wirtschaftspolitik.", focus is economic policy, and Christoph Wieland is the only co-host
+credited (Niklas Schwab no longer listed). Marcel kept the three-host photo and the June
+launch news item deliberately.
 
 **Off-site SEO actions for Marcel (July 2026 — site side is done: robots.txt, sitemap,
 JSON-LD Person + PodcastSeries, per-page OG images):** after domain cutover, add

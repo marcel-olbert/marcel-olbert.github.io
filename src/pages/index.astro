@@ -87,7 +87,10 @@ function formatDate(d: string) {
           <p class="podcast-band-blurb">{podcast.blurb}</p>
           <p class="podcast-latest">
             <strong>Latest episode:</strong> <span lang="de">{latestEpisode.title}</span><br />
-            Listen on <a href={latestEpisode.spotify}>Spotify</a> · <a href={latestEpisode.youtube}>YouTube</a> · <a href={podcast.links.apple}>Apple Podcasts</a> · <a href="/podcast/">All episodes →</a>
+            Listen on <a href={latestEpisode.spotify}>Spotify</a>
+            {latestEpisode.youtube && (<Fragment>{' · '}<a href={latestEpisode.youtube}>YouTube</a></Fragment>)}
+            {' · '}<a href={podcast.links.apple}>Apple Podcasts</a>
+            {' · '}<a href="/podcast/">All episodes →</a>
           </p>
         </div>
       </div>
