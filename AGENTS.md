@@ -96,6 +96,9 @@ episodes (keyed by Spotify URL) without touching anything else in the file.
 `deploy.yml` (a GITHUB_TOKEN push does not trigger workflows on its own). YouTube titles
 differ from feed titles, so they are word-overlap matched; a low-confidence match leaves
 `youtube: null` and both templates hide missing platform links.
+Each run also BACKFILLS (Aug 2026): it revisits existing entries and fills any `youtube:
+null` / `apple: null` once the platform catches up (YouTube typically publishes a day or
+two after the audio feed). Those two lines are the only ones it ever rewrites in place.
 **Show rebranded (Aug 2026):** feed title is now "Prof of Concept - So läuft
 Wirtschaftspolitik.", focus is economic policy, and Christoph Wieland is the only co-host
 credited (Niklas Schwab no longer listed). Marcel kept the three-host photo and the June

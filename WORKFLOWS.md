@@ -37,11 +37,17 @@ beklaut…" on YouTube), so those are matched by word overlap.
 - **Want it live now, not Thursday:** GitHub → Actions → "Sync podcast
   episodes" → *Run workflow*. Or locally: `npm run sync:podcast`, then commit.
   `npm run sync:podcast -- --dry-run` shows what it would add without writing.
-- **An episode shows up without its YouTube (or Apple) link:** the match wasn't
-  confident enough, so the script left it `null` and the page simply hides that
-  link. Paste the URL into the entry in `podcast.yaml` by hand, or ask Claude.
-- **The script never overwrites** anything already in the file — episodes you
-  or Claude edited by hand stay exactly as they are.
+- **An episode shows up without its YouTube link:** normal. YouTube usually
+  publishes a day or two after the audio feed, so the entry arrives with
+  `youtube: null` and the page just hides that one link. **Every later run
+  retries it** and fills the link in once the video appears — that is what the
+  Friday and Monday passes are for. Nothing for you to do.
+- It only stays missing if the video is never published, or if its title is so
+  different that no match is confident enough. Then paste the URL into the entry
+  in `podcast.yaml` by hand, or ask Claude.
+- **The script never overwrites** anything already in the file. The only lines
+  it ever rewrites are `youtube: null` / `apple: null`; titles, dates and links
+  you or Claude edited by hand stay exactly as they are.
 
 Script: `scripts/sync-podcast.mjs`. Schedule: `.github/workflows/sync-podcast.yml`.
 
