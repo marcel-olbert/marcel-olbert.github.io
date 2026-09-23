@@ -1,6 +1,19 @@
 # Hosted events — new entries on top. COBRA events (Mannheim, 2026–) and the
 # historical LBS-era events. COBRA events page:
 # https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/cobra-events/
+- title: Run with your Prof – Tax Run Club 2026
+  date: "23. September 2026"
+  location: Mannheim
+  description: >-
+    5-km-Lauf durch Mannheim mit Studierenden, Christoph Spengel und mir. Start um
+    17:30 Uhr am Ehrenhof der Universität Mannheim, im Anschluss Get-together im
+    Café EO mit DJ Jelly, Freigetränken für alle Teilnehmenden des Laufs und
+    Merch. Organisiert vom MaFAT Student Club, ermöglicht durch MaFAT e.V.,
+    COBRA und KPMG Mannheim.
+  links:
+    - label: COBRA
+      url: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/
+
 - title: COBRA Summer School on Empirical Tax Research
   date: July 2026
   location: Mannheim
