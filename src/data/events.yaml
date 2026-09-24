@@ -1,6 +1,32 @@
 # Hosted events — new entries on top. COBRA events (Mannheim, 2026–) and the
 # historical LBS-era events. COBRA events page:
 # https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/cobra-events/
+- title: "COBRA Launch Event — Economic Miracle 2.0?"
+  date: "23 February 2027"
+  location: Aula, University of Mannheim
+  description: >-
+    Save the date. Public launch of COBRA, the Mannheim Research Center for Corporate
+    Behavior and Regulation Analysis, on the theme “Economic Miracle 2.0? How much
+    regulation does Germany need amid geopolitical realignment and technological
+    disruption?” I open with first research findings on Germany as an investment
+    location, followed by a fireside conversation with Sebastian Matthes,
+    Editor-in-Chief of Handelsblatt, on his new book “Inside 2029”, and a panel with
+    Dr. Danyal Bayaz, Finance Minister of Baden-Württemberg, Julia Stadler, Co-CEO of
+    Stadler Anlagenbau, and Annika Maldener, Managing Director at CVC Capital
+    Partners. 17:00–19:30, followed by a reception. The event will be held in German;
+    formal invitations follow in the autumn.
+  links:
+    - label: COBRA
+      url: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/
+    - label: "Sebastian Matthes (Handelsblatt)"
+      url: https://www.handelsblatt.com/autoren/sebastian-matthes/20911050.html
+    - label: "Dr. Danyal Bayaz (Ministry of Finance, Baden-Württemberg)"
+      url: https://fm.baden-wuerttemberg.de/de/ministerium/minister-danyal-bayaz
+    - label: "Julia Stadler (STADLER Anlagenbau)"
+      url: https://w-stadler.com/company/news/detail/stadler-appoints-eighth-generation-family-member-julia-stadler-as-co-chief-executive-officer
+    - label: "Annika Maldener (CVC Capital Partners)"
+      url: https://www.cvc.com/about/our-people/annika-maldener/
+
 - title: Run with your Prof – Tax Run Club 2026
   date: "23. September 2026"
   location: Mannheim
