@@ -15,6 +15,15 @@
   linkLabel: Programme & speakers
 
 - date: 2026-09
+  text: >-
+    On 29 September I am moderating the MaFAT annual panel “Germany in Search of
+    Growth: What Can Private Equity Contribute?” at the University of Mannheim, with
+    Dr. Ralf U. Braunagel (PwC Deutschland) and Cornelius Becker (independent
+    investor). 17:30, room SN 163, open to all, held in German.
+  link: https://www.bwl.uni-mannheim.de/mafat/httpswwwbwluni-mannheimdenewswir-brauchen-einen-neuen-steuermix/detail/mafat-jahresveranstaltung-deutschland-auf-der-suche-nach-wachstum-2/
+  linkLabel: Event details
+
+- date: 2026-09
   text: "Run with your Prof – Tax Run Club 2026: 5 km durch Mannheim mit Christoph Spengel und mir, danach Get-together im Café EO mit DJ Jelly, Freigetränken und Merch. 23. September, 17:30 Uhr, Start am Ehrenhof der Universität Mannheim. Ein Event des MaFAT Student Club, ermöglicht von MaFAT e.V., COBRA und KPMG Mannheim."
   link: /events/
   linkLabel: Events
@@ -44,8 +53,3 @@
       url: https://www.bwl.uni-mannheim.de/en/details/prof-marcel-olbert-in-der-excellence-in-refereeing-liste-2025-des-journal-of-accounting-research-vertreten/
     - label: Journal of Accounting Research
       url: https://onlinelibrary.wiley.com/journal/1475679x
-
-- date: 2026-06
-  text: Launched Prof of Concept — my German-language podcast on the economy, with co-hosts Niklas Schwab (@hedgefonds.henning) and Christoph Wieland.
-  link: /podcast/
-  linkLabel: Podcast
