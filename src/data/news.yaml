@@ -6,6 +6,19 @@
   link: /events/
   linkLabel: Events
 
+- date: 2026-08
+  text: >-
+    Invited speaker at the Stanford Accounting Summer Camp, Stanford Graduate School
+    of Business, presenting work on deferred taxes at US banks to around 90
+    participants, mostly faculty from leading US universities: how the write-down of
+    deferred tax assets following the 2017 Tax Cuts and Jobs Act affected lending to
+    mid-sized US firms. The analysis draws on financialfilings.com, a database newly
+    acquired by our Accounting and Taxation Area and COBRA, which makes near
+    real-time text analysis of listed companies’ reporting possible. Matti
+    Boie-Wegener, postdoc in my team, was also invited.
+  link: https://financialfilings.com
+  linkLabel: financialfilings.com
+
 - date: 2026-07
   text: New open resource — Measuring Tax Effects, an interactive guide to 84+ measures and 51 data sources for tax research, with Rebecca Lester (Stanford GSB). Companion to our Journal of Accounting and Economics review.
   link: https://www.measuringtaxeffects.com/
@@ -28,8 +41,3 @@
   text: Talk on using AI agents in empirical research at the University of Mannheim AI Clinic.
   link: /assets/ai-agents-empirical-research-slides.pdf
   linkLabel: Slides (PDF)
-
-- date: 2026-01
-  text: Building a new research team and Research Center at the University of Mannheim — pre-doc and PhD hiring for this year is complete; new postings in 2027.
-  link: null
-  linkLabel: null
