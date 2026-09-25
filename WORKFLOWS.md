@@ -65,7 +65,13 @@ Script: `scripts/sync-podcast.mjs`. Schedule: `.github/workflows/sync-podcast.ym
 ## News item ("Latest" on the homepage)
 
 - Edit `src/data/news.yaml`: new item on top, date as `YYYY-MM`.
-- Keep it to 4–6 items — delete the oldest when adding.
+- Keep it to 4–6 items — delete the oldest when adding. Nothing is really lost:
+  removed items stay in the git history, so they can always be brought back.
+- Announcing something in the future (a save-the-date)? Use the event's own
+  month, e.g. `2027-02`. It then sorts to the top and shows that month.
+- Language: the site is English, so news items are English by default. A German
+  item is fine where the event and audience are German (the Tax Run is one);
+  just say which you want.
 
 ## Media appearance (podcast guest, interview, article, video)
 
@@ -91,10 +97,16 @@ Script: `scripts/sync-podcast.mjs`. Schedule: `.github/workflows/sync-podcast.ym
   should go (homepage, speaking page, an event). Claude resizes to ~1600px
   web versions in `public/assets/` — originals never go into the repo.
 
-## Hosted event / conference
+## Hosted event / conference (past or upcoming)
 
 - New entry in `src/data/events.yaml` (title, date, location, description,
   links, optional photos in `public/assets/events/`).
+- Order is reverse chronological, so an upcoming event goes at the very top.
+  Upcoming ones read as "Save the date"; no separate page or field is needed.
+- `date` is free text, so "29 September 2026" or "July 2026" both work.
+- Advertising an event usually means two entries: the Events page, plus a short
+  item in `news.yaml` for the homepage. Tell Claude "advertise this event" and
+  it does both.
 
 ---
 

@@ -33,12 +33,12 @@ CV, photos, housekeeping) — written for Marcel; keep it in sync when workflows
 | `publications.yaml` | Published papers | New entries on top; `selected: true` → homepage |
 | `working-papers.yaml` | Working papers | New entries on top |
 | `work-in-progress.yaml` | Projects without public draft | |
-| `news.yaml` | Homepage "Latest" | date `YYYY-MM`, keep 4–6 items, prune old |
+| `news.yaml` | Homepage "Latest" | date `YYYY-MM`, keep 4–6 items, prune oldest. A future date is fine for a save-the-date (sorts to top) |
 | `media.yaml` | Podcasts/videos/articles/interviews | type: podcast\|video\|article\|interview |
 | `speaking.yaml` | Speaking & Policy page (topics, formats, engagements) | DRAFT — needs Marcel's voice |
 | `podcast.yaml` | Prof of Concept podcast (show info, platform links, episodes) | New episodes on TOP of `episodes` — homepage auto-features `episodes[0]` |
 | `teaching.yaml` | Teaching page (intro, materials) | PLACEHOLDER — Marcel adds courses/materials over time; never invent course details |
-| `events.yaml` | Hosted conferences (historical, LBS era) | |
+| `events.yaml` | Hosted events, past AND upcoming | New on top, reverse chronological (future events first); `date` is free text |
 | `data-code.yaml` | Datasets & code resources | |
 
 "Add my new paper" workflow: add YAML entry (title, coauthors list w/o Marcel, journal,
@@ -68,7 +68,11 @@ schema.org Person JSON-LD, old-URL redirects, favicon.
 1. Design & feel of the live site — his reactions per page.
 2. `speaking.yaml` — topics/wording are Claude's draft from his research profile; Marcel
    must make them his own. Testimonials wanted (he'll supply).
-3. `news.yaml` dates — 2026-01 (Mannheim team item) and 2025-09 (Oligarch WP) are guesses.
+3. `news.yaml` is at its 4–6 item cap and four entries were pruned on 23–24 Sept 2026 to
+   make room (2025-09 Oligarch WP, 2026-01 Mannheim team, 2026-05 AI Clinic talk, 2026-06
+   podcast launch — all recoverable from git history). Claude offered to raise the cap to
+   eight or add a `/news/` archive page; Marcel has not decided. Until he does, keep
+   pruning the oldest and say which item dropped.
 4. Email RESOLVED (July 2026): marcel.olbert@outlook.com confirmed — this is Marcel's
    personal (non-university) site, so the personal address is intentional.
 5. Add LinkedIn / Google Scholar / X links? (`site.yaml` has null slots; old site had none.)
@@ -86,8 +90,8 @@ Speaking page (`/assets/marcel-olbert-speaking.jpg`). Photos resized to 1600px v
 Unused so far: 3 more COBRA-launch event photos in that folder.
 **Prof of Concept podcast (built July 2026):** own page `/podcast/` (in nav) + homepage
 band featuring the latest episode + news item. Data in `podcast.yaml` — show description
-verbatim from official RSS feed (anchor.fm/s/1133e62b4/podcast/rss); co-hosts Niklas
-Schwab (@hedgefonds.henning) & Christoph Wieland; Spotify/Apple/YouTube links verified.
+verbatim from official RSS feed (anchor.fm/s/1133e62b4/podcast/rss); Spotify/Apple/YouTube
+links verified. (Co-hosts changed since launch — see "Show rebranded" below.)
 To feature a new episode: add it at the top of `episodes` in `podcast.yaml`.
 **Episodes now sync themselves (Aug 2026):** `scripts/sync-podcast.mjs` reads the anchor.fm
 RSS, the iTunes lookup API and the YouTube playlist XML feed, and appends only unseen
@@ -101,8 +105,31 @@ null` / `apple: null` once the platform catches up (YouTube typically publishes 
 two after the audio feed). Those two lines are the only ones it ever rewrites in place.
 **Show rebranded (Aug 2026):** feed title is now "Prof of Concept - So läuft
 Wirtschaftspolitik.", focus is economic policy, and Christoph Wieland is the only co-host
-credited (Niklas Schwab no longer listed). Marcel kept the three-host photo and the June
-launch news item deliberately.
+credited (Niklas Schwab no longer listed). Marcel kept the three-host photo deliberately.
+The June launch news item was later pruned (Sept 2026) to keep `news.yaml` at six.
+
+**Events & news, Sept 2026 (added by Claude on Marcel's instruction):**
+- `events.yaml` now leads with UPCOMING events, newest first: COBRA Launch Event
+  (23 Feb 2027, Aula, with Sebastian Matthes / Danyal Bayaz / Julia Stadler / Annika
+  Maldener; speaker profile URLs all verified 200 and matched to the person before use),
+  MaFAT Annual Event (29 Sep 2026, PE panel moderated by Marcel), Run with your Prof /
+  Tax Run Club (23 Sep 2026, MaFAT Student Club).
+- **Language:** the site is English. The Tax Run entries are GERMAN because the event and
+  its audience are German (Marcel asked for it); COBRA launch and MaFAT are English per
+  his source text, each stating that the event is held in German. Ask which language when
+  it is not obvious rather than defaulting.
+- **Open naming question:** Marcel's COBRA launch text says "Mannheim **Research** Center
+  for Corporate Behavior and Regulation Analysis"; the older Soft Launch entry and this
+  file say "Mannheim Center for …" (no "Research"). Both spellings are live on `/events/`.
+  Flagged to Marcel 24 Sept 2026, not yet resolved — do not silently pick one.
+- Never invent a registration or profile link. Where none exists (Tax Run, MaFAT sign-up,
+  Julia Stadler has no standing company profile page — `/company/management` 404s), link
+  the organisation or the official announcement instead, and say so.
+
+**Podcast automation is proven in production (Sept 2026):** it ran unattended through
+September, added four episodes by itself, and the backfill correctly filled in the
+Reformpaket YouTube link once the video appeared. A stale local clone is the likeliest
+reason the repo looks "behind" — `git pull` before concluding anything is wrong.
 
 **Off-site SEO actions for Marcel (July 2026 — site side is done: robots.txt, sitemap,
 JSON-LD Person + PodcastSeries, per-page OG images):** after domain cutover, add
