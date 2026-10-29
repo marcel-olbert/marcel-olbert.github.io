@@ -118,10 +118,9 @@ The June launch news item was later pruned (Sept 2026) to keep `news.yaml` at si
   its audience are German (Marcel asked for it); COBRA launch and MaFAT are English per
   his source text, each stating that the event is held in German. Ask which language when
   it is not obvious rather than defaulting.
-- **Open naming question:** Marcel's COBRA launch text says "Mannheim **Research** Center
-  for Corporate Behavior and Regulation Analysis"; the older Soft Launch entry and this
-  file say "Mannheim Center for …" (no "Research"). Both spellings are live on `/events/`.
-  Flagged to Marcel 24 Sept 2026, not yet resolved — do not silently pick one.
+- **COBRA naming RESOLVED (29 Oct 2026):** the official name is "Mannheim Center for
+  Corporate Behavior and Regulation Analysis" — WITHOUT "Research". Use this everywhere;
+  the two "Research Center" occurrences (events.yaml, news.yaml) were corrected.
 - Never invent a registration or profile link. Where none exists (Tax Run, MaFAT sign-up,
   Julia Stadler has no standing company profile page — `/company/management` 404s), link
   the organisation or the official announcement instead, and say so.
@@ -175,3 +174,23 @@ www→apex redirect, old-WordPress-URL redirects.
 5. Nice-to-have: Lighthouse pass, full link check, dedicated OG card image.
 NOTE: Marcel has Google-hosted email on the domain (MX aspmx.l.google.com) — a
 @marcelolbert.com address may exist as a nicer public contact; ask before using.
+
+## Connected: Admin knowledge base (added 29 Oct 2026)
+
+Marcel's private project/task base lives at
+`/Users/marcel/Library/CloudStorage/OneDrive-Personal/Agentic Tasks/ProfTasks/Admin`
+(read its `CLAUDE.md` first). Division of truth:
+- **This repo** = public facts (titles, co-authors, links, abstracts, events, media, podcast).
+- **Admin** = private state (paper status, tasks, deadlines, contacts, press/VIP log).
+
+When working in this repo:
+- After adding/moving a paper, event, talk or media item, update the matching Admin file
+  (`projects/research/_pipeline.md`, `DEADLINES.md`, `comms/press-vip-log.md`) and add a
+  dated line to `projects/outreach/website.md` → `## Log`.
+- When a website TODO above is done or decided, tick it in Admin `projects/outreach/website.md`.
+- Before starting site work, check Admin `INBOX.md` → `## Website proposals` for pending
+  edits; apply only those Marcel approves, then remove them from the inbox.
+- Never copy private Admin content (R&R details, grant amounts, unconfirmed events,
+  contact details) into the site.
+- Edits may also come from cloud Claude sessions (claude.ai app / phone): always
+  `git pull` before editing locally.
