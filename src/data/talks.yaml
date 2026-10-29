@@ -1,0 +1,91 @@
+# Talks — shown on the homepage ("Talks": upcoming + most recent) and in full on /speaking/#talks.
+# New entries on TOP. date: "YYYY-MM-DD" (or "YYYY-MM" if the day is unknown), always quoted.
+# kind: Keynote | Research presentation | Discussion | Panel | Moderation | Workshop | Lecture |
+#       Fireside chat | Expert hearing
+# slides: path to a PDF in public/assets/slides/ — only for recent talks, and only once Marcel approves.
+# lang: de → shows "in German". Upcoming vs. past is decided automatically from the date at build time.
+talks:
+  - date: "2027-02-23"
+    kind: Keynote
+    title: "Opening: Germany as an investment location — first research findings"  # TODO(Marcel): final title
+    event: "COBRA Launch Event — Economic Miracle 2.0?"
+    location: Aula, University of Mannheim
+    lang: de
+    link: /events/
+
+  - date: "2026-11-04"
+    kind: Keynote
+    title: "Agents in the Lab: How LLMs and AI Agents Will Reshape Empirical Research — and What Research Data Infrastructure Must Become"  # TODO(Marcel): confirm title
+    event: "BERD@NFDI Leadership Retreat"
+    location: University of Mannheim
+
+  - date: "2026-09-29"
+    kind: Moderation
+    title: "Germany in Search of Growth: What Can Private Equity Contribute?"
+    event: MaFAT Annual Event (panel with Ralf U. Braunagel and Cornelius Becker)
+    location: University of Mannheim
+    lang: de
+    link: https://www.bwl.uni-mannheim.de/mafat/httpswwwbwluni-mannheimdenewswir-brauchen-einen-neuen-steuermix/detail/mafat-jahresveranstaltung-deutschland-auf-der-suche-nach-wachstum-2/
+    # slides: /assets/slides/2026-09-29_mafat-private-equity.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
+
+  - date: "2026-08-13"
+    kind: Discussion
+    title: "The Effects of Fiscal Policy through the Banking Sector: Evidence from Deferred Tax Assets (Armstrong, Gallemore & Graham)"
+    event: Stanford Accounting Summer Camp
+    location: Stanford Graduate School of Business
+
+  - date: "2026-07-01"
+    kind: Lecture
+    title: "The State of Empirical Tax Research"
+    event: COBRA Summer School on Empirical Tax Research
+    location: University of Mannheim
+    # slides: /assets/slides/2026-07_state-of-empirical-tax-research.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
+
+  - date: "2026-05"
+    kind: Workshop
+    title: "Use Cases & Thoughts on AI Agents for Empirical Research"
+    event: COBRA AI & Code Clinic
+    location: University of Mannheim
+    # slides: /assets/slides/2026-05_cobra-ai-clinic.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
+
+  - date: "2025"
+    kind: Fireside chat
+    title: "Fireside chat with Stéphane Boujnah, CEO of Euronext"
+    event: LBS Summit Series
+    location: London Business School
+
+  - date: "2025"
+    kind: Keynote
+    title: "New Era of German Fiscal Policy in 2025"
+    event: HG Oftersheim/Schwetzingen
+    location: Schwetzingen
+    lang: de
+
+  - date: "2024"
+    kind: Keynote
+    title: "KI als Werttreiber in Tax and Beyond — wissenschaftliche Evidenz und offene Fragen"
+    event: Flick Gocke Schaumburg
+    location: Frankfurt
+    lang: de
+
+  - date: "2024"
+    kind: Research presentation
+    title: "Carbon taxation in Europe"
+    event: PwC US Climate Tax Study Group
+
+  - date: "2024"
+    kind: Panel
+    title: "Road to COP28"
+    event: London Business School
+    location: London
+
+  - date: "2023"
+    kind: Expert hearing
+    title: "The role of tax policy in controlling inflation"
+    event: European Parliament, FISC Subcommittee
+
+  - date: "2023"
+    kind: Moderation
+    title: "Sustainability panel"
+    event: LBS China Business Forum
+    location: London Business School

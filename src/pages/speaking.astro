@@ -2,6 +2,13 @@
 import Base from '../layouts/Base.astro';
 import site from '../data/site.yaml';
 import speaking from '../data/speaking.yaml';
+import talksData from '../data/talks.yaml';
+import TalkEntry from '../components/TalkEntry.astro';
+
+const today = new Date().toISOString().slice(0, 10);
+const upcoming = talksData.talks.filter((t: any) => String(t.date) >= today).reverse();
+const past = talksData.talks.filter((t: any) => String(t.date) < today);
+const years = [...new Set(past.map((t: any) => String(t.date).slice(0, 4)))];
 ---
 
 <Base title="Speaking & Policy" description="Keynotes, executive education, policy advice, and media commentary by Marcel Olbert on tax policy, ESG regulation, and the future of corporate transparency.">
@@ -31,16 +38,19 @@ import speaking from '../data/speaking.yaml';
       </ul>
     </section>
 
-    <section>
-      <h2>Selected engagements</h2>
-      {speaking.engagements.map((e: any) => (
-        <div class="news-item">
-          <div class="news-date">{e.year ?? 'Ongoing'}</div>
-          <div>
-            {e.text}
-            {e.link && <> — <a href={e.link}>{e.linkLabel ?? 'Link'}</a></>}
-          </div>
-        </div>
+    <section id="talks">
+      <h2>Talks</h2>
+      {upcoming.length > 0 && (
+        <Fragment>
+          <h3 class="talk-year">Upcoming</h3>
+          {upcoming.map((t: any) => <TalkEntry talk={t} upcoming />)}
+        </Fragment>
+      )}
+      {years.map((y) => (
+        <Fragment>
+          <h3 class="talk-year">{y}</h3>
+          {past.filter((t: any) => String(t.date).startsWith(y)).map((t: any) => <TalkEntry talk={t} />)}
+        </Fragment>
       ))}
     </section>
 

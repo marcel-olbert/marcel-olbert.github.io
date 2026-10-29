@@ -5,8 +5,16 @@ import site from '../data/site.yaml';
 import news from '../data/news.yaml';
 import podcast from '../data/podcast.yaml';
 import publications from '../data/publications.yaml';
+import talksData from '../data/talks.yaml';
+import TalkEntry from '../components/TalkEntry.astro';
 
 const latestEpisode = podcast.episodes[0];
+
+// Talks: upcoming (soonest first) + the 3 most recent past talks. Decided at build time.
+const today = new Date().toISOString().slice(0, 10);
+const isUpcoming = (t: any) => String(t.date) >= today;
+const upcomingTalks = talksData.talks.filter(isUpcoming).reverse();
+const recentTalks = talksData.talks.filter((t: any) => !isUpcoming(t)).slice(0, 3);
 
 const selected = publications.filter((p: any) => p.selected);
 const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -74,6 +82,13 @@ function formatDate(d: string) {
       <p class="follow-line">
         {site.linkedinPitch} <a href={site.linkedinUrl}>Follow on LinkedIn →</a>
       </p>
+    </section>
+
+    <section>
+      <h2>Talks</h2>
+      {upcomingTalks.map((t: any) => <TalkEntry talk={t} upcoming />)}
+      {recentTalks.map((t: any) => <TalkEntry talk={t} />)}
+      <p style="margin-top: 1rem;"><a href="/speaking/#talks">All talks →</a></p>
     </section>
 
     <section>

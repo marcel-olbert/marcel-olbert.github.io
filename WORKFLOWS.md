@@ -79,9 +79,20 @@ Script: `scripts/sync-podcast.mjs`. Schedule: `.github/workflows/sync-podcast.ym
   podcast | video | article | interview. Link out — never embed YouTube
   (GDPR: no third-party requests).
 
+## New talk (keynote, panel, discussion, lecture)
+
+- **Tell Claude:** "add my talk at …" with date, place, kind and title — or let the
+  weekly talks-archive task propose it from your new slide deck.
+- **DIY:** new entry at the TOP of `src/data/talks.yaml` (date in quotes). It shows
+  as "Upcoming" until the date passes; a daily rebuild moves it to the past list.
+- **Slides:** put the PDF in `public/assets/slides/` and add `slides: /assets/slides/<file>.pdf`
+  — only for recent talks, and check the PDF for internal pages, portraits or
+  third-party charts first.
+- Minor or internal talks stay off the site (they live in the Admin talks archive).
+
 ## Speaking engagement / testimonial
 
-- `src/data/speaking.yaml` — engagements under `engagements`, with year.
+- `src/data/speaking.yaml` — topics and formats (talks themselves: see "New talk" above).
 - Testimonials: supply the quote + who said it (verbatim, with permission);
   Claude adds the section.
 

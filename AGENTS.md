@@ -35,7 +35,8 @@ CV, photos, housekeeping) — written for Marcel; keep it in sync when workflows
 | `work-in-progress.yaml` | Projects without public draft | |
 | `news.yaml` | Homepage "Latest" | date `YYYY-MM`, keep 4–6 items, prune oldest. A future date is fine for a save-the-date (sorts to top) |
 | `media.yaml` | Podcasts/videos/articles/interviews | type: podcast\|video\|article\|interview |
-| `speaking.yaml` | Speaking & Policy page (topics, formats, engagements) | DRAFT — needs Marcel's voice |
+| `speaking.yaml` | Speaking & Policy page (topics, formats) | DRAFT — needs Marcel's voice |
+| `talks.yaml` | Talks: homepage section (upcoming + 3 most recent) and full list on `/speaking/#talks` | New on top; `date` quoted "YYYY-MM-DD"/"YYYY-MM"/"YYYY"; upcoming decided at build time (daily scheduled rebuild in deploy.yml); `slides:` PDF in `public/assets/slides/` only for recent talks Marcel approved; skip minor/internal talks |
 | `podcast.yaml` | Prof of Concept podcast (show info, platform links, episodes) | New episodes on TOP of `episodes` — homepage auto-features `episodes[0]` |
 | `teaching.yaml` | Teaching page (intro, materials) | PLACEHOLDER — Marcel adds courses/materials over time; never invent course details |
 | `events.yaml` | Hosted events, past AND upcoming | New on top, reverse chronological (future events first); `date` is free text |
@@ -192,5 +193,6 @@ When working in this repo:
   edits; apply only those Marcel approves, then remove them from the inbox.
 - Never copy private Admin content (R&R details, grant amounts, unconfirmed events,
   contact details) into the site.
+- Talks: Admin `talks/TALKS.md` is the full private archive; `talks.yaml` here is the curated public list (no internal talks, no research-seminar list — Marcel decided 29 Oct 2026).
 - Edits may also come from cloud Claude sessions (claude.ai app / phone): always
   `git pull` before editing locally.
