@@ -28,6 +28,21 @@ press:
     description: In German — portrait and interview on my return from London Business School to Mannheim and my research.
     date: null  # TODO(Marcel): month (spring 2026)
 
+  - title: "Unternehmensteuern: Die neuen Steueroasen sind legal"
+    type: article
+    outlet: Handelsblatt
+    link: "https://www.handelsblatt.com/politik/international/unternehmensteuern-die-neuen-steueroasen-sind-legal/24582358.html"
+    paperLink: "https://doi.org/10.2308/TAR-2020-0714"
+    description: In German — reports our ZEW study with Christoph Spengel and Lisa De Simone on country-by-country reporting and where multinationals now invest instead of tax havens.
+    date: 2019
+
+  - title: "Neue Studie: Großkonzerne meiden Steueroasen"
+    type: quote
+    outlet: ORF (Austrian public broadcaster)
+    link: "https://orf.at/stories/3130022/"
+    paperLink: "https://doi.org/10.2308/TAR-2020-0714"
+    description: In German — on our ZEW study of country-by-country reporting with Christoph Spengel and Lisa De Simone, finding that large multinationals have largely withdrawn from classic tax havens such as the Bahamas and the Cayman Islands.
+    date: 2019-07
 
 online:
   - title: Research summaries by the Wheeler Institute
