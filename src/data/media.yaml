@@ -34,7 +34,7 @@ press:
     link: "https://www.handelsblatt.com/politik/international/unternehmensteuern-die-neuen-steueroasen-sind-legal/24582358.html"
     paperLink: "https://doi.org/10.2308/TAR-2020-0714"
     description: In German — reports our ZEW study with Christoph Spengel and Lisa De Simone on country-by-country reporting and where multinationals now invest instead of tax havens.
-    date: 2019
+    date: 2019-07
 
   - title: "Neue Studie: Großkonzerne meiden Steueroasen"
     type: quote
@@ -129,12 +129,28 @@ podcast:
 
 
 policy:
+  - title: International Corporate Tax Reform
+    type: citation
+    outlet: International Monetary Fund (IMF Policy Paper)
+    link: "https://www.imf.org/-/media/files/publications/pp/2023/english/ppea2023001.pdf"
+    paperLink: "https://doi.org/10.2308/TAR-2020-0714"
+    description: IMF staff paper for the Executive Board on international corporate tax reform; draws on our estimate that country-by-country reporting reduced multinationals' affiliates in low-tax jurisdictions.
+    date: 2023-02
+
   - title: The role of tax policy in controlling inflation
     type: hearing
     outlet: European Parliament, Subcommittee on Tax Matters (FISC)
     link: "https://www.europarl.europa.eu/committees/en/the-role-of-tax-policy-in-controlling-in/product-details/20230515CHE11741"
     description: Hearing of the European Parliament's tax subcommittee on the role of tax policy in controlling inflation.
     date: 2023
+
+  - title: "Country-by-Country-Reporting und Unattraktivität von Steueroasen sowie Hochsteuerländern"
+    type: citation
+    outlet: Deutscher Bundestag (Drucksachen 19/13325 and 19/13783)
+    link: "https://dserver.bundestag.de/btd/19/137/1913783.pdf"
+    paperLink: "https://doi.org/10.2308/TAR-2020-0714"
+    description: In German — a parliamentary question by the FDP group built on our ZEW policy brief and the country-by-country reporting study with Lisa De Simone; the Federal Ministry of Finance answered for the government.
+    date: 2019-10
 
   - title: Analysis of US Corporate Tax Reform Proposals and their Effects for Europe and Germany
     type: citation
