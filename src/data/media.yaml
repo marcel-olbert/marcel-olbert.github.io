@@ -129,6 +129,14 @@ podcast:
 
 
 policy:
+  - title: "A Decade of the BEPS Initiative: An Inclusive Framework Stocktake Report to G20 Finance Ministers and Central Bank Governors"
+    type: citation
+    outlet: OECD/G20 Inclusive Framework on BEPS
+    link: "https://www.oecd.org/en/publications/2025/10/a-decade-of-the-beps-initiative_d6b0d93a.html"
+    paperLink: "https://doi.org/10.2308/TAR-2020-0714"
+    description: The Inclusive Framework's ten-year stocktake of the BEPS project for the G20 cites our country-by-country reporting study with Lisa De Simone and our chapter with Christoph Spengel and Stefan Weck on multinational firms in tax havens.
+    date: 2025-10
+
   - title: International Corporate Tax Reform
     type: citation
     outlet: International Monetary Fund (IMF Policy Paper)
