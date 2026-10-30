@@ -47,10 +47,20 @@ press:
 online:
   - title: Democrats could change corporate game with stock taxes
     type: article
-    outlet: Bloomberg Professional
+    outlet: Bloomberg Intelligence
     link: "https://www.bloomberg.com/professional/insights/regulation/democrats-could-change-corporate-game-with-stock-taxes/"
-    description: Bloomberg analysis of US corporate tax proposals that draws on my research.  # TODO(Marcel): which paper? (add paperLink)
+    paperLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125715"
+    description: Analysis of the OECD's Pillar 1 plan that cites my study with Lisa De Simone — when the EU moved VAT on digital sales to destination-based taxation in 2015, multinationals stepped up their tax planning rather than reducing it.
+    date: 2022-08
+
+  - title: "G20 tax plan's loopholes may exempt whole countries, but not US"
+    type: article
+    outlet: Bloomberg Government
+    link: "https://www.bloomberg.com/professional/blog/g20-tax-plans-loopholes-may-exempt-whole-countries-but-not-us/"
+    paperLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125715"
+    description: Analysis of the OECD/G20 two-pillar plan, including why a "tax pincer" of destination- and origin-based taxes may fail against digital companies — drawing on my research with Lisa De Simone.
     date: null  # TODO(Marcel): month/year
+
 
   - title: Research summaries by the Wheeler Institute
     type: article
