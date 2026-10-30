@@ -201,5 +201,9 @@ When working in this repo:
 - Never copy private Admin content (R&R details, grant amounts, unconfirmed events,
   contact details) into the site.
 - Talks: Admin `talks/TALKS.md` is the full private archive; `talks.yaml` here is the curated public list (no internal talks, no research-seminar list — Marcel decided 29 Oct 2026).
+- CV: source is Marcel's LaTeX CV project at `/Users/marcel/Library/CloudStorage/OneDrive-Personal/Agentic Tasks/ProfTasks/CV`
+  (`CV_Olbert.tex` → `CV_Olbert.pdf`; see its `CLAUDE.md`). Publish a new CV here only with Marcel's OK by copying
+  `CV_Olbert.pdf` to `public/assets/cv-marcel-olbert.pdf` (same filename). Website additions that belong in the CV
+  go to Admin `INBOX.md` → `## CV proposals`. A biweekly scheduled task (1st/15th) compares CV, website and Admin.
 - Edits may also come from cloud Claude sessions (claude.ai app / phone): always
   `git pull` before editing locally.
