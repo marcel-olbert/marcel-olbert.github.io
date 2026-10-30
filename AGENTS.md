@@ -9,6 +9,13 @@ Marcel is Professor of Taxation, Accounting, and Finance at University of Mannhe
 (formerly London Business School). Strong in Stata, comfortable in R, basic Python —
 explain web-stack things briefly when they matter; don't assume JS/Astro knowledge.
 
+**Session start — ALWAYS sync first.** Before reading or editing anything, run
+`git pull --ff-only` (a SessionStart hook in `.claude/settings.local.json` does this
+automatically on Marcel's Mac; still check its output). The site is also edited from cloud
+Claude sessions (claude.ai app / phone) and by the podcast GitHub Action, so a local clone is
+often behind. If the pull fails (local uncommitted changes or diverged history), STOP and tell
+Marcel before editing — never overwrite or force-push.
+
 **Day-to-day maintenance recipes live in `WORKFLOWS.md`** (new episode, new paper, news,
 CV, photos, housekeeping) — written for Marcel; keep it in sync when workflows change.
 
