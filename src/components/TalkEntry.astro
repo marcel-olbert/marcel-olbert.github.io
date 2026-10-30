@@ -1,7 +1,7 @@
 ---
 interface Props {
   talk: { date: string; kind: string; title: string; event?: string; location?: string;
-          lang?: string; link?: string; slides?: string };
+          lang?: string; subtitle_en?: string; link?: string; slides?: string };
   upcoming?: boolean;
 }
 const { talk, upcoming } = Astro.props;
@@ -18,7 +18,8 @@ const where = [talk.event, talk.location].filter(Boolean).join(' · ');
   <div>
     <span class="talk-kind">{talk.kind}</span>
     <div class="talk-title" lang={talk.lang === 'de' ? 'de' : undefined}>{talk.title}</div>
-    {where && <div class="talk-meta">{where}{talk.lang === 'de' && ' · in German'}</div>}
+    {talk.subtitle_en && <div class="talk-subtitle" lang="en">{talk.subtitle_en}</div>}
+    {where && <div class="talk-meta" lang={talk.lang === 'de' ? 'de' : undefined}>{where}</div>}
     {(talk.slides || talk.link) && (
       <div class="talk-links">
         {talk.slides && <a href={talk.slides}>Slides (PDF)</a>}

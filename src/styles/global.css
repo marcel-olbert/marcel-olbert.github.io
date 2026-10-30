@@ -296,6 +296,7 @@ section + section { margin-top: 3.2rem; }
   padding: 0.15rem 0.55rem; border-radius: 99px; margin-bottom: 0.35rem;
 }
 .talk-title { font-family: var(--serif); font-size: 1.08rem; font-weight: 560; line-height: 1.3; }
+.talk-subtitle { font-size: 0.94rem; font-style: italic; color: var(--ink); opacity: 0.8; margin-top: 0.15rem; }
 .talk-meta { color: var(--muted); font-size: 0.92rem; margin-top: 0.2rem; }
 .talk-links { font-size: 0.9rem; font-weight: 550; margin-top: 0.35rem; }
 .talk-year { font-family: var(--serif); font-size: 1.15rem; margin: 2rem 0 0.6rem; }

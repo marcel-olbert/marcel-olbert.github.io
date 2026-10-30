@@ -3,13 +3,16 @@
 # kind: Keynote | Research presentation | Discussion | Panel | Moderation | Workshop | Lecture |
 #       Fireside chat | Expert hearing
 # slides: path to a PDF in public/assets/slides/ — only for recent talks, and only once Marcel approves.
-# lang: de → shows "in German". Upcoming vs. past is decided automatically from the date at build time.
+# lang: de → title, event and location in German, plus `subtitle_en` (English subtitle) — website only.
+# (Marcel, 30 Oct 2026: German-language talks are listed in German with an English subtitle.)
+# Upcoming vs. past is decided automatically from the date at build time.
 talks:
   - date: "2027-02-23"
     kind: Keynote
-    title: "Opening: Germany as an investment location — first research findings"  # TODO(Marcel): final title
-    event: "COBRA Launch Event — Economic Miracle 2.0?"
-    location: Aula, University of Mannheim
+    title: "Eröffnung: Investitionsstandort Deutschland – erste Forschungsergebnisse"  # TODO(Marcel): final title
+    subtitle_en: "Opening: Germany as an investment location — first research findings"
+    event: "COBRA Launch Event"
+    location: Aula, Universität Mannheim
     lang: de
     link: /events/
 
@@ -21,9 +24,10 @@ talks:
 
   - date: "2026-09-29"
     kind: Moderation
-    title: "Germany in Search of Growth: What Can Private Equity Contribute?"
-    event: MaFAT Annual Event (panel with Ralf U. Braunagel and Cornelius Becker)
-    location: University of Mannheim
+    title: "Deutschland auf der Suche nach Wachstum: Welchen Beitrag kann Private Equity leisten?"
+    subtitle_en: "Germany in Search of Growth: What Can Private Equity Contribute?"
+    event: MaFAT-Jahresveranstaltung (Panel mit Dr. Ralf U. Braunagel und Cornelius Becker)
+    location: Universität Mannheim
     lang: de
     link: https://www.bwl.uni-mannheim.de/mafat/httpswwwbwluni-mannheimdenewswir-brauchen-einen-neuen-steuermix/detail/mafat-jahresveranstaltung-deutschland-auf-der-suche-nach-wachstum-2/
     # slides: /assets/slides/2026-09-29_mafat-private-equity.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
@@ -56,7 +60,8 @@ talks:
 
   - date: "2025"
     kind: Keynote
-    title: "New Era of German Fiscal Policy in 2025"
+    title: "Neue Ära der deutschen Fiskalpolitik 2025"  # TODO(Marcel): CV lists only the English title — confirm the German original
+    subtitle_en: "New Era of German Fiscal Policy in 2025"
     event: HG Oftersheim/Schwetzingen
     location: Schwetzingen
     lang: de
@@ -64,6 +69,7 @@ talks:
   - date: "2024"
     kind: Keynote
     title: "KI als Werttreiber in Tax and Beyond — wissenschaftliche Evidenz und offene Fragen"
+    subtitle_en: "AI as a value driver in tax and beyond — scientific evidence and open questions"
     event: Flick Gocke Schaumburg
     location: Frankfurt
     lang: de
