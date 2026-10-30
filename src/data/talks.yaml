@@ -25,6 +25,11 @@ talks:
     lang: de
     link: /events/
 
+  - date: "2026-11-09"
+    kind: Lecture  # TODO(Marcel): confirm format (talk / keynote) and add title
+    event: Mannheim Taxation Campus Day
+    location: ZEW, Mannheim
+
   - date: "2026-11-04"
     kind: Keynote
     title: "Agents in the Lab: How LLMs and AI Agents Will Reshape Empirical Research — and What Research Data Infrastructure Must Become"  # TODO(Marcel): confirm title
