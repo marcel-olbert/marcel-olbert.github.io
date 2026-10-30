@@ -2,30 +2,59 @@
 import Base from '../layouts/Base.astro';
 import media from '../data/media.yaml';
 
-const typeLabels = { podcast: 'Podcast', video: 'Video', article: 'Article', interview: 'Interview' };
+const typeLabels: Record<string, string> = {
+  quote: 'Quoted', portrait: 'Portrait', 'guest-article': 'Guest article', article: 'Article',
+  blog: 'Blog', video: 'Video', interview: 'Interview', podcast: 'Podcast',
+  hearing: 'Hearing', citation: 'Cited',
+};
+const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const fmtDate = (d: unknown) => {
+  if (d === null || d === undefined || d === '') return '';
+  const s = String(d);
+  const m = s.match(/^(\d{4})-(\d{2})/);
+  return m ? `${months[+m[2] - 1]} ${m[1]}` : s;
+};
+
+const sections = [
+  { key: 'press', id: 'press', title: 'In the press', lede: 'Newspaper and magazine coverage, interviews, and guest articles.', cta: 'Read' },
+  { key: 'podcast', id: 'podcasts', title: 'Podcasts', lede: 'Guest appearances on other shows.', cta: 'Listen' },
+  { key: 'policy', id: 'policy', title: 'Policy', lede: 'Parliamentary hearings and policy debates that draw on my research.', cta: 'View' },
+  { key: 'online', id: 'online', title: 'Research summaries & video', lede: 'Blog posts, research summaries, and short videos explaining my work.', cta: 'Read' },
+].filter((s) => (media as any)[s.key]?.length);
 ---
 
-<Base title="Media" description="Podcasts, interviews, videos, and articles by Marcel Olbert on tax policy, ESG disclosure, and corporate transparency.">
+<Base title="Media" description="Press coverage, research summaries, podcasts, and policy work by Marcel Olbert on tax policy, disclosure regulation, and corporate transparency.">
   <div class="wrap">
     <h1 class="page-title">Media &amp; Insights</h1>
     <p class="page-lede">
-      Podcasts, interviews, and accessible summaries of my research — for practitioners,
+      Press coverage, podcasts, and accessible summaries of my research — for practitioners,
       policymakers, and anyone curious about how taxes and transparency shape firm behavior.
     </p>
 
-    <div class="card-grid">
-      {media.map((item: any) => (
-        <article class="card">
-          <span class="card-tag">{typeLabels[item.type] ?? item.type}</span>
-          <h3>{item.link ? <a href={item.link}>{item.title}</a> : item.title}</h3>
-          <div class="card-outlet">{item.outlet}{item.date && ` · ${item.date}`}</div>
-          {item.description && <p>{item.description}</p>}
-          <div class="card-link">
-            {item.link && <a href={item.link}>Listen / watch / read →</a>}
-            {item.paperLink && <> · <a href={item.paperLink}>Paper</a></>}
-          </div>
-        </article>
-      ))}
-    </div>
+    <nav class="media-jump" aria-label="Sections on this page">
+      {sections.map((s) => <a href={`#${s.id}`}>{s.title}</a>)}
+      <a href="/podcast/">My podcast: Prof of Concept →</a>
+    </nav>
+
+    {sections.map((s) => (
+      <section class="media-section" id={s.id}>
+        <h2>{s.title}</h2>
+        <p class="media-section-lede">{s.lede}</p>
+        <div class="card-grid">
+          {(media as any)[s.key].map((item: any) => (
+            <article class="card">
+              <span class="card-tag">{typeLabels[item.type] ?? item.type}</span>
+              <h3>{item.link ? <a href={item.link}>{item.title}</a> : item.title}</h3>
+              <div class="card-outlet">{item.outlet}{fmtDate(item.date) && ` · ${fmtDate(item.date)}`}</div>
+              {item.description && <p>{item.description}</p>}
+              <div class="card-link">
+                {item.link && <a href={item.link}>{item.type === 'video' ? 'Watch' : item.type === 'podcast' ? 'Listen' : s.cta} →</a>}
+                {item.paperLink && <> · <a href={item.paperLink}>Paper</a></>}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
   </div>
 </Base>

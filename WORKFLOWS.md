@@ -73,11 +73,15 @@ Script: `scripts/sync-podcast.mjs`. Schedule: `.github/workflows/sync-podcast.ym
   item is fine where the event and audience are German (the Tax Run is one);
   just say which you want.
 
-## Media appearance (podcast guest, interview, article, video)
+## Media appearance (press, online, podcast guest, policy)
 
-- New entry on top of `src/data/media.yaml`; `type:` is one of
-  podcast | video | article | interview. Link out — never embed YouTube
-  (GDPR: no third-party requests).
+- `src/data/media.yaml` has four sections; add the new entry at the TOP of the right one:
+  `press` (newspapers/magazines: quoted, portrait, guest article), `online` (blogs,
+  research summaries, videos), `podcast` (EXTERNAL shows only — your own podcast lives on
+  `/podcast/`), `policy` (hearings, policy documents citing your work).
+- `type:` sets the small label: quote | portrait | guest-article | article | blog | video |
+  interview | podcast | hearing | citation. `date:` "YYYY-MM", "YYYY" or null.
+- Link out — never embed YouTube (GDPR: no third-party requests).
 
 ## New talk (keynote, panel, discussion, lecture)
 

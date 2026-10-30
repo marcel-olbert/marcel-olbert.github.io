@@ -1,88 +1,131 @@
-# Media appearances & research communication. Add new entries at the top.
-# type: podcast | video | article | interview
-# TODO(Marcel): add dates where you remember them (YYYY-MM) — currently mostly unknown.
-- title: "KI im Studium: Wenn BWL-Studenten nur mit KI eine Eins schreiben"
-  type: article
-  outlet: Frankfurter Allgemeine Zeitung (FAZ)
-  link: https://www.faz.net/aktuell/karriere-hochschule/hoersaal/ki-im-studium-wenn-bwl-studenten-nur-mit-ki-eine-eins-schreiben-accg-110854030.html
-  description: In German — with Christoph Spengel, on what it means for university teaching when business students can ace an assignment using AI alone, and how we should respond.
-  date: 2026-03
+# Media page (/media/). Four sections, each NEW ENTRIES ON TOP:
+#   press   — newspapers & magazines (articles quoting me, portraits, guest articles)
+#   online  — blogs, research summaries, videos, online interviews
+#   podcast — EXTERNAL podcasts I appeared on (my own show lives on /podcast/, not here)
+#   policy  — hearings, policy documents/impact assessments citing my work
+# type (small label on the card): quote | portrait | guest-article | article | blog | video | interview | podcast | hearing | citation
+# date: "YYYY-MM" or "YYYY" or null
 
-- title: "Prof of Concept — my own podcast"
-  type: podcast
-  outlet: Prof of Concept
-  link: https://www.youtube.com/watch?v=Xn3jlbJlbf4
-  description: In German — discussions of current business and economics issues, including recent reforms, tailored to a young audience. With co-hosts Chris Wieland and Niklas Schab.
-  date: null
+press:
+  - title: "Investitionen in Deutschland: Ey, haste mal 'ne Milliarde?"
+    type: quote
+    outlet: Süddeutsche Zeitung
+    link: "https://www.sueddeutsche.de/wirtschaft/investitionen-deutschland-friedrich-merz-investorengipfel-li.3566360"
+    description: "In German — quoted on what corporate investment pledges achieve, drawing on my analysis of the 2025 \"Made for Germany\" initiative, ahead of the government's investment summit."
+    date: 2026-10
 
-- title: "Regulation, reporting, and the value question: ESG in a shifting landscape"
-  type: podcast
-  outlet: Think Ahead Podcast
-  link: https://open.spotify.com/show/2DArpBYDnVSmNUeDTLOMSW
-  description: With Katharina Neureiter (Co-Head of Global Sustainability, The Carlyle Group), hosted by Sergei Guriev (Dean, London Business School) — on how new rules, from ESG disclosures to tax incentives, are reshaping corporate behavior and investor expectations.
-  date: null
+  - title: "KI im Studium: Wenn BWL-Studenten nur mit KI eine Eins schreiben"
+    type: guest-article
+    outlet: Frankfurter Allgemeine Zeitung (FAZ)
+    link: "https://www.faz.net/aktuell/karriere-hochschule/hoersaal/ki-im-studium-wenn-bwl-studenten-nur-mit-ki-eine-eins-schreiben-accg-110854030.html"
+    description: In German — with Christoph Spengel, on what it means for university teaching when business students can ace an assignment using AI alone, and how we should respond.
+    date: 2026-03
 
-- title: "Research summary: Value-added taxation and multinational firms in the digital age"
-  type: video
-  outlet: YouTube
-  link: https://www.youtube.com/watch?v=HBF6XOJWhGo
-  paperLink: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125715
-  description: Video summary of joint work with Lisa De Simone (UT Austin) on how multinational companies respond to destination-based taxes.
-  date: null
+  - title: "Zurück in Mannheim: Ökonom Marcel Olbert verzichtet sogar auf Geld"
+    type: portrait
+    outlet: Mannheimer Morgen
+    link: "https://www.mannheimer-morgen.de/wirtschaft_artikel,-regionale-wirtschaft-zurueck-in-mannheim-oekonom-marcel-olbert-verzichtet-sogar-auf-geld-_arid,2364563.html"
+    description: In German — portrait and interview on my return from London Business School to Mannheim and my research.
+    date: null  # TODO(Marcel): month (spring 2026)
 
-- title: Global Tax Policy, Private Equity, and Sustainability
-  type: podcast
-  outlet: Conversations on Climate
-  link: https://www.youtube.com/watch?v=R0GLZ8U6ypA
-  description: Hour-long conversation with Chris Caldwell on how disclosure regulation and tax policy can change corporate behavior, and the role of the private equity industry.
-  date: null
 
-- title: Carbon Taxes and Carbon Leakage
-  type: podcast
-  outlet: Tax Chats
-  link: https://taxchats.buzzsprout.com/1878989/episodes/15885860-cement-and-carbon-taxes-a-chat-with-marcel-olbert-and-daniel-klein
-  description: With hosts Jeff Hoopes (UNC) and Scott Dyreng (Duke), joined by Daniel Klein (Heidelberg Materials) — on carbon taxes, their impact on European firms, and evidence on carbon leakage.
-  date: null
+online:
+  - title: Research summaries by the Wheeler Institute
+    type: article
+    outlet: Wheeler Institute for Business and Development
+    link: "https://wheelerinstituteresearch.org/people/marcel-olbert/"
+    description: Collection of research summaries, including spillover effects of European corporate tax reforms on investment in Africa and carbon leakage to developing countries.
+    date: null
 
-- title: Can taxes make businesses more sustainable?
-  type: podcast
-  outlet: The Why Podcast (London Business School)
-  link: https://megaphone.link/LBS1223957784
-  description: Conversation with Alenka Turnsek (EY EMEIA Sustainability Tax Leader) on international business tax policy and environmental taxation.
-  date: null
+  - title: "Research summary: Value-added taxation and multinational firms in the digital age"
+    type: video
+    outlet: YouTube
+    link: "https://www.youtube.com/watch?v=HBF6XOJWhGo"
+    paperLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125715"
+    description: Video summary of joint work with Lisa De Simone (UT Austin) on how multinational companies respond to destination-based taxes.
+    date: null
 
-- title: "Research summary: The Global Minimum Tax — the world's most historic corporate tax reform"
-  type: video
-  outlet: YouTube
-  link: https://www.youtube.com/watch?v=wrwibkzjDf0
-  paperLink: https://doi.org/10.1093/rfs/hhad038
-  description: Findings from the Review of Financial Studies paper with Roberto Gomez-Cram on how the proposed 15% global corporate minimum tax affected US firms' stock market valuations.
-  date: null
+  - title: "Interview: ESG Disclosures in the Private Equity Industry"
+    type: interview
+    outlet: Faculti
+    link: "https://faculti.net/esg-disclosures-in-the-private-equity-industry"
+    description: On how private equity firms disclose their ESG investing strategies — and whether more ESG talk in the PE industry also means more walk. On average, it does.
+    date: null
 
-- title: Research summaries by the Wheeler Institute
-  type: article
-  outlet: Wheeler Institute for Business and Development
-  link: https://wheelerinstituteresearch.org/people/marcel-olbert/
-  description: Collection of research summaries, including spillover effects of European corporate tax reforms on investment in Africa and carbon leakage to developing countries.
-  date: null
+  - title: "Taxing times: a new era of political economy"
+    type: article
+    outlet: LBS Think
+    link: "https://www.london.edu/think/taxing-times-a-new-era-of-political-economy"
+    description: With Roberto Gomez-Cram — analyzing the changes to global corporate profit taxation.
+    date: null
 
-- title: "Interview: ESG Disclosures in the Private Equity Industry"
-  type: interview
-  outlet: Faculti
-  link: https://faculti.net/esg-disclosures-in-the-private-equity-industry
-  description: On how private equity firms disclose their ESG investing strategies — and whether more ESG talk in the PE industry also means more walk. On average, it does.
-  date: null
+  - title: Keeping an eye on private equity and ESG
+    type: article
+    outlet: LBS Think
+    link: "https://www.london.edu/think/keeping-an-eye-on-private-equity-and-esg"
+    description: Do private equity firms merely make ESG claims, or do claims translate into better portfolio company performance?
+    date: null
 
-- title: "Taxing times: a new era of political economy"
-  type: article
-  outlet: LBS Think
-  link: https://www.london.edu/think/taxing-times-a-new-era-of-political-economy
-  description: With Roberto Gomez-Cram — analyzing the changes to global corporate profit taxation.
-  date: null
+  - title: "Research summary: The Global Minimum Tax — the world's most historic corporate tax reform"
+    type: video
+    outlet: YouTube
+    link: "https://www.youtube.com/watch?v=wrwibkzjDf0"
+    paperLink: "https://doi.org/10.1093/rfs/hhad038"
+    description: "Findings from the Review of Financial Studies paper with Roberto Gomez-Cram on how the proposed 15% global corporate minimum tax affected US firms' stock market valuations."
+    date: null
 
-- title: Keeping an eye on private equity and ESG
-  type: article
-  outlet: LBS Think
-  link: https://www.london.edu/think/keeping-an-eye-on-private-equity-and-esg
-  description: Do private equity firms merely make ESG claims, or do claims translate into better portfolio company performance?
-  date: null
+  - title: How Does Private Firm Disclosure Affect Demand for Public Firm Equity?
+    type: blog
+    outlet: CLS Blue Sky Blog (Columbia Law School)
+    link: "https://clsbluesky.law.columbia.edu/2021/07/06/how-does-private-firm-disclosure-affect-demand-for-public-firm-equity/"
+    paperLink: "https://doi.org/10.1016/j.jacceco.2022.101545"
+    description: "With Jinhwan Kim — summary of our Journal of Accounting and Economics paper on how private firms' disclosures shift global investors' capital away from public firms."
+    date: 2021-07
+
+
+podcast:
+  - title: "Regulation, reporting, and the value question: ESG in a shifting landscape"
+    type: podcast
+    outlet: Think Ahead Podcast
+    link: "https://open.spotify.com/show/2DArpBYDnVSmNUeDTLOMSW"
+    description: With Katharina Neureiter (Co-Head of Global Sustainability, The Carlyle Group), hosted by Sergei Guriev (Dean, London Business School) — on how new rules, from ESG disclosures to tax incentives, are reshaping corporate behavior and investor expectations.
+    date: null
+
+  - title: Carbon Taxes and Carbon Leakage
+    type: podcast
+    outlet: Tax Chats
+    link: "https://taxchats.buzzsprout.com/1878989/episodes/15885860-cement-and-carbon-taxes-a-chat-with-marcel-olbert-and-daniel-klein"
+    description: With hosts Jeff Hoopes (UNC) and Scott Dyreng (Duke), joined by Daniel Klein (Heidelberg Materials) — on carbon taxes, their impact on European firms, and evidence on carbon leakage.
+    date: null
+
+  - title: Global Tax Policy, Private Equity, and Sustainability
+    type: podcast
+    outlet: Conversations on Climate
+    link: "https://www.youtube.com/watch?v=R0GLZ8U6ypA"
+    description: Hour-long conversation with Chris Caldwell on how disclosure regulation and tax policy can change corporate behavior, and the role of the private equity industry.
+    date: null
+
+  - title: Can taxes make businesses more sustainable?
+    type: podcast
+    outlet: The Why Podcast (London Business School)
+    link: "https://megaphone.link/LBS1223957784"
+    description: Conversation with Alenka Turnsek (EY EMEIA Sustainability Tax Leader) on international business tax policy and environmental taxation.
+    date: null
+
+
+policy:
+  - title: The role of tax policy in controlling inflation
+    type: hearing
+    outlet: European Parliament, Subcommittee on Tax Matters (FISC)
+    link: "https://www.europarl.europa.eu/committees/en/the-role-of-tax-policy-in-controlling-in/product-details/20230515CHE11741"
+    description: Hearing of the European Parliament's tax subcommittee on the role of tax policy in controlling inflation.
+    date: 2023
+
+  - title: Analysis of US Corporate Tax Reform Proposals and their Effects for Europe and Germany
+    type: citation
+    outlet: The White House
+    link: "https://www.whitehouse.gov/articles/tax-reform-going/"
+    paperLink: "http://ftp.zew.de/pub/zew-docs/gutachten/US_Tax_Reform_2017.pdf"
+    description: Our ZEW study on the US corporate tax reform proposals was mentioned by Kevin Hassett at the White House.
+    date: 2017
+

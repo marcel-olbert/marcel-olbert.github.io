@@ -41,7 +41,7 @@ CV, photos, housekeeping) — written for Marcel; keep it in sync when workflows
 | `working-papers.yaml` | Working papers | New entries on top |
 | `work-in-progress.yaml` | Projects without public draft | |
 | `news.yaml` | Homepage "Latest" | date `YYYY-MM`, keep 4–6 items, prune oldest. A future date is fine for a save-the-date (sorts to top) |
-| `media.yaml` | Podcasts/videos/articles/interviews | type: podcast\|video\|article\|interview |
+| `media.yaml` | Media page in four sections: press / online / podcast (external only) / policy | New on top within each section; `type` = card label (see file header) |
 | `speaking.yaml` | Speaking & Policy page (topics, formats) | DRAFT — needs Marcel's voice |
 | `talks.yaml` | Talks: homepage section (upcoming + 3 most recent) and full list on `/speaking/#talks` | New on top; `date` quoted "YYYY-MM-DD"/"YYYY-MM"/"YYYY"; upcoming decided at build time (daily scheduled rebuild in deploy.yml); `slides:` PDF in `public/assets/slides/` only for recent talks Marcel approved; skip minor/internal talks; list complete for the past 12 months, earlier years = Marcel's selection (headings show "(selected)"); German-language talks: title/event/location in German + `subtitle_en` (Marcel, 30 Oct 2026; website only) |
 | `podcast.yaml` | Prof of Concept podcast (show info, platform links, episodes) | New episodes on TOP of `episodes` — homepage auto-features `episodes[0]` |

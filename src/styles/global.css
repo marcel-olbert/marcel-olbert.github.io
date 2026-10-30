@@ -332,3 +332,11 @@ section + section { margin-top: 3.2rem; }
   .side-photo { max-width: 22rem; }
 }
 .talk-year-note { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; color: var(--muted); }
+
+/* Media page sections */
+.media-jump { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin: -1.2rem 0 2.4rem; font-size: 0.93rem; font-weight: 550; }
+.media-jump a:last-child { margin-left: auto; }
+.media-section { margin-bottom: 3rem; scroll-margin-top: 5rem; }
+.media-section > h2 { margin-bottom: 0.3rem; }
+.media-section-lede { color: var(--muted); margin-bottom: 1.2rem; font-size: 0.98rem; }
+@media (max-width: 640px) { .media-jump a:last-child { margin-left: 0; } }
