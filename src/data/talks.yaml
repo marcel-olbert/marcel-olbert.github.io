@@ -39,7 +39,7 @@ talks:
     location: Universität Mannheim
     lang: de
     link: https://www.bwl.uni-mannheim.de/mafat/httpswwwbwluni-mannheimdenewswir-brauchen-einen-neuen-steuermix/detail/mafat-jahresveranstaltung-deutschland-auf-der-suche-nach-wachstum-2/
-    # slides: /assets/slides/2026-09-29_mafat-private-equity.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
+    # no public slides: deck consists mostly of third-party material (decided 2026-10-30)
 
   - date: "2026-08-13"
     kind: Discussion
@@ -52,14 +52,14 @@ talks:
     title: "The State of Empirical Tax Research"
     event: COBRA Summer School on Empirical Tax Research
     location: University of Mannheim
-    # slides: /assets/slides/2026-07_state-of-empirical-tax-research.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
+    slides: /assets/slides/2026-07_state-of-empirical-tax-research.pdf  # approved 2026-10-30; cleaned copy (third-party images/internal pages removed)
 
   - date: "2026-05"
     kind: Workshop
     title: "Use Cases & Thoughts on AI Agents for Empirical Research"
     event: COBRA AI & Code Clinic
     location: University of Mannheim
-    # slides: /assets/slides/2026-05_cobra-ai-clinic.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
+    slides: /assets/slides/2026-05_cobra-ai-clinic.pdf  # approved 2026-10-30; cleaned copy (third-party images/internal pages removed)
 
   - date: "2026-02-03"
     kind: Research presentation
