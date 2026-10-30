@@ -45,6 +45,13 @@ press:
     date: 2019-07
 
 online:
+  - title: Democrats could change corporate game with stock taxes
+    type: article
+    outlet: Bloomberg Professional
+    link: "https://www.bloomberg.com/professional/insights/regulation/democrats-could-change-corporate-game-with-stock-taxes/"
+    description: Bloomberg analysis of US corporate tax proposals that draws on my research.  # TODO(Marcel): which paper? (add paperLink)
+    date: null  # TODO(Marcel): month/year
+
   - title: Research summaries by the Wheeler Institute
     type: article
     outlet: Wheeler Institute for Business and Development
