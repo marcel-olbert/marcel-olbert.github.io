@@ -8,58 +8,71 @@ import TalkEntry from '../components/TalkEntry.astro';
 const today = new Date().toISOString().slice(0, 10);
 const upcoming = talksData.talks.filter((t: any) => String(t.date) >= today).reverse();
 const past = talksData.talks.filter((t: any) => String(t.date) < today);
+const thisYear = new Date().getFullYear();
 const years = [...new Set(past.map((t: any) => String(t.date).slice(0, 4)))];
+const mailto = `mailto:${site.email}?subject=Speaking inquiry`;
 ---
 
 <Base title="Speaking & Policy" description="Keynotes, executive education, policy advice, and media commentary by Marcel Olbert on tax policy, ESG regulation, and the future of corporate transparency.">
-  <div class="wrap-text">
-    <h1 class="page-title">Speaking &amp; Policy</h1>
-    <p class="page-lede">{speaking.intro}</p>
-
-    <div class="photo-pair">
-      <img src="/assets/marcel-olbert-speaking.jpg" alt="Marcel Olbert speaking at an event at Mannheim Business School" width="1600" height="1066" loading="lazy" />
-      <img src="/assets/marcel-olbert-speaking-2.jpg" alt="Marcel Olbert presenting research on ESG disclosures in private equity at London Business School" width="1067" height="1600" loading="lazy" />
+  <div class="wrap">
+    <div class="speak-hero">
+      <div>
+        <h1 class="page-title">Speaking &amp; Policy</h1>
+        <p class="speak-lede">{speaking.intro}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href={mailto}>Invite me to speak</a>
+          <a class="btn btn-ghost" href="#topics">Core topics</a>
+        </div>
+      </div>
+      <img class="speak-photo" src="/assets/marcel-olbert-speaking.jpg" alt="Marcel Olbert speaking at an event at Mannheim Business School" width="1600" height="1066" />
     </div>
 
-    <section>
-      <h2>Core Topics</h2>
-      {speaking.topics.map((t: any) => (
-        <div class="topic">
-          <h3>{t.title}</h3>
-          <p>{t.text}</p>
+    <div class="speak-grid">
+      <section id="talks" class="speak-main">
+        <h2>Talks</h2>
+        {upcoming.length > 0 && (
+          <Fragment>
+            <h3 class="talk-year">Upcoming</h3>
+            {upcoming.map((t: any) => <TalkEntry talk={t} upcoming />)}
+          </Fragment>
+        )}
+        {years.map((y) => (
+          <Fragment>
+            <h3 class="talk-year">{y}{Number(y) < thisYear && <span class="talk-year-note"> (selected)</span>}</h3>
+            {past.filter((t: any) => String(t.date).startsWith(y)).map((t: any) => <TalkEntry talk={t} />)}
+          </Fragment>
+        ))}
+      </section>
+
+      <aside id="topics" class="speak-side">
+        <h2>Core topics</h2>
+        {speaking.topics.map((t: any) => (
+          <div class="side-topic">
+            <h3>{t.title}</h3>
+            {t.text && <p>{t.text}</p>}
+            {t.points && (
+              <ul>
+                {t.points.map((pt: any) => <li><strong>{pt.label}.</strong> {pt.text}</li>)}
+              </ul>
+            )}
+          </div>
+        ))}
+        <div class="side-formats">
+          <h3>Formats</h3>
+          <ul class="chip-list">
+            {speaking.formats.map((f: string) => <li>{f}</li>)}
+          </ul>
         </div>
-      ))}
-    </section>
-
-    <section>
-      <h2>Formats</h2>
-      <ul style="margin-left: 1.1rem;">
-        {speaking.formats.map((f: string) => <li>{f}</li>)}
-      </ul>
-    </section>
-
-    <section id="talks">
-      <h2>Talks</h2>
-      {upcoming.length > 0 && (
-        <Fragment>
-          <h3 class="talk-year">Upcoming</h3>
-          {upcoming.map((t: any) => <TalkEntry talk={t} upcoming />)}
-        </Fragment>
-      )}
-      {years.map((y) => (
-        <Fragment>
-          <h3 class="talk-year">{y}</h3>
-          {past.filter((t: any) => String(t.date).startsWith(y)).map((t: any) => <TalkEntry talk={t} />)}
-        </Fragment>
-      ))}
-    </section>
+        <img class="side-photo" src="/assets/marcel-olbert-speaking-2.jpg" alt="Marcel Olbert presenting research on ESG disclosures in private equity at London Business School" width="1067" height="1600" loading="lazy" />
+      </aside>
+    </div>
 
     <div class="cta-band">
       <div>
         <h2>Invite me to speak</h2>
-        <p>Keynotes, panels, executive sessions, and policy briefings — in English or German.</p>
+        <p>Academic research presentations, keynotes, panels, executive sessions, and policy briefings — in English or German.</p>
       </div>
-      <a class="btn btn-primary" href={`mailto:${site.email}?subject=Speaking inquiry`}>Get in touch</a>
+      <a class="btn btn-primary" href={mailto}>Get in touch</a>
     </div>
   </div>
 </Base>

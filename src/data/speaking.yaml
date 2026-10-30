@@ -7,12 +7,14 @@ intro: >-
   Through my regular interactions with corporate leaders, journalists as well as social media influencers, I always aim to make my research accessible and actionable for a broad audience.
 
 topics:
-  - title: Tax policy and business
-    text: Evidence from my own and surveyed research, paired with timely data analyses of tax reforms and firms' tax sensitivity across countries.
-  - title: The global tax reform and what it means for business
-    text: The OECD's Pillar Two minimum tax is the biggest change to corporate taxation in a century. What the evidence says about who bears it, how markets priced it, and how firms are responding.
-  - title: Tax policy for sustainability
-    text: Carbon taxes, green incentives, and the risk of carbon leakage — what works, what backfires, and what the data from European firms shows.
+  - title: Tax policy and business taxation
+    points:
+      - label: Tax policy and business
+        text: Evidence from my own and surveyed research, paired with timely data analyses of tax reforms and firms' tax sensitivity across countries.
+      - label: The global tax reform and what it means for business
+        text: The OECD's Pillar Two minimum tax is the biggest change to corporate taxation in a century. What the evidence says about who bears it, how markets priced it, and how firms are responding.
+      - label: Tax policy for sustainability
+        text: Carbon taxes, green incentives, and the risk of carbon leakage — what works, what backfires, and what the data from European firms shows.
   - title: ESG disclosure — talk versus walk
     text: Evidence from the private equity industry on whether ESG claims translate into real changes in portfolio companies, and what regulators should take from it.
   - title: Transparency regulation and multinational firms
@@ -21,6 +23,7 @@ topics:
     text: How AI agents are changing empirical research and corporate tax and finance work — a practitioner-oriented view from the frontier.
 
 formats:
+  - Academic research presentations
   - Keynotes and conference talks
   - Executive education sessions and workshops
   - Panel discussions and moderation

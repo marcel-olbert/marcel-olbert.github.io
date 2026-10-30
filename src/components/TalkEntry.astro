@@ -1,6 +1,6 @@
 ---
 interface Props {
-  talk: { date: string; kind: string; title: string; event?: string; location?: string;
+  talk: { date: string; kind: string; title?: string; event?: string; location?: string;
           lang?: string; subtitle_en?: string; link?: string; slides?: string };
   upcoming?: boolean;
 }
@@ -8,7 +8,8 @@ const { talk, upcoming } = Astro.props;
 const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const [y, m, d] = String(talk.date).split('-');
 const dateLabel = d ? `${Number(d)} ${months[Number(m) - 1]} ${y}` : m ? `${months[Number(m) - 1]} ${y}` : y;
-const where = [talk.event, talk.location].filter(Boolean).join(' · ');
+const heading = talk.title ?? talk.event;
+const where = (talk.title ? [talk.event, talk.location] : [talk.location]).filter(Boolean).join(' · ');
 ---
 <div class="talk">
   <div class="talk-date">
@@ -17,7 +18,7 @@ const where = [talk.event, talk.location].filter(Boolean).join(' · ');
   </div>
   <div>
     <span class="talk-kind">{talk.kind}</span>
-    <div class="talk-title" lang={talk.lang === 'de' ? 'de' : undefined}>{talk.title}</div>
+    <div class="talk-title" lang={talk.lang === 'de' ? 'de' : undefined}>{heading}</div>
     {talk.subtitle_en && <div class="talk-subtitle" lang="en">{talk.subtitle_en}</div>}
     {where && <div class="talk-meta" lang={talk.lang === 'de' ? 'de' : undefined}>{where}</div>}
     {(talk.slides || talk.link) && (

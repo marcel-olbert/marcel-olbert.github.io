@@ -1,12 +1,21 @@
 # Talks — shown on the homepage ("Talks": upcoming + most recent) and in full on /speaking/#talks.
 # New entries on TOP. date: "YYYY-MM-DD" (or "YYYY-MM" if the day is unknown), always quoted.
 # kind: Keynote | Research presentation | Discussion | Panel | Moderation | Workshop | Lecture |
-#       Fireside chat | Expert hearing
+#       Expert hearing   (fireside chats count as Moderation — Marcel, 30 Oct 2026)
+# Coverage rule (Marcel, 30 Oct 2026): complete for the past 12 months; earlier years list a selection of his choice
+# (year headings before the current year show "(selected)").
+# title is optional: without it, the event name becomes the heading (e.g. research seminars).
 # slides: path to a PDF in public/assets/slides/ — only for recent talks, and only once Marcel approves.
 # lang: de → title, event and location in German, plus `subtitle_en` (English subtitle) — website only.
 # (Marcel, 30 Oct 2026: German-language talks are listed in German with an English subtitle.)
 # Upcoming vs. past is decided automatically from the date at build time.
 talks:
+  - date: "2027-05-20"
+    kind: Research presentation
+    event: London School of Economics
+    location: London
+    # title: TODO(Marcel) — paper title once fixed
+
   - date: "2027-02-23"
     kind: Keynote
     title: "Eröffnung: Investitionsstandort Deutschland – erste Forschungsergebnisse"  # TODO(Marcel): final title
@@ -52,8 +61,34 @@ talks:
     location: University of Mannheim
     # slides: /assets/slides/2026-05_cobra-ai-clinic.pdf  # TODO: approved by Marcel 2026-10-29; add once PDF is checked
 
+  - date: "2026-02-03"
+    kind: Research presentation
+    title: "The Global Network of Oligarch Companies"
+    event: "EU Tax Observatory conference “From Secrecy to Transparency: The End of Hidden Wealth?”"
+    location: Paris School of Economics
+    link: https://taxobservatory.world/?p=16396
+
+  - date: "2025-10-17"
+    kind: Research presentation
+    title: "Taxes and the Global Spillovers of AI Investments"
+    event: Lancaster University Management School
+    location: Lancaster
+    link: https://www.lancaster.ac.uk/lums/our-departments/accounting-and-finance/events/marcel-olbert-london-business-school-seminar/
+
   - date: "2025"
-    kind: Fireside chat
+    kind: Research presentation
+    title: "Taxes and the Global Spillovers of AI Investments"
+    event: MIT Sloan School of Management
+    location: Cambridge, MA
+
+  - date: "2025"
+    kind: Research presentation
+    title: "Carbon Leakage to Developing Countries"
+    event: University of Chicago Booth School of Business
+    location: Chicago
+
+  - date: "2025"
+    kind: Moderation
     title: "Fireside chat with Stéphane Boujnah, CEO of Euronext"
     event: LBS Summit Series
     location: London Business School

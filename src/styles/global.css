@@ -304,3 +304,31 @@ section + section { margin-top: 3.2rem; }
   .talk { grid-template-columns: 1fr; gap: 0.3rem; }
   .talk-upcoming { display: inline-block; margin: 0 0 0 0.5rem; }
 }
+
+/* ——— Speaking & Policy layout: compact hero, talks first, topics in sidebar ——— */
+.speak-hero { display: grid; grid-template-columns: 1.6fr 1fr; gap: 2.4rem; align-items: center; padding: 2.2rem 0 1rem; }
+.speak-lede { color: var(--muted); font-size: 1.02rem; line-height: 1.55; margin: 0.6rem 0 1rem; }
+.speak-photo { width: 100%; height: 300px; object-fit: cover; object-position: 50% 30%; border-radius: 10px; display: block; }
+.chip-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip-list li { font-size: 0.8rem; font-weight: 550; color: var(--ink); background: var(--tag-bg); padding: 0.22rem 0.65rem; border-radius: 99px; }
+.speak-grid { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 3rem; align-items: start; margin-top: 1.2rem; }
+.speak-main > h2, .speak-side > h2 { margin-bottom: 0.4rem; }
+.speak-main .talk-year:first-of-type { margin-top: 0.8rem; }
+.speak-side { position: sticky; top: 1.5rem; }
+.side-topic { padding: 0.85rem 0; border-bottom: 1px solid var(--rule); }
+.side-topic:first-of-type { border-top: 1px solid var(--rule); margin-top: 0.8rem; }
+.side-topic h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+.side-topic p, .side-topic li { color: var(--muted); font-size: 0.88rem; line-height: 1.5; }
+.side-topic ul { margin: 0.3rem 0 0 1rem; display: grid; gap: 0.35rem; }
+.side-topic li strong { color: var(--ink); font-weight: 600; }
+.side-photo { width: 100%; height: auto; border-radius: 10px; margin-top: 1.2rem; display: block; }
+.side-formats { margin-top: 1.4rem; }
+.side-formats h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+@media (max-width: 900px) {
+  .speak-hero, .speak-grid { grid-template-columns: 1fr; }
+  .speak-hero { padding-top: 1.6rem; }
+  .speak-side { position: static; }
+  .speak-photo { display: none; }
+  .side-photo { max-width: 22rem; }
+}
+.talk-year-note { font-family: var(--sans); font-size: 0.85rem; font-weight: 500; color: var(--muted); }
