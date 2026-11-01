@@ -16,6 +16,12 @@ talks:
     location: London
     # title: TODO(Marcel) — paper title once fixed
 
+  - date: "2027-03-04"
+    kind: Lecture
+    title: "Teaching (tax) at business schools in the age of AI"  # talk held in German (Marcel, 1 Nov 2026)
+    event: Tagung der VHB-Kommission Steuern
+    location: Universität zu Köln
+
   - date: "2027-02-23"
     kind: Keynote
     title: "Eröffnung: Investitionsstandort Deutschland – erste Forschungsergebnisse"  # TODO(Marcel): final title
