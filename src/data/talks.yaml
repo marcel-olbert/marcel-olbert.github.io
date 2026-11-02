@@ -32,8 +32,9 @@ talks:
     link: /events/
 
   - date: "2026-11-09"
-    kind: Lecture  # TODO(Marcel): confirm format (talk / keynote) and add title
-    event: Mannheim Taxation Campus Day
+    kind: Lecture
+    title: "Research Compass: Why and How to Publish Tax Research in Top Accounting Journals?"
+    event: MannheimTaxation Campus Meeting
     location: ZEW, Mannheim
 
   - date: "2026-11-04"
