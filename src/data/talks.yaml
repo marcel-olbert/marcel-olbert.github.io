@@ -39,9 +39,10 @@ talks:
 
   - date: "2026-11-04"
     kind: Keynote
-    title: "Agents in the Lab: How LLMs and AI Agents Will Reshape Empirical Research — and What Research Data Infrastructure Must Become"  # TODO(Marcel): confirm title
+    title: "Research Independence and Quality in the Age of AI"  # title as on the delivered deck; EN slides, talk held in German (2026-11-05)
     event: "BERD@NFDI Leadership Retreat"
     location: University of Mannheim
+    slides: /assets/slides/2026-11_berd-ai-impulse.pdf  # approved 2026-11-05; delivered version, Claude draft pages removed
 
   - date: "2026-09-29"
     kind: Moderation
