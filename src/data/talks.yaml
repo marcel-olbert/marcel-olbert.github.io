@@ -38,6 +38,7 @@ talks:
     event: Rotary Club Schwetzingen-Kurpfalz
     location: Schwetzingen
     lang: de
+    slides: /assets/slides/2026-11_rotary-schwetzingen.pdf  # approved 2026-11-12; recompiled from the delivered .tex; "Wer ich bin" and frame 18 (KMU cost of capital) removed, third-party images blanked
 
   - date: "2026-11-09"
     kind: Lecture
