@@ -30,9 +30,14 @@ links:
   youtube: https://www.youtube.com/playlist?list=PLEioR_KrWcyNpHjVtMAMAIgCH64fFEvXE
   rss: https://anchor.fm/s/1133e62b4/podcast/rss
 episodes: # newest first
+  - title: "KI-Kreislaufdeals: Wie Nvidia seinen eigenen Umsatz finanziert"
+    date: 2026-11-12
+    youtube: https://www.youtube.com/watch?v=oCan-yB2q_8
+    spotify: https://podcasters.spotify.com/pod/show/prof-of-concept/episodes/KI-Kreislaufdeals-Wie-Nvidia-seinen-eigenen-Umsatz-finanziert-e3s5kpo
+    apple: https://podcasts.apple.com/de/podcast/ki-kreislaufdeals-wie-nvidia-seinen-eigenen-umsatz/id6786339773?i=1000801386770
   - title: "Live aus Mannheim mit hedgefonds.henning: Wenn ich König von Deutschland wär: Das perfekte Steuersystem!"
     date: 2026-11-05
-    youtube: null
+    youtube: https://www.youtube.com/watch?v=sVK7zuKIKU0
     spotify: https://podcasters.spotify.com/pod/show/prof-of-concept/episodes/Live-aus-Mannheim-mit-hedgefonds-henning-Wenn-ich-Knig-von-Deutschland-wr-Das-perfekte-Steuersystem-e3rqgoq
     apple: https://podcasts.apple.com/de/podcast/live-aus-mannheim-mit-hedgefonds-henning-wenn-ich-k%C3%B6nig/id6786339773?i=1000800047538
   - title: "Das Ende der Lüge? Wie KI die Welt ehrlicher macht."
