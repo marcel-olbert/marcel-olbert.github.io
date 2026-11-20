@@ -265,6 +265,10 @@ section + section { margin-top: 3.2rem; }
 .event ul { margin: 0.8rem 0 0 1.1rem; font-size: 0.95rem; }
 .event-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.7rem; margin-top: 1.1rem; }
 .event-photos img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.event-photos--people { grid-template-columns: repeat(5, 1fr); }
+.event-photos figure { margin: 0; }
+.event-photos figure img { aspect-ratio: 1; height: auto; }
+.event-photos figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.3; }
 
 /* ——— Footer ——— */
 .site-footer { border-top: 1px solid var(--rule); padding: 2.2rem 0 2.8rem; color: var(--muted); font-size: 0.9rem; }
@@ -278,6 +282,7 @@ section + section { margin-top: 3.2rem; }
   .hero-photo { order: -1; max-width: 20rem; }
   .news-item { grid-template-columns: 1fr; gap: 0.1rem; }
   .event-photos { grid-template-columns: 1fr 1fr; }
+  .event-photos--people { grid-template-columns: repeat(3, 1fr); }
   main { padding-top: 2rem; }
 }
 

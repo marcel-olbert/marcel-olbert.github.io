@@ -22,8 +22,10 @@ import events from '../data/events.yaml';
           </ul>
         )}
         {event.photos?.length > 0 && (
-          <div class="event-photos">
-            {event.photos.map((src: string) => <img src={src} alt={event.title} loading="lazy" />)}
+          <div class={event.photos.some((p: any) => p.caption) ? 'event-photos event-photos--people' : 'event-photos'}>
+            {event.photos.map((p: any) => typeof p === 'string'
+              ? <img src={p} alt={event.title} loading="lazy" />
+              : <figure><img src={p.src} alt={p.caption ?? event.title} loading="lazy" />{p.caption && <figcaption>{p.caption}</figcaption>}</figure>)}
           </div>
         )}
       </article>

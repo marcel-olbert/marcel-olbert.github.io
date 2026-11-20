@@ -2,19 +2,22 @@
 # historical LBS-era events. COBRA events page:
 # https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/cobra-events/
 - title: "COBRA Launch Event — Economic Miracle 2.0?"
-  date: "23 February 2027"
+  date: "23 February 2027, 17:30–21:00"
   location: Aula, University of Mannheim
   description: >-
-    Save the date. Public launch of COBRA, the Mannheim Center for Corporate
-    Behavior and Regulation Analysis, on the theme “Economic Miracle 2.0? How much
-    regulation does Germany need amid geopolitical realignment and technological
-    disruption?” I open with first research findings on Germany as an investment
-    location, followed by a fireside conversation with Sebastian Matthes,
-    Editor-in-Chief of Handelsblatt, on his new book “Inside 2029”, and a panel with
-    Dr. Danyal Bayaz, Finance Minister of Baden-Württemberg, Julia Stadler, Co-CEO of
-    Stadler Anlagenbau, and Annika Maldener, Managing Director at CVC Capital
-    Partners. 17:00–19:30, followed by a reception. The event will be held in German;
-    formal invitations follow in the autumn.
+    Public launch of COBRA, the Mannheim Center for Corporate Behavior and
+    Regulation Analysis at Mannheim Business School, on the question “Economic
+    Miracle 2.0? What regulation does Germany need amid geopolitical realignment and
+    technological disruption?” After welcome addresses by the Rector of the
+    University of Mannheim and the Dean of Mannheim Business School, I present COBRA
+    and current research findings on Germany as an investment location. This is
+    followed by a fireside conversation with Sebastian Matthes, Editor-in-Chief of
+    Handelsblatt, on his book “Inside 2029 – Wie Deutschlands Wirtschaft wieder
+    Weltklasse wird”, and a panel with Dr. Danyal Bayaz, Finance Minister of
+    Baden-Württemberg, Luka Mucic, CEO of Vonovia, Julia Stadler, Co-CEO of Stadler
+    Anlagenbau, and Annika Maldener, Managing Director at CVC Capital Partners, with
+    questions from the audience. Doors open at 16:50. By invitation; the event will
+    be held in German.
   links:
     - label: COBRA
       url: https://www.mannheim-business-school.com/de/the-mannheim-experience/faculty-research/cobra-mannheim-center-for-corporate-behavior-and-regulation-analysis/
@@ -22,10 +25,24 @@
       url: https://www.handelsblatt.com/autoren/sebastian-matthes/20911050.html
     - label: "Dr. Danyal Bayaz (Ministry of Finance, Baden-Württemberg)"
       url: https://fm.baden-wuerttemberg.de/de/ministerium/minister-danyal-bayaz
+    - label: "Luka Mucic (Vonovia)"
+      url: https://www.vonovia.com/en/about-us/corporate-management/management-board
     - label: "Julia Stadler (STADLER Anlagenbau)"
       url: https://w-stadler.com/company/news/detail/stadler-appoints-eighth-generation-family-member-julia-stadler-as-co-chief-executive-officer
     - label: "Annika Maldener (CVC Capital Partners)"
       url: https://www.cvc.com/about/our-people/annika-maldener/
+  # Speaker portraits from the official COBRA invitation mailing (5 Nov 2026)
+  photos:
+    - src: /assets/events/cobra-2027-matthes.jpg
+      caption: Sebastian Matthes
+    - src: /assets/events/cobra-2027-bayaz.jpg
+      caption: Dr. Danyal Bayaz
+    - src: /assets/events/cobra-2027-mucic.jpg
+      caption: Luka Mucic
+    - src: /assets/events/cobra-2027-stadler.jpg
+      caption: Julia Stadler
+    - src: /assets/events/cobra-2027-maldener.jpg
+      caption: Annika Maldener
 
 - title: "MaFAT Annual Event — Germany in Search of Growth: What Can Private Equity Contribute?"
   date: "29 September 2026"
